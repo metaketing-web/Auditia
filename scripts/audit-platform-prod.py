@@ -174,14 +174,26 @@ def audit_auth(clients: dict[str, Client]) -> None:
         code, _ = cab.request("POST", "/api/collecte/tokens/sync", b"{}")
         check(code in (401, 403), "cabinet blocked collecte sync", f"cabinet sync {code}")
 
-    # auditeur accès collecte entretien
+    # auditeur accès collecte entretien (entretien affecté A ou A+L)
     aud = clients.get("auditeur_b")
     if aud:
         conn = sqlite3.connect(DB)
-        eid = conn.execute("SELECT entretien_id FROM collecte_tokens LIMIT 1").fetchone()[0]
+        st = json.loads(conn.execute("SELECT payload FROM mission_state WHERE id=1").fetchone()[0])
+        eid = None
+        for row in conn.execute("SELECT entretien_id FROM collecte_tokens"):
+            ent = next(
+                (e for e in (st.get("entretiens") or []) if e.get("id") == row[0]),
+                None,
+            )
+            if ent and str(ent.get("aud") or "").upper() in ("A", "A+L"):
+                eid = row[0]
+                break
         conn.close()
-        code, d = aud.get_json(f"/api/collecte/entretien/{eid}")
-        check(code == 200 and d.get("token"), "auditeur collecte/entretien", f"auditeur ent {code}")
+        if eid:
+            code, d = aud.get_json(f"/api/collecte/entretien/{eid}")
+            check(code == 200 and d.get("token"), "auditeur collecte/entretien", f"auditeur ent {code}")
+        else:
+            warn("no entretien A for auditeur_b collecte test")
 
 
 def audit_core_api(clients: dict[str, Client]) -> tuple[str | None, str | None]:

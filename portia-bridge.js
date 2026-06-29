@@ -48,15 +48,14 @@
       const h = await fetch("/api/health");
       if (!h.ok) return false;
       const health = await h.json();
-      if (health.storageMode === "server") {
-        try {
-          const pr = await fetch("/api/config/public");
-          if (pr.ok) serverConfig = await pr.json();
-        } catch (_) {}
-      }
-      if (!serverConfig) serverConfig = health;
+      if (!health.ok) return false;
+      try {
+        const pr = await fetch("/api/config/public");
+        if (pr.ok) serverConfig = await pr.json();
+      } catch (_) {}
+      if (!serverConfig) return false;
       window._portiaServerConfig = serverConfig;
-      return !!(health.ok && (health.storageMode === "server" || (serverConfig && serverConfig.storageMode === "server")));
+      return serverConfig.storageMode === "server";
     } catch {
       return false;
     }

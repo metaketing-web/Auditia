@@ -48,6 +48,22 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4-mini").strip()
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5-20250929").strip()
+PNIPM_REF_BASE = os.environ.get("PNIPM_REF_BASE", "").strip().rstrip("/")
+
+# Chemins statiques interdits (audit sécurité — pas de fuite config / dotfiles)
+_BLOCKED_STATIC_EXACT = frozenset(
+    {
+        "package.json",
+        "requirements.txt",
+        ".env",
+        ".env.example",
+        "team-users.example.json",
+        "team-users.json",
+        ".DS_Store",
+        "rotate_team_passwords.py",
+    }
+)
+_BLOCKED_STATIC_SUFFIX = (".pem", ".key", ".sql", ".sqlite", ".db", ".bak")
 MAX_UPLOAD_MB = int(os.environ.get("MAX_UPLOAD_MB", "50"))
 MISSION_ACCESS_CODE = os.environ.get("MISSION_ACCESS_CODE", "").strip()
 DATABASE_URL = os.environ.get("DATABASE_URL", "").strip()
@@ -61,6 +77,10 @@ LOGIN_LIMITER = esec.LoginRateLimiter(
     max_attempts=int(os.environ.get("LOGIN_MAX_ATTEMPTS", "5")),
     window_sec=int(os.environ.get("LOGIN_WINDOW_SEC", "900")),
     lockout_sec=int(os.environ.get("LOGIN_LOCKOUT_SEC", "1800")),
+)
+COLLECTE_DEPOSIT_LIMITER = esec.SlidingWindowLimiter(
+    max_events=int(os.environ.get("COLLECTE_DEPOSIT_MAX", "20")),
+    window_sec=int(os.environ.get("COLLECTE_DEPOSIT_WINDOW_SEC", "3600")),
 )
 _CORS_ORIGINS = [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip()]
 
@@ -117,6 +137,21 @@ if _CORS_ORIGINS:
         allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
         allow_headers=["Content-Type", "X-Portia-Token", "X-Portia-Bootstrap-Secret"],
     )
+
+
+@app.middleware("http")
+async def block_sensitive_static_middleware(request: Request, call_next):
+    path = request.url.path
+    if path.startswith("/api/"):
+        return await call_next(request)
+    name = path.lstrip("/").split("/", 1)[0]
+    if not name:
+        return await call_next(request)
+    if name in _BLOCKED_STATIC_EXACT or name.lower().endswith(_BLOCKED_STATIC_SUFFIX):
+        return JSONResponse({"detail": "Not Found"}, status_code=404)
+    if name.startswith(".") or "/." in path:
+        return JSONResponse({"detail": "Not Found"}, status_code=404)
+    return await call_next(request)
 
 
 @app.middleware("http")
@@ -365,6 +400,27 @@ def _migrate_planning_calendar_july_2026(state: dict[str, Any]) -> None:
     _apply_july_2026_planning_structure(state)
 
 
+def _migrate_notification_prefs_emails(state: dict[str, Any]) -> None:
+    """Préférences notifs indexées par e-mail — copie ancien → nouveau après migration compte."""
+    meta = state.get("meta")
+    if not isinstance(meta, dict):
+        return
+    prefs = meta.get("notificationPrefs")
+    if not isinstance(prefs, dict):
+        return
+    for old, new in (
+        ("juliana@portia.local", "jc@metaketing.io"),
+        ("diopasse@hotmail.fr", "diopasse.pro@gmail.com"),
+        ("auditeur.b@portia.local", "diopasse.pro@gmail.com"),
+    ):
+        old_k, new_k = old.lower(), new.lower()
+        if old_k not in prefs:
+            continue
+        if new_k not in prefs:
+            prefs[new_k] = prefs[old_k]
+        prefs.pop(old_k, None)
+
+
 def normalize_state(state: dict[str, Any]) -> dict[str, Any]:
     if not state:
         return state
@@ -396,6 +452,7 @@ def normalize_state(state: dict[str, Any]) -> dict[str, Any]:
     meta = state.setdefault("meta", {})
     if meta.get("notificationPrefs") is None or not isinstance(meta.get("notificationPrefs"), dict):
         meta["notificationPrefs"] = {}
+    _migrate_notification_prefs_emails(state)
     esec.purge_test_documents_from_state(state)
     _migrate_agenda_conflicts(state)
     _migrate_r1_cdc_annexes(state)
@@ -458,6 +515,13 @@ def set_state(payload: dict[str, Any], *, audit: bool = True) -> None:
         conn.commit()
     if audit:
         log_action("state_save", f"keys={list(payload.keys())}")
+
+
+def _dataroom_doc_for_user(doc_id: str, user: dict[str, Any]) -> dict[str, Any]:
+    doc = dr.get_document(DB_PATH, doc_id)
+    if not doc or not esec.user_can_access_dataroom_doc(doc, user):
+        raise HTTPException(404, "Document introuvable")
+    return doc
 
 
 def migrate_terrain_trames(state: dict[str, Any]) -> None:
@@ -728,14 +792,7 @@ class TotpDisableRequest(BaseModel):
 
 @app.get("/api/health")
 def health() -> dict[str, Any]:
-    return {
-        "ok": True,
-        "storage": "sqlite",
-        "storageMode": "server",
-        "requireAuth": REQUIRE_AUTH,
-        "missionAccessRequired": bool(MISSION_ACCESS_CODE),
-        "appVersion": 1,
-    }
+    return {"ok": True}
 
 
 def _config_payload() -> dict[str, Any]:
@@ -767,6 +824,7 @@ def _config_payload() -> dict[str, Any]:
             "totpRequiredPilotage": REQUIRE_TOTP_PILOTAGE,
             "sessionCookieAuth": SESSION_COOKIE_AUTH,
         },
+        "pnipmRefBase": PNIPM_REF_BASE,
     }
 
 
@@ -777,7 +835,6 @@ def config_public() -> dict[str, Any]:
         "storageMode": "server",
         "requireAuth": REQUIRE_AUTH,
         "missionAccessRequired": bool(MISSION_ACCESS_CODE),
-        "aiReady": aip.ai_ready(),
     }
 
 
@@ -1143,6 +1200,8 @@ def api_export_entretien(
     except ValueError:
         raise HTTPException(400, "Identifiant entretien invalide")
     state = get_state()
+    if not esec.user_can_access_entretien(state, eid, user):
+        raise HTTPException(404, "Entretien introuvable")
     try:
         data, fname, ctype = eitem.export_entretien(
             state, DB_PATH, eid, format, anonymize=anonymize
@@ -1437,7 +1496,14 @@ def api_get_questionnaire(
     entretien_id: str,
     user: dict[str, Any] = Depends(require_user),
 ) -> dict[str, Any]:
-    return qr.load_questionnaire(DB_PATH, entretien_id)
+    try:
+        eid = esec.validate_entretien_id(entretien_id)
+    except ValueError as e:
+        raise HTTPException(400, str(e)) from e
+    state = get_state()
+    if not esec.user_can_access_entretien(state, eid, user):
+        raise HTTPException(404, "Entretien introuvable")
+    return qr.load_questionnaire(DB_PATH, eid)
 
 
 @app.put("/api/entretiens/{entretien_id}/questionnaire")
@@ -1452,6 +1518,9 @@ async def api_put_questionnaire(
         eid = esec.validate_entretien_id(entretien_id)
     except ValueError as e:
         raise HTTPException(400, str(e)) from e
+    state = get_state()
+    if not esec.user_can_access_entretien(state, eid, user):
+        raise HTTPException(404, "Entretien introuvable")
     qr.merge_questionnaire_into_state(DB_PATH, get_state, lambda s: set_state(s, audit=False), eid, body)
     eaudit.journal(
         DB_PATH,
@@ -1465,10 +1534,7 @@ async def api_put_questionnaire(
 
 @app.get("/api/dataroom/docs/{doc_id}")
 def api_dataroom_doc(doc_id: str, user: dict[str, Any] = Depends(require_user)) -> dict[str, Any]:
-    doc = dr.get_document(DB_PATH, doc_id)
-    if not doc:
-        raise HTTPException(404, "Document introuvable")
-    return doc
+    return _dataroom_doc_for_user(doc_id, user)
 
 
 class DocStatutPatch(BaseModel):
@@ -1539,6 +1605,7 @@ def api_doc_relance(
     body: RelanceRequest,
     user: dict[str, Any] = Depends(require_write),
 ) -> dict[str, Any]:
+    _dataroom_doc_for_user(doc_id, user)
     try:
         result = drel.create_relance(
             DB_PATH,
@@ -1668,6 +1735,7 @@ def api_doc_summarize(
         raise HTTPException(429, "Quota assistant IA atteint")
     if not aip.ai_ready():
         raise HTTPException(503, "Assistant IA non configuré sur le serveur")
+    _dataroom_doc_for_user(doc_id, user)
     try:
         result = drai.summarize_document(DB_PATH, UPLOAD_DIR, doc_id, force=body.force)
     except ValueError as e:
@@ -1688,9 +1756,7 @@ def api_doc_summarize(
 
 @app.get("/api/dataroom/docs/{doc_id}/summary")
 def api_doc_summary_get(doc_id: str, user: dict[str, Any] = Depends(require_user)) -> dict[str, Any]:
-    doc = dr.get_document(DB_PATH, doc_id)
-    if not doc:
-        raise HTTPException(404, "Document introuvable")
+    doc = _dataroom_doc_for_user(doc_id, user)
     return {
         "docId": doc_id,
         "summary": doc.get("aiSummary") or "",
@@ -1920,6 +1986,8 @@ async def upload_file(
 
 @app.get("/api/files/{file_id}")
 def download_file(file_id: str, user: dict[str, Any] = Depends(require_user)):
+    if not dr.user_can_access_file(DB_PATH, file_id, user):
+        raise HTTPException(404, "Fichier introuvable")
     info = dr.get_file_for_download(DB_PATH, file_id, upload_dir=UPLOAD_DIR)
     if not info:
         raise HTTPException(404, "Fichier introuvable")
@@ -1931,6 +1999,8 @@ def download_file(file_id: str, user: dict[str, Any] = Depends(require_user)):
 def preview_file(file_id: str, user: dict[str, Any] = Depends(require_user)):
     import file_preview as fp
 
+    if not dr.user_can_access_file(DB_PATH, file_id, user):
+        raise HTTPException(404, "Fichier introuvable")
     info = dr.get_file_for_download(DB_PATH, file_id, upload_dir=UPLOAD_DIR)
     if not info:
         raise HTTPException(404, "Fichier introuvable")
@@ -2589,6 +2659,11 @@ async def api_collecte_deposit(
     description: str = Form(""),
     doc_type: str = Form("DOC"),
 ) -> dict[str, Any]:
+    ip = esec.client_ip(request)
+    limit_key = f"{ip}:{(token or '')[:16]}"
+    ok_lim, lim_msg = COLLECTE_DEPOSIT_LIMITER.check(limit_key)
+    if not ok_lim:
+        raise HTTPException(429, lim_msg)
     content = await file.read()
     max_bytes = MAX_UPLOAD_MB * 1024 * 1024
     if len(content) > max_bytes:
@@ -2680,6 +2755,9 @@ def api_collecte_entretien(
     user: dict[str, Any] = Depends(require_user),
 ) -> dict[str, Any]:
     eid = esec.validate_entretien_id(entretien_id)
+    state = get_state()
+    if not esec.user_can_access_entretien(state, eid, user):
+        raise HTTPException(404, "Entretien introuvable")
     base = csync.public_base_url()
     tok = colldb.get_token_for_entretien(DB_PATH, eid, base)
     docs = colldb.list_docs_for_entretien(DB_PATH, eid)

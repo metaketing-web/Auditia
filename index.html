@@ -1101,7 +1101,7 @@ const Store={
   defaults(){
     return {
       meta:{version:1, j0:J0_DATE, clockJ:-2, seeded:true, entretiensViergesRev:"20260605", createdAt:new Date().toISOString(), notificationPrefs:{}},
-      settings:{apiKey:"", model:"claude-sonnet-4-20250514", proxy:"", missionName:"Audit de cadrage PNIPM — MPJIPSC"},
+      settings:{model:"claude-sonnet-4-20250514", proxy:"/api/ai/complete", missionName:"Audit de cadrage PNIPM — MPJIPSC"},
       entretiens:JSON.parse(JSON.stringify(SEED_ENTRETIENS)),
       docs:JSON.parse(JSON.stringify(SEED_DOCS)),
       constats:JSON.parse(JSON.stringify(SEED_CONSTATS)),
@@ -1296,23 +1296,25 @@ const Files={
    AI — appels directs API Anthropic (navigateur), contexte d'audit, features
    ========================================================================= */
 const AI={
-  get ready(){ const s=Store.state&&Store.state.settings; if(!s) return false; return !!(s.apiKey&&s.apiKey.trim()) || !!(s.proxy&&s.proxy.trim()); },
-  endpoint(){ const p=(Store.state.settings.proxy||"").trim(); return p||"https://api.anthropic.com/v1/messages"; },
+  get ready(){
+    if(window._portiaServerConfig&&window._portiaServerConfig.aiReady)return true;
+    const p=(Store.state&&Store.state.settings&&Store.state.settings.proxy||"").trim();
+    return !!p;
+  },
+  endpoint(){ return (Store.state.settings.proxy||"").trim()||"/api/ai/complete"; },
   headers(){
     const h={"content-type":"application/json"};
-    const p=(Store.state.settings.proxy||"").trim();
-    if(!p){ h["x-api-key"]=(Store.state.settings.apiKey||"").trim(); h["anthropic-version"]="2023-06-01"; h["anthropic-dangerous-direct-browser-access"]="true"; }
+    if(window.PORTIA_AUTH_TOKEN)h["X-Portia-Token"]=window.PORTIA_AUTH_TOKEN;
     return h;
   },
   async complete({system,messages,max_tokens=1800,onToken}){
     if(!this.ready){ const e=new Error("NO_KEY"); e.code="NO_KEY"; throw e; }
     const body={model:(Store.state.settings.model||"claude-sonnet-4-20250514").trim(),max_tokens,system,messages,stream:!!onToken};
     let res;
-    try{ res=await fetch(this.endpoint(),{method:"POST",headers:this.headers(),body:JSON.stringify(body)}); }
-    catch(netErr){ const e=new Error("Connexion impossible à l'API. Vérifiez votre réseau ou utilisez un proxy backend (la clé navigateur peut être bloquée par CORS selon la configuration)."); e.code="NET"; throw e; }
+    try{ res=await fetch(this.endpoint(),{method:"POST",headers:this.headers(),body:JSON.stringify(body),credentials:"same-origin"}); }
+    catch(netErr){ const e=new Error("Connexion impossible au proxy IA serveur."); e.code="NET"; throw e; }
     if(!res.ok){ let t=""; try{t=await res.text();}catch(_){} const e=new Error("Erreur API ("+res.status+") "+t.slice(0,260)); e.code="HTTP"; throw e; }
-    if(!onToken){ const data=await res.json(); return (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join(""); }
-    // ---- streaming SSE ----
+    if(!onToken){ const data=await res.json(); return data.text||(data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join(""); }
     const reader=res.body.getReader(); const dec=new TextDecoder(); let buf="",full="";
     while(true){
       const {done,value}=await reader.read(); if(done)break;
@@ -2589,16 +2591,24 @@ VIEWS.assistant=function(){
    ========================================================================= */
 VIEWS.reglages=function(){
   const v=el("div",{class:"view"});const s=Store.state.settings;
-  v.innerHTML=pageHead("Configuration","Réglages","Couche IA, simulation de la mission et gestion des données locales.","")
-  +`<div class="row"><div class="col" style="min-width:320px;flex:1.4">
-    <div class="card" style="margin-bottom:16px"><div class="card-h"><div class="ic" style="background:linear-gradient(140deg,var(--terra),var(--terra-deep));color:#fff">${svgI(ICON.assistant)}</div><h3>Couche IA — API Anthropic</h3><div class="actions"><span class="ai-dot ${AI.ready?"live":""}" style="cursor:default"><i></i><span>${AI.ready?"Connectée":"Hors-ligne"}</span></span></div></div>
+  const serverAi=!!window.PORTIA_REQUIRE_AUTH;
+  const modelVal=esc((window._portiaServerConfig&&window._portiaServerConfig.model)||s.model||"");
+  const aiCard=serverAi?`
+    <div class="card" style="margin-bottom:16px"><div class="card-h"><div class="ic" style="background:linear-gradient(140deg,var(--terra),var(--terra-deep));color:#fff">${svgI(ICON.assistant)}</div><h3>Couche IA — serveur Skydeen</h3><div class="actions"><span class="ai-dot ${AI.ready?"live":""}" style="cursor:default"><i></i><span>${AI.ready?"Connectée":"Inactive"}</span></span></div></div>
       <div class="card-b">
-        <div class="frow"><label>Clé API Anthropic</label><div style="display:flex;gap:8px"><input id="stKey" type="password" value="${esc(s.apiKey||"")}" placeholder="sk-ant-…" style="flex:1"><button class="btn ghost sm" id="stKeyShow">Afficher</button></div><div class="hint">La clé est stockée localement sur ce poste (localStorage) et envoyée directement à l'API depuis le navigateur.</div></div>
-        <div class="f2"><div class="frow"><label>Modèle</label><input id="stModel" value="${esc(s.model||"")}" placeholder="claude-sonnet-4-20250514"><div class="hint">Identifiant du modèle Anthropic. Modifiez-le si nécessaire.</div></div>
-        <div class="frow"><label>Proxy backend (optionnel)</label><input id="stProxy" value="${esc(s.proxy||"")}" placeholder="https://votre-proxy/v1/messages"><div class="hint">Recommandé en production pour ne pas exposer la clé.</div></div></div>
-        <div class="note gold"><b>Sécurité :</b> en usage navigateur direct, la clé API est visible côté client. Pour un déploiement réel, passez par un proxy backend qui détient la clé et applique vos contrôles d'accès.</div>
-        <div style="display:flex;gap:10px;margin-top:14px"><button class="btn terra" id="stSave">${svgI('<path d="M20 6 9 17l-5-5"/>')} Enregistrer</button><button class="btn ghost" id="stTest">${svgI('<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/>')} Tester la connexion</button><span id="stTestRes" style="align-self:center;font-size:12.5px"></span></div>
-      </div></div>
+        <div class="note sage"><b>Sécurité :</b> la clé API Anthropic est stockée uniquement sur le serveur. Le navigateur appelle le proxy <code>/api/ai/complete</code> — aucune clé côté client.</div>
+        <div class="frow" style="margin-top:12px"><label>Modèle (lecture seule)</label><input id="stModel" value="${modelVal}" readonly style="opacity:.85"></div>
+        <div style="display:flex;gap:10px;margin-top:14px"><button class="btn ghost" id="stTest">${svgI('<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/>')} Tester la connexion IA</button><span id="stTestRes" style="align-self:center;font-size:12.5px"></span></div>
+      </div></div>`:`
+    <div class="card" style="margin-bottom:16px"><div class="card-h"><div class="ic" style="background:linear-gradient(140deg,var(--terra),var(--terra-deep));color:#fff">${svgI(ICON.assistant)}</div><h3>Couche IA</h3><div class="actions"><span class="ai-dot ${AI.ready?"live":""}" style="cursor:default"><i></i><span>${AI.ready?"Connectée":"Hors-ligne"}</span></span></div></div>
+      <div class="card-b">
+        <div class="note slate">Mode démo local — configurez le proxy backend <code>/api/ai/complete</code> en production.</div>
+        <div class="frow" style="margin-top:12px"><label>Proxy IA</label><input id="stProxy" value="${esc(s.proxy||"/api/ai/complete")}" placeholder="/api/ai/complete"></div>
+        <div style="display:flex;gap:10px;margin-top:14px"><button class="btn terra" id="stSave">${svgI('<path d="M20 6 9 17l-5-5"/>')} Enregistrer</button><button class="btn ghost" id="stTest">${svgI('<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/>')} Tester</button><span id="stTestRes" style="align-self:center;font-size:12.5px"></span></div>
+      </div></div>`;
+  v.innerHTML=pageHead("Configuration","Réglages","Simulation de la mission et gestion des données locales.","")
+  +`<div class="row"><div class="col" style="min-width:320px;flex:1.4">
+    ${aiCard}
     <div class="card"><div class="card-h"><div class="ic" style="background:var(--ink);color:var(--terra)">${svgI(ICON.agenda)}</div><h3>Simulation de la mission</h3></div>
       <div class="card-b"><div class="frow"><label>Position dans la mission — aujourd'hui = J<b id="stJlbl">${Store.clockJ>=0?"+"+Store.clockJ:Store.clockJ}</b> (${Store.jToWeek(Store.clockJ)})</label><input type="range" id="stClock" min="-2" max="30" step="1" value="${Store.clockJ}" style="padding:0"><div class="hint">Déplace la « date du jour » de la mission pour visualiser le cockpit, le planning et les jalons à différents moments. J0 = ${Store.jToDate(0).toLocaleDateString("fr-FR")}.</div></div></div></div>
   </div>
@@ -2610,9 +2620,10 @@ VIEWS.reglages=function(){
         <button class="btn ghost" id="stReset" style="width:100%;justify-content:center;color:var(--crit);border-color:var(--bord-soft)">${svgI('<path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>')} Réinitialiser (données de démonstration)</button></div>
       </div></div>
     </div></div>`;
-  v.querySelector("#stKeyShow").onclick=e=>{const i=v.querySelector("#stKey");const sh=i.type==="password";i.type=sh?"text":"password";e.target.textContent=sh?"Masquer":"Afficher";};
-  v.querySelector("#stSave").onclick=()=>{Store.setSetting("apiKey",v.querySelector("#stKey").value.trim());Store.setSetting("model",v.querySelector("#stModel").value.trim()||"claude-sonnet-4-20250514");Store.setSetting("proxy",v.querySelector("#stProxy").value.trim());Store.setSetting("missionName",v.querySelector("#stMission").value.trim());App.updateAiDot();toast("Réglages enregistrés","","ok");App.go("reglages");};
-  v.querySelector("#stTest").onclick=()=>{const res=v.querySelector("#stTestRes");const key=v.querySelector("#stKey").value.trim();if(!key&&!v.querySelector("#stProxy").value.trim()){res.style.color="var(--crit)";res.textContent="Renseignez une clé ou un proxy.";return;}Store.setSetting("apiKey",key);Store.setSetting("model",v.querySelector("#stModel").value.trim()||"claude-sonnet-4-20250514");Store.setSetting("proxy",v.querySelector("#stProxy").value.trim());res.style.color="var(--txt-2)";res.innerHTML='<span class="typing" style="padding:0"><i></i><i></i><i></i></span>';AI.complete({system:"Réponds uniquement par le mot OK.",messages:[{role:"user",content:"test"}],max_tokens:10}).then(()=>{res.style.color="var(--ok)";res.textContent="✓ Connexion réussie";App.updateAiDot();}).catch(err=>{res.style.color="var(--crit)";res.textContent="✗ "+(err.message||"Échec").slice(0,80);});};
+  v.querySelector("#stTest").onclick=()=>{const res=v.querySelector("#stTestRes");res.style.color="var(--txt-2)";res.innerHTML='<span class="typing" style="padding:0"><i></i><i></i><i></i></span>';AI.complete({system:"Réponds uniquement par le mot OK.",messages:[{role:"user",content:"test"}],max_tokens:10}).then(()=>{res.style.color="var(--ok)";res.textContent="✓ Connexion réussie";App.updateAiDot();}).catch(err=>{res.style.color="var(--crit)";res.textContent="✗ "+(err.message||"Échec").slice(0,80);});};
+  if(!serverAi){
+    v.querySelector("#stSave").onclick=()=>{Store.setSetting("proxy",v.querySelector("#stProxy").value.trim()||"/api/ai/complete");Store.setSetting("missionName",v.querySelector("#stMission").value.trim());App.updateAiDot();toast("Réglages enregistrés","","ok");App.go("reglages");};
+  }
   v.querySelector("#stClock").addEventListener("input",e=>{Store.setClock(e.target.value);v.querySelector("#stJlbl").textContent=(Store.clockJ>=0?"+"+Store.clockJ:Store.clockJ);App.updateClock();});
   v.querySelector("#stExport").onclick=()=>{Store.exportJSON();toast("Export généré","","ok");};
   v.querySelector("#stImport").onclick=()=>App.importDialog();
@@ -2870,7 +2881,7 @@ window.Store=Store; window.Modal=Modal; window.Files=Files; window.toast=toast; 
 </script>
 <script src="questionnaires-terrain.js"></script>
 <script src="portia-file-preview.js"></script>
-<script src="portia-bridge.js?v=20260605d"></script>
+<script src="portia-bridge.js?v=20260701a"></script>
 <script src="portia-offline-sync.js?v=20260605b"></script>
 <script src="portia-state-snapshots.js"></script>
 <script src="portia-plaud.js"></script>
@@ -2891,8 +2902,8 @@ window.Store=Store; window.Modal=Modal; window.Files=Files; window.toast=toast; 
 <script src="portia-auditors.js?v=20260605f"></script>
 <script src="portia-mission-docs-build.js?v=20260619b"></script>
 <script src="portia-mission-docs.js"></script>
-<script src="portia-mission-pnipm.js?v=20260605b"></script>
-<script src="portia-mission-ext.js?v=20260605b"></script>
+<script src="portia-mission-pnipm.js?v=20260701a"></script>
+<script src="portia-mission-ext.js?v=20260701a"></script>
 <script src="portia-hub-persist.js?v=20260605a"></script>
 <script src="portia-nav-connect.js"></script>
 <script src="portia-gap-trace.js"></script>

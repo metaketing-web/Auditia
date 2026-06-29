@@ -35,7 +35,7 @@ bash /opt/portia-audit/scripts/post-cloudflare-verify.sh
 
 **Procédure (5 min, nécessite votre téléphone) :**
 1. https://audit.skydeen.ai
-2. Connexion `ac@metaketing.io` (admin) ou `juliana@portia.local`
+2. Connexion `ac@metaketing.io` (admin) ou `jc@metaketing.io` (juliana)
 3. Cliquer **Configurer la 2FA** (ou aller dans **Réglages**)
 4. Scanner le QR avec Google Authenticator ou Authy
 5. Valider avec le code à 6 chiffres
@@ -117,6 +117,7 @@ Le ZIP complet téléchargé (`portia-audit-backup-complet-*.zip`) contient mots
 | Monitoring 15 min + rapport sécurité 4 h UTC | OK |
 | 2FA backend + UI déployés | OK |
 | Code app synchronisé sur EC2 | OK |
+| Correctifs audit VLN01–VLN05 + IDOR + rate-limit collecte | OK (`scripts/verify-security-audit.sh`) |
 | Certificat SSL — renouvellement auto (certbot) | OK |
 
 **Commandes utiles sur le serveur :**

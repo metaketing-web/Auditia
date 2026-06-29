@@ -17,7 +17,7 @@ DB_PATH = Path(os.environ.get("DATA_DIR", str(APP_DIR / "data"))) / "portia.db"
 ACCOUNTS = [
     ("ac@metaketing.io", "ADMIN_PASSWORD"),
     ("jc@metaketing.io", "JULIANA_PASSWORD"),
-    ("diopasse@hotmail.fr", "AUDITEUR_B_PASSWORD"),
+    ("diopasse.pro@gmail.com", "AUDITEUR_B_PASSWORD"),
     ("lbaoka@gmail.com", "AUDITEUR_T_PASSWORD"),
     ("jeanmajax234@gmail.com", "AUDITEUR_TEST_PASSWORD"),
     ("cabinet@mpjipsc.local", "CABINET_PASSWORD"),

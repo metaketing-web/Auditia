@@ -6,7 +6,7 @@
 |-------|------|--------------|
 | ac@metaketing.io | admin | voir `team-users.json` (serveur, non versionné) |
 | jc@metaketing.io | juliana | idem |
-| diopasse@hotmail.fr / lbaoka@gmail.com | auditeurs | idem |
+| diopasse.pro@gmail.com / lbaoka@gmail.com | auditeurs | idem |
 | cabinet@mpjipsc.local | cabinet (lecture seule) | idem |
 
 Code mission : `MISSION_ACCESS_CODE` dans `/home/ec2-user/.env` (obligatoire si défini). `apply-env.sh` renforce automatiquement un code faible.

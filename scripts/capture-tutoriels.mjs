@@ -18,7 +18,7 @@ const PASSWORDS = {
   "auditeur.b@portia.local": process.env.PORTIA_PASSWORD_B || process.env.PORTIA_PASSWORD || "Portia2026!",
   "auditeur.t@portia.local": process.env.PORTIA_PASSWORD_T || process.env.PORTIA_PASSWORD || "Portia2026!",
   "jeanmajax234@gmail.com": process.env.PORTIA_PASSWORD_JEAN || "JeanPNIPM2026!",
-  "diopasse@hotmail.fr": process.env.PORTIA_PASSWORD_ASSE || "AssePNIPM2026!",
+  "diopasse.pro@gmail.com": process.env.PORTIA_PASSWORD_ASSE || "AssePNIPM2026!",
   "lbaoka@gmail.com": process.env.PORTIA_PASSWORD_LAETITIA || "LaetitiaPNIPM2026!",
 };
 

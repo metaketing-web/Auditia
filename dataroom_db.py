@@ -581,6 +581,41 @@ def get_file_for_download(
     return None
 
 
+def user_can_access_file(db_path: Path, file_id: str, user: dict[str, Any]) -> bool:
+    """Empêche l'IDOR : fichier mission (Data Room) ou upload personnel."""
+    role = (user or {}).get("role") or ""
+    if role in ("admin", "juliana", "cabinet"):
+        return True
+    uid = (user or {}).get("id") or ""
+    email = ((user or {}).get("email") or "").strip().lower()
+    name = ((user or {}).get("name") or "").strip().lower()
+    with _connect(db_path) as conn:
+        row = conn.execute(
+            "SELECT doc_id FROM dataroom_files WHERE id = ?", (file_id,)
+        ).fetchone()
+        if row:
+            return True
+        row = conn.execute(
+            "SELECT doc_id, uploaded_by FROM uploaded_files WHERE id = ?", (file_id,)
+        ).fetchone()
+        if row:
+            if row["doc_id"]:
+                doc = conn.execute(
+                    "SELECT id FROM dataroom_documents WHERE id = ?", (row["doc_id"],)
+                ).fetchone()
+                if doc:
+                    return True
+            who = (row["uploaded_by"] or "").strip().lower()
+            if who and (who == email or who == name or email in who or name in who):
+                return True
+            return False
+        doc = conn.execute(
+            "SELECT id FROM dataroom_documents WHERE id = ? OR file_id = ?",
+            (file_id, file_id),
+        ).fetchone()
+        return doc is not None
+
+
 def sync_state_docs(db_path: Path, get_state_fn, set_state_fn) -> None:
     """Met à jour mission_state.docs depuis la table dataroom."""
     state = get_state_fn()

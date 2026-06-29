@@ -4,9 +4,22 @@
 (function () {
   "use strict";
 
-  const REF_BASE = "http://13.63.156.32";
+  const REF_LINKS_DEF = [
+    { k: "presentation", lbl: "Présentation AO", path: "/presentation", desc: "Réponse structurée au cahier des charges MPJIPSC." },
+    { k: "dashboard", lbl: "Dashboard ministériel", path: "/dashboard", desc: "Vision ERP cible : pilotage Cabinet, indicateurs, drill-down." },
+    { k: "portail", lbl: "Portail jeunes & opérateurs", path: "/portail", desc: "Parcours terrain, coordinateurs et opérateurs de programmes." },
+  ];
 
-  const AGENDA_SEMAINES = [
+  function getRefBase() {
+    const c = window.PORTIA_SERVER_CONFIG || window._portiaServerConfig || {};
+    return String(c.pnipmRefBase || "").trim().replace(/\/+$/, "");
+  }
+
+  function refLinks() {
+    const base = getRefBase();
+    if (!base) return [];
+    return REF_LINKS_DEF.map((l) => ({ ...l, url: base + l.path }));
+  }
     {
       s: 1,
       titre: "Cadrage stratégique",
@@ -65,13 +78,7 @@
     { id: "perf", n: "Performance & exploitation", cdc: "§ Perf 7.x", themes: ["Performance"] },
   ];
 
-  const REF_LINKS = [
-    { k: "presentation", lbl: "Présentation AO", url: REF_BASE + "/presentation", desc: "Réponse structurée au cahier des charges MPJIPSC." },
-    { k: "dashboard", lbl: "Dashboard ministériel", url: REF_BASE + "/dashboard", desc: "Vision ERP cible : pilotage Cabinet, indicateurs, drill-down." },
-    { k: "portail", lbl: "Portail jeunes & opérateurs", url: REF_BASE + "/portail", desc: "Parcours terrain, coordinateurs et opérateurs de programmes." },
-  ];
-
-  function auditorCode() {
+  const AGENDA_SEMAINES = [
     if (window.PortiaAuditors) return PortiaAuditors.auditorCodeFromUser(App.user);
     const sr = App.user && App.user.serverRole;
     if (sr === "auditeur_b") return "A";
@@ -475,6 +482,19 @@
 
     VIEWS.ref_pnipm = function () {
       const v = el("div", { class: "view" });
+      const links = refLinks();
+      const linksHtml = links.length
+        ? `<div class="row" style="margin-bottom:18px">${links
+            .map(
+              (l) =>
+                `<div class="col card pad" style="min-width:260px;flex:1;border-top:3px solid var(--gold)">
+            <b style="font-family:var(--font-display);font-size:16px">${esc(l.lbl)}</b>
+            <p class="muted" style="font-size:12px;margin:10px 0 14px;line-height:1.5">${esc(l.desc)}</p>
+            <a class="btn terra" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">Ouvrir ↗</a>
+          </div>`
+            )
+            .join("")}</div>`
+        : `<div class="note slate" style="margin-bottom:18px">Les maquettes AO en ligne ne sont pas configurées sur ce serveur (variable <code>PNIPM_REF_BASE</code>). Consultez les documents mission et le cadrage dans le cockpit.</div>`;
       v.innerHTML =
         pageHead(
           "Appel d'offres · MPJIPSC",
@@ -482,15 +502,8 @@
           "Maquettes de la réponse au cahier des charges : dashboard ministériel (ERP + IA) et portail jeunes / coordinateurs / opérateurs.",
           ""
         ) +
-        `<div class="row" style="margin-bottom:18px">${REF_LINKS.map(
-          (l) =>
-            `<div class="col card pad" style="min-width:260px;flex:1;border-top:3px solid var(--gold)">
-            <b style="font-family:var(--font-display);font-size:16px">${esc(l.lbl)}</b>
-            <p class="muted" style="font-size:12px;margin:10px 0 14px;line-height:1.5">${esc(l.desc)}</p>
-            <a class="btn terra" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">Ouvrir ↗</a>
-          </div>`
-        ).join("")}</div>
-        <div class="card"><div class="card-b">
+        linksHtml +
+        `<div class="card"><div class="card-b">
         <p style="font-size:14px;line-height:1.65"><b>Lien avec cet audit cockpit :</b> la présentation AO décrit la cible. Ce cockpit documente l'état des lieux, les écarts et les prérequis avant construction. Les livrables L1→L7 alimentent la décision de lancement du marché plateforme.</p>
         </div></div>`;
       return v;
@@ -586,5 +599,5 @@
     }
   }
 
-  window.PortiaMission = { init, AGENDA_SEMAINES, CDC_MODULES, REF_BASE };
+  window.PortiaMission = { init, AGENDA_SEMAINES, CDC_MODULES, getRefBase, refLinks };
 })();

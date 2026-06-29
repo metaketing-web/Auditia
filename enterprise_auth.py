@@ -81,7 +81,7 @@ def init_auth_schema(db_path: Path) -> None:
 
 ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL", "ac@metaketing.io").strip().lower()
 JULIANA_EMAIL = os.environ.get("JULIANA_EMAIL", "jc@metaketing.io").strip().lower()
-AUDITOR_B_EMAIL = os.environ.get("AUDITOR_B_EMAIL", "diopasse@hotmail.fr").strip().lower()
+AUDITOR_B_EMAIL = os.environ.get("AUDITOR_B_EMAIL", "diopasse.pro@gmail.com").strip().lower()
 AUDITOR_T_EMAIL = os.environ.get("AUDITOR_T_EMAIL", "lbaoka@gmail.com").strip().lower()
 
 
@@ -301,7 +301,7 @@ def seed_default_users(db_path: Path) -> None:
     accounts = [
         ("u_admin", ADMIN_EMAIL or "ac@metaketing.io", "Directeur de Projet Audit", "admin", "ADMIN_PASSWORD"),
         ("u_juliana", JULIANA_EMAIL or "jc@metaketing.io", "Juliana", "juliana", "JULIANA_PASSWORD"),
-        ("u_aud_b", AUDITOR_B_EMAIL or "diopasse@hotmail.fr", "Asse", "auditeur_b", "AUDITEUR_B_PASSWORD"),
+        ("u_aud_b", AUDITOR_B_EMAIL or "diopasse.pro@gmail.com", "Asse", "auditeur_b", "AUDITEUR_B_PASSWORD"),
         ("u_aud_t", AUDITOR_T_EMAIL or "lbaoka@gmail.com", "Laetitia", "auditeur_t", "AUDITEUR_T_PASSWORD"),
         ("u_cabinet", "cabinet@mpjipsc.local", "Vue Cabinet", "cabinet", "CABINET_PASSWORD"),
     ]
