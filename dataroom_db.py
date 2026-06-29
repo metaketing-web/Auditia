@@ -229,6 +229,7 @@ def row_to_doc(row: sqlite3.Row, file_row: Optional[sqlite3.Row] = None) -> dict
         "normalizedName": row["normalized_name"] or "",
         "notes": row["notes"] or "",
         "updatedAt": row["updated_at"],
+        "createdAt": row["created_at"] if "created_at" in keys else row["updated_at"],
         "entretienId": (row["entretien_id"] or "") if "entretien_id" in keys else "",
         "ministryFolder": (row["ministry_folder"] or "") if "ministry_folder" in keys else "",
         "depositOrigin": (row["deposit_origin"] or "") if "deposit_origin" in keys else "",

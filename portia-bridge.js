@@ -130,6 +130,8 @@
           entretienId: d.entretienId || "",
           ministryFolder: d.ministryFolder || "",
           depositOrigin: d.depositOrigin || "",
+          updatedAt: d.updatedAt || "",
+          createdAt: d.createdAt || d.updatedAt || "",
           aiSummary: d.aiSummary || "",
           aiSummaryAt: d.aiSummaryAt || "",
         }));

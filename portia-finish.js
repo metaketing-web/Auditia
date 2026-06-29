@@ -147,7 +147,7 @@
     <div class="fbar"><input class="search" id="drQ" placeholder="Rechercher…"><select class="fselect" id="drRep"><option value="all">Tous R1→R11</option>${DATAROOM_REPS.map((r) => `<option value="${r.id}">${r.id}</option>`).join("")}</select>
     <select class="fselect" id="drMinistrySel" style="min-width:160px"><option value="all">Tous dossiers 00→10</option></select>
     <div class="seg" id="drStatut">${[["all", "Tous"], ["a_verifier", "À valider"], ["verse", "Versés"], ["attendu", "Attendus"], ["relance", "Relance"]].map(([k, l], i) => `<button data-v="${k}" class="${i === 0 ? "on" : ""}">${l}</button>`).join("")}</div></div>
-    <div class="card"><table class="tbl"><thead><tr><th>Document</th><th>Rép.</th><th>Min.</th><th>Source</th><th>Statut</th><th style="text-align:right">Action</th></tr></thead><tbody id="drBody"></tbody></table></div>`;
+    <div class="card"><table class="tbl"><thead><tr><th>Document</th><th>Rép.</th><th title="Arborescence ministère 00→10 (classement des dépôts externes)">Ministère</th><th>Source</th><th>Dépôt</th><th>Statut</th><th style="text-align:right">Action</th></tr></thead><tbody id="drBody"></tbody></table></div>`;
 
       const body = v.querySelector("#drBody");
       const kpiEl = v.querySelector("#drKpis");
@@ -158,6 +158,20 @@
       function ministryName(id) {
         const m = ministryFolders.find((x) => x.id === id);
         return m ? m.name : id || "—";
+      }
+
+      function fmtDepositDate(d) {
+        const iso = d.updatedAt || d.createdAt;
+        if (!iso || !docHasFile(d)) return "—";
+        try {
+          return new Date(iso).toLocaleDateString("fr-FR", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+          });
+        } catch (_) {
+          return String(iso).slice(0, 10);
+        }
       }
 
       function loadMinistryFolders() {
@@ -289,11 +303,12 @@
               <td><span class="tag mono">${d.rep}</span></td>
               <td>${d.ministryFolder ? `<span class="tag mono" title="${esc(ministryName(d.ministryFolder))}">${esc(d.ministryFolder)}</span>` : '<span class="muted">—</span>'}</td>
               <td>${esc(d.source)}</td>
+              <td class="mono" style="font-size:11px;white-space:nowrap">${esc(fmtDepositDate(d))}</td>
               <td>${sel}</td>
               <td style="text-align:right">${action}</td></tr>`;
             })
             .join("") ||
-          `<tr><td colspan="6"><div class="empty" style="padding:30px"><b>Aucun document</b><p>Aucun document ne correspond aux filtres — vérifiez la connexion serveur ou réessayez dans un instant.</p></div></td></tr>`;
+          `<tr><td colspan="7"><div class="empty" style="padding:30px"><b>Aucun document</b><p>Aucun document ne correspond aux filtres — vérifiez la connexion serveur ou réessayez dans un instant.</p></div></td></tr>`;
         v.querySelectorAll(".dr-st").forEach((sel) => {
           sel.onclick = (e) => e.stopPropagation();
           sel.onchange = (e) => {
