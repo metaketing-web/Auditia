@@ -1,0 +1,55 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>DG — Agence Emploi Jeunes (AEJ)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — DG — Agence Emploi Jeunes (AEJ)</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | AEJ |
+| Axe | Programmatique |
+| Semaine | S2 |
+| Date mission | J+7 |
+| Heure | 09:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | tutelle |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Structure sous tutelle (AEJ, OSCN, BCP…)
+<b>Durée indicative :</b> 120-150 min
+<b>Clé trame :</b> `tutelle`</p><p><b>Nombre de questions :</b> 15</p><p>### Phase 1 — Investigation</p><p>#### A. Mandat &amp; volumes</p><p><b>1. Mandat, dispositifs actifs, volumes de bénéficiaires (inscriptions, sorties) ?</b>
+<li>*Réf. :* `tut_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Autonomie de gestion vis-à-vis du ministère ?</b>
+<li>*Réf. :* `tut_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Conventions de tutelle et obligations de reporting ?</b>
+<li>*Réf. :* `tut_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Systèmes &amp; données</p><p><b>1. Systèmes d'information (interne, propriétaire, bases) ?</b>
+<li>*Réf. :* `tut_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Identification des bénéficiaires — clé unique existante ?</b>
+<li>*Réf. :* `tut_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Gestion des doublons inter-programmes ?</b>
+<li>*Réf. :* `tut_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### C. Paiements &amp; flux</p><p><b>1. Flow de paiement des primes (stages, formations, THIMO) ?</b>
+<li>*Réf. :* `tut_i_c1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Reporting bailleur : formats, fréquence, charge ?</b>
+<li>*Réf. :* `tut_i_c2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Interface possible avec plateforme ministérielle (API, batch) ?</b>
+<li>*Réf. :* `tut_i_c3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### Intégration CDC</p><p><b>1. Interface CDC avec vos bases — faisable techniquement et politiquement ?</b>
+<li>*Réf. :* `tut_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Remontée automatisée vers le Cabinet — conditions ?</b>
+<li>*Réf. :* `tut_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Doublons fonctionnalités CDC vs vos outils ?</b>
+<li>*Réf. :* `tut_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Modèle cible</p><p><b>1. Modèle d'intégration privilégié (API, batch, saisie) ?</b>
+<li>*Réf. :* `tut_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Données prioritaires à consolider en premier ?</b>
+<li>*Réf. :* `tut_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Prérequis gouvernance et confidentialité ?</b>
+<li>*Réf. :* `tut_cc_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

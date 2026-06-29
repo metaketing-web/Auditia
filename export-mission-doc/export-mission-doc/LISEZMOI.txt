@@ -1,0 +1,10 @@
+EXPORT MISSION — .doc
+========================
+Exporté : 2026-06-08 15:21 UTC
+
+entretiens/          48 fichiers (questionnaire 3 phases + CR)
+checklists/          6 checklists A-F + 1 CDC technique
+livrables/           7 livrables L1-L7
+volumes/             3 volumes consolidés pour impression
+
+Ouvrir les .doc dans Word → Imprimer ou Enregistrer en PDF.

@@ -1,0 +1,130 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>questionnaire vierge Coordonnateur BCP-Emploi</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>Questionnaire vierge — Coordonnateur — BCP-Emploi</h1>
+<ul style='margin:8px 0 8px 24px'>
+<li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-19 11:26 UTC</li>
+<li><b>J0 mission :</b> 2026-07-06</li>
+</ul>
+<p>_Grille terrain à compléter lors de l&#x27;entretien — aucune réponse ni compte rendu prérempli._</p>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Fiche entretien</h2>
+<table>
+<tr><th>Champ</th><th>Valeur</th></tr>
+<tr><td>Structure</td><td>BCP-Emploi</td></tr>
+<tr><td>Axe</td><td>Programmatique</td></tr>
+<tr><td>Semaine</td><td>S2</td></tr>
+<tr><td>Date mission</td><td>J+8</td></tr>
+<tr><td>Heure</td><td>09:30</td></tr>
+<tr><td>Auditeur(s)</td><td>B+T</td></tr>
+<tr><td>Trame</td><td>tutelle</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Questionnaire structuré (grille complète)</h2>
+<p><b>Grille :</b> Structure sous tutelle (AEJ, OSCN, BCP…) <b>Durée indicative :</b> 120-150 min <b>Clé trame :</b> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tutelle</span></p>
+<p><b>Nombre de questions :</b> 15</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 1 — Investigation</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>A. Mandat &amp; volumes</h4>
+<p><b>1. Mandat, dispositifs actifs, volumes de bénéficiaires (inscriptions, sorties) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_a1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Autonomie de gestion vis-à-vis du ministère ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_a2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Conventions de tutelle et obligations de reporting ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_a3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>B. Systèmes &amp; données</h4>
+<p><b>1. Systèmes d&#x27;information (interne, propriétaire, bases) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_b1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Identification des bénéficiaires — clé unique existante ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_b2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Gestion des doublons inter-programmes ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_b3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C. Paiements &amp; flux</h4>
+<p><b>1. Flow de paiement des primes (stages, formations, THIMO) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_c1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Reporting bailleur : formats, fréquence, charge ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_c2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Interface possible avec plateforme ministérielle (API, batch) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_i_c3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 2 — Confrontation</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>Intégration CDC</h4>
+<p><b>1. Interface CDC avec vos bases — faisable techniquement et politiquement ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_c_1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Remontée automatisée vers le Cabinet — conditions ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_c_2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Doublons fonctionnalités CDC vs vos outils ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_c_3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 3 — Co-construction</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>Modèle cible</h4>
+<p><b>1. Modèle d&#x27;intégration privilégié (API, batch, saisie) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_cc_1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Données prioritaires à consolider en premier ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_cc_2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Prérequis gouvernance et confidentialité ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>tut_cc_3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+</body></html>

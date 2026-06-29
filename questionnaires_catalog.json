@@ -1,0 +1,3414 @@
+{
+  "trames": {
+    "cabinet": {
+      "label": "Cabinet — Vision, commande politique & pilotage",
+      "dur": "75-90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Commande politique & priorités",
+              "items": [
+                {
+                  "id": "cab_i_a1",
+                  "q": "Quelle est la commande politique réelle derrière la PNIPM ? Quel problème prioritaire doit-elle résoudre ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_a2",
+                  "q": "Qui sont les sponsors et les points de friction politiques autour du projet ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_a3",
+                  "q": "Quels engagements PJGOUV 2026-2030 et bailleurs conditionnent le calendrier ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_a4",
+                  "q": "Quelles décisions récentes auraient été facilitées par une vision consolidée ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Pilotage & indicateurs",
+              "items": [
+                {
+                  "id": "cab_i_b1",
+                  "q": "Qu'attendez-vous concrètement du Cabinet en matière de pilotage et drill-down ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_b2",
+                  "q": "Quels indicateurs stratégiques suivez-vous aujourd'hui, avec quelle fréquence et quelle source ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_b3",
+                  "q": "Comment circule l'information de reporting entre structures et Cabinet ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_b4",
+                  "q": "Quelles fonctionnalités du MVP vous paraissent caduques ou prioritaires ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Fragmentation & gouvernance",
+              "items": [
+                {
+                  "id": "cab_i_c1",
+                  "q": "Quel niveau d'autonomie des directions et tutelles complique la consolidation ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_c2",
+                  "q": "Comment arbitrez-vous programmatique vs non-programmatique aujourd'hui ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_c3",
+                  "q": "Quels COPIL et instances de décision doivent être reproduits dans la plateforme ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "D. IA & aide à la décision",
+              "items": [
+                {
+                  "id": "cab_i_d1",
+                  "q": "Parmi vos décisions récurrentes, lesquelles gagneraient à être anticipées par une analyse prédictive (risque de non-atteinte d'objectifs, retards de paiement) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_d2",
+                  "q": "Quel niveau de confiance accorderiez-vous à une recommandation automatique, et qui devrait la valider avant action ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_d3",
+                  "q": "Pour l'assistant conversationnel (chatbot), quels usages prioritaires et quelles limites (langue, sujets sensibles) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "E. Conduite du changement & antécédents",
+              "items": [
+                {
+                  "id": "cab_i_e1",
+                  "q": "Quels projets numériques antérieurs du Ministère ont réussi ou échoué, et quelles leçons en tirez-vous ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_e2",
+                  "q": "Quelle capacité interne (équipe, budget) pour reprendre et maintenir la plateforme après le transfert du prestataire ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_i_e3",
+                  "q": "Quel budget et quelle source de financement sont sécurisés pour la construction puis le fonctionnement (run) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Confrontation CDC / attentes Cabinet",
+              "items": [
+                {
+                  "id": "cab_c_1",
+                  "q": "Le CDC prévoit un accès 360° jusqu'au bénéficiaire — est-ce réaliste et souhaité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_c_2",
+                  "q": "La traçabilité des primes au niveau individuel est-elle un attendu ferme ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_c_3",
+                  "q": "Comment arbitrez-vous ambition fonctionnelle vs délai accéléré (réf. 25/03) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_c_4",
+                  "q": "Le calendrier accéléré (2-3 mois) du CDC est-il tenable au regard de l'ambition IA et d'interopérabilité, ou faut-il un MVP resserré ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "cab_cc_1",
+                  "q": "Quels 2-3 quick wins à fort signal politique pour les 8 premières semaines ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_cc_2",
+                  "q": "Quelles conditions de réussite côté gouvernance (COPIL, charte, sponsors) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_cc_3",
+                  "q": "Qui doit être impérativement associé à la phase de construction ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cab_cc_4",
+                  "q": "Quelles pièces Data Room (R1, R2) manquent pour trancher ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dsi": {
+      "label": "DSI — Architecture SI, intégrations & sécurité",
+      "dur": "120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Architecture & applicatifs",
+              "items": [
+                {
+                  "id": "dsi_i_a1",
+                  "q": "Décrivez l'architecture SI : applications, hébergement, monolithe vs distribué.",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_a2",
+                  "q": "Quels projets SI en cours ou planifiés (budget, échéance, prestataire) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_a3",
+                  "q": "Cartographie applicative à jour ? Pièce versée en R7 ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_a4",
+                  "q": "Démonstration écran possible aujourd'hui (parcours type bénéficiaire) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Réseau, hébergement & continuité",
+              "items": [
+                {
+                  "id": "dsi_i_b1",
+                  "q": "État IPv4/IPv6, connectivité régions, contraintes hébergeur.",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_b2",
+                  "q": "Sauvegardes, PRA/PCA : périmètre, RPO/RTO, dernier test ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_b3",
+                  "q": "Incidents majeurs 12 derniers mois et résolution ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Intégrations & interopérabilité",
+              "items": [
+                {
+                  "id": "dsi_i_c1",
+                  "q": "État SIGFIP, UXP/X-Road, NNI : raccordements, habilitations, documentation.",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_c2",
+                  "q": "Bus d'échange, ESB, API existantes — inventaire et propriétaire ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_c3",
+                  "q": "Échanges point à point vs référentiel commun — constats ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "D. Identité, accès & journalisation",
+              "items": [
+                {
+                  "id": "dsi_i_d1",
+                  "q": "SSO, 2FA, gestion des habilitations — état et cible ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_d2",
+                  "q": "Audit trail : quelles apps, rétention, exploitation ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_d3",
+                  "q": "Séparation rôles exploitation / sécurité / métier ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "E. IA, données d'entraînement & socle décisionnel",
+              "items": [
+                {
+                  "id": "dsi_i_e1",
+                  "q": "Quelle profondeur et qualité d'historique de données existe pour entraîner des modèles ML (années disponibles, complétude, format) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_e2",
+                  "q": "Les données sont-elles centralisées et exploitables pour de l'analytique, ou dispersées et hétérogènes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_e3",
+                  "q": "Quel datacenter national / cloud gouvernemental est disponible (opérateur, capacité, SLA, conditions), et avez-vous un contact identifié ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_i_e4",
+                  "q": "Quelle équipe data / MLOps pourrait opérer la couche IA côté Ministère après transfert ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Écarts CDC technique",
+              "items": [
+                {
+                  "id": "dsi_c_1",
+                  "q": "500+ utilisateurs simultanés et SLA 99,9 % — capacité actuelle mesurée ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_c_2",
+                  "q": "Raccordement UXP/X-Road réaliste dans le délai mission ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_c_3",
+                  "q": "Architecture microservices soutenable par l'exploitation actuelle ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Trajectoire technique",
+              "items": [
+                {
+                  "id": "dsi_cc_1",
+                  "q": "Cloud national, on-premise ou hybride — préférence et justification ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_cc_2",
+                  "q": "Trajectoire sécurisation (ISO 27001, ANSSI) recommandée ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_cc_3",
+                  "q": "Prérequis techniques bloquants avant lot 1 ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dsi_cc_4",
+                  "q": "Référents techniques pour ateliers d'architecture (noms, délais) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rssi": {
+      "label": "RSSI — Sécurité des systèmes d'information",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "Gouvernance sécurité",
+              "items": [
+                {
+                  "id": "rssi_i_1",
+                  "q": "Mandat RSSI, rattachement, moyens (équipe, budget) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "rssi_i_2",
+                  "q": "Politique de sécurité SI : date, couverture, application réelle ?",
+                  "hint": ""
+                },
+                {
+                  "id": "rssi_i_3",
+                  "q": "Registre incidents : volume, gravité, remontée Cabinet ?",
+                  "hint": ""
+                },
+                {
+                  "id": "rssi_i_4",
+                  "q": "Audits, pentests, conformité ISO/ANSSI — planning ?",
+                  "hint": ""
+                },
+                {
+                  "id": "rssi_i_5",
+                  "q": "Séparation des pouvoirs DSI vs validation sécurité en production ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC sécurité",
+              "items": [
+                {
+                  "id": "rssi_c_1",
+                  "q": "SSO, 2FA, 6 niveaux d'accès — qui valide la mise en œuvre ?",
+                  "hint": ""
+                },
+                {
+                  "id": "rssi_c_2",
+                  "q": "Hébergement souverain / cloud national — position officielle ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Actions",
+              "items": [
+                {
+                  "id": "rssi_cc_1",
+                  "q": "Prérequis sécurité bloquants avant construction ?",
+                  "hint": ""
+                },
+                {
+                  "id": "rssi_cc_2",
+                  "q": "Documents à fournir (politique, PRA) — délai ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dpo": {
+      "label": "DPO — Protection des données personnelles",
+      "dur": "75-90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "RGPD & traitements",
+              "items": [
+                {
+                  "id": "dpo_i_1",
+                  "q": "DPO désigné ? Rattachement, indépendance, moyens ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpo_i_2",
+                  "q": "Registre des traitements à jour ? Périmètre jeunesse / PII ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpo_i_3",
+                  "q": "Base légale, consentement, durée conservation bénéficiaires ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpo_i_4",
+                  "q": "Procédure droits personnes (accès, rectification, effacement) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpo_i_5",
+                  "q": "AIPD envisagée pour PNIPM ? Sous-traitants (IA, hébergeur) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Partage & conformité",
+              "items": [
+                {
+                  "id": "dpo_c_1",
+                  "q": "Partage données avec bailleurs et tutelles : clauses et risques ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpo_c_2",
+                  "q": "Anonymisation exports et couche IA — exigences ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Suivi",
+              "items": [
+                {
+                  "id": "dpo_cc_1",
+                  "q": "Fréquence de revue DPO pendant la construction ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpo_cc_2",
+                  "q": "Registre et DPIA à verser en Data Room — délai ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "direction": {
+      "label": "Direction centrale / service métier",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Mandat & périmètre",
+              "items": [
+                {
+                  "id": "dir_i_a1",
+                  "q": "Mandat de votre direction et périmètre de données produites ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_a2",
+                  "q": "Quels dispositifs / programmes relèvent de votre direction ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_a3",
+                  "q": "Effectifs, organisation régionale, points focaux data ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Outils & reporting",
+              "items": [
+                {
+                  "id": "dir_i_b1",
+                  "q": "Quels outils utilisez-vous pour suivi et reporting (nom, version) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_b2",
+                  "q": "Quelles données, formats, fréquences de production ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_b3",
+                  "q": "Quels processus manuels et chronophages ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_b4",
+                  "q": "Obligations de reporting internes, bailleurs, tutelle ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Qualité & échanges",
+              "items": [
+                {
+                  "id": "dir_i_c1",
+                  "q": "Qualité et fraîcheur des données — auto-évaluation ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_c2",
+                  "q": "Avec quelles structures échangez-vous des données, comment ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_i_c3",
+                  "q": "Principaux points de douleur opérationnels ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Intégration CDC",
+              "items": [
+                {
+                  "id": "dir_c_1",
+                  "q": "Quelles fonctionnalités CDC sont utiles vs superflues pour vous ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_c_2",
+                  "q": "Quelles données partageriez-vous dans une plateforme centralisée ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_c_3",
+                  "q": "Obstacles à la centralisation (juridique, technique, politique) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Priorités",
+              "items": [
+                {
+                  "id": "dir_cc_1",
+                  "q": "Quick wins améliorant immédiatement votre quotidien ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_cc_2",
+                  "q": "Conditions de réussite et craintes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_cc_3",
+                  "q": "Référents data et métier à associer (noms) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dir_cc_4",
+                  "q": "Pièces Data Room à verser sous 72h ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "direction_daf": {
+      "label": "DAF — Finances, budget & SIGFIP",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Budget & programmation",
+              "items": [
+                {
+                  "id": "daf_i_a1",
+                  "q": "Structure budgétaire programmatique / non-programmatique — lisibilité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_a2",
+                  "q": "Budget 2026 par programme — disponibilité et format ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_a3",
+                  "q": "Circuit d'engagement et de paiement des primes (étapes, délais) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. SIGFIP & exécution",
+              "items": [
+                {
+                  "id": "daf_i_b1",
+                  "q": "Utilisation actuelle de SIGFIP (modules, exports) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_b2",
+                  "q": "Modalités de raccordement API / batch envisagées ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_b3",
+                  "q": "Réconciliation programme ↔ ligne budgétaire ↔ paiement ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Reporting financier",
+              "items": [
+                {
+                  "id": "daf_i_c1",
+                  "q": "Reporting Cabinet et bailleurs — formats, délais, ressaisies ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_c2",
+                  "q": "Écarts entre exécution SIGFIP et suivi programmatique ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC finances",
+              "items": [
+                {
+                  "id": "daf_c_1",
+                  "q": "Intégration SIGFIP temps réel — faisable dans le délai ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_c_2",
+                  "q": "Traçabilité prime individuelle exigée par le CDC — état des lieux ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Actions",
+              "items": [
+                {
+                  "id": "daf_cc_1",
+                  "q": "Exports SIGFIP à verser en R5 — délai ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_cc_2",
+                  "q": "Point focal technique budget pour ateliers flux ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "direction_dpsd": {
+      "label": "DPSD — Données, statistiques & référentiels",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Référentiels & qualité",
+              "items": [
+                {
+                  "id": "dpsd_i_a1",
+                  "q": "Existence d'un dictionnaire / référentiel ministériel ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_i_a2",
+                  "q": "Découpage territorial normalisé — état et responsable ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_i_a3",
+                  "q": "Grille qualité données par source — pratique actuelle ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Production statistique",
+              "items": [
+                {
+                  "id": "dpsd_i_b1",
+                  "q": "Indicateurs produits, fréquence, outils (Excel, BI, autre) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_i_b2",
+                  "q": "Échantillons anonymisés disponibles (volume, fraîcheur) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_i_b3",
+                  "q": "Lacunes de complétude connues par programme ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Gouvernance data",
+              "items": [
+                {
+                  "id": "dpsd_i_c1",
+                  "q": "Rôles DPSD vs DSI vs métiers sur la donnée ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_i_c2",
+                  "q": "Processus de validation avant diffusion Cabinet ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC données",
+              "items": [
+                {
+                  "id": "dpsd_c_1",
+                  "q": "Identifiant unique bénéficiaire (NNI) — faisabilité court terme ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_c_2",
+                  "q": "Consolidation temps réel — prérequis data ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Livrables data",
+              "items": [
+                {
+                  "id": "dpsd_cc_1",
+                  "q": "Référentiel et échantillon à verser R3 — calendrier ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dpsd_cc_2",
+                  "q": "Atelier qualité données avec programmes — qui inviter ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "direction_ig": {
+      "label": "Inspection générale — Contrôle & redevabilité",
+      "dur": "75-90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Missions de contrôle",
+              "items": [
+                {
+                  "id": "ig_i_a1",
+                  "q": "Dernières missions IG sur programmes jeunesse / primes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ig_i_a2",
+                  "q": "Constats récurrents sur traçabilité des paiements ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ig_i_a3",
+                  "q": "Recommandations non encore implémentées ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Risques & fraude",
+              "items": [
+                {
+                  "id": "ig_i_b1",
+                  "q": "Signalements, litiges, contentieux liés aux dispositifs ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ig_i_b2",
+                  "q": "Mécanismes de contrôle interne existants ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Exigences CDC",
+              "items": [
+                {
+                  "id": "ig_c_1",
+                  "q": "Audit trail inviolable du CDC — écart avec la pratique ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ig_c_2",
+                  "q": "Niveau de traçabilité exigé par le Cabinet — votre lecture ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Suivi",
+              "items": [
+                {
+                  "id": "ig_cc_1",
+                  "q": "Indicateurs de risque à intégrer au tableau de bord ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ig_cc_2",
+                  "q": "Rapports IG partageables pour la mission (anonymisés) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "tutelle": {
+      "label": "Structure sous tutelle (AEJ, OSCN, BCP…)",
+      "dur": "120-150 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Mandat & volumes",
+              "items": [
+                {
+                  "id": "tut_i_a1",
+                  "q": "Mandat, dispositifs actifs, volumes de bénéficiaires (inscriptions, sorties) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_a2",
+                  "q": "Autonomie de gestion vis-à-vis du ministère ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_a3",
+                  "q": "Conventions de tutelle et obligations de reporting ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Systèmes & données",
+              "items": [
+                {
+                  "id": "tut_i_b1",
+                  "q": "Systèmes d'information (interne, propriétaire, bases) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_b2",
+                  "q": "Identification des bénéficiaires — clé unique existante ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_b3",
+                  "q": "Gestion des doublons inter-programmes ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Paiements & flux",
+              "items": [
+                {
+                  "id": "tut_i_c1",
+                  "q": "Flow de paiement des primes (stages, formations, THIMO) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_c2",
+                  "q": "Reporting bailleur : formats, fréquence, charge ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_c3",
+                  "q": "Interface possible avec plateforme ministérielle (API, batch) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_c4",
+                  "q": "Qui est le payeur de référence de vos primes et par quel canal (Trésor, banque, mobile money) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_i_c5",
+                  "q": "Comment réconciliez-vous aujourd'hui paiement ↔ bénéficiaire ↔ comptabilité ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Intégration CDC",
+              "items": [
+                {
+                  "id": "tut_c_1",
+                  "q": "Interface CDC avec vos bases — faisable techniquement et politiquement ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_c_2",
+                  "q": "Remontée automatisée vers le Cabinet — conditions ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_c_3",
+                  "q": "Doublons fonctionnalités CDC vs vos outils ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Modèle cible",
+              "items": [
+                {
+                  "id": "tut_cc_1",
+                  "q": "Modèle d'intégration privilégié (API, batch, saisie) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_cc_2",
+                  "q": "Données prioritaires à consolider en premier ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tut_cc_3",
+                  "q": "Prérequis gouvernance et confidentialité ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "tutelle_aej": {
+      "label": "AEJ — Agence Emploi Jeunes (profondeur)",
+      "dur": "120-150 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Dispositifs & bases",
+              "items": [
+                {
+                  "id": "aej_i_a1",
+                  "q": "Périmètre dispositifs AEJ et volumes par type ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_i_a2",
+                  "q": "Architecture base bénéficiaires (schéma, champs clés) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_i_a3",
+                  "q": "Doublons avec OSCN, programmes bailleurs — constats chiffrés ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Opérations & SI",
+              "items": [
+                {
+                  "id": "aej_i_b1",
+                  "q": "Applications métier et flux vers le ministère ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_i_b2",
+                  "q": "Carte Jeunes / outils numériques — lien avec AEJ ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_i_b3",
+                  "q": "Qualité données et fréquence de mise à jour ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Paiements",
+              "items": [
+                {
+                  "id": "aej_i_c1",
+                  "q": "Circuit prime stage / formation — délais, litiges ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_i_c2",
+                  "q": "Traçabilité nominative bénéficiaire → paiement ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC & consolidation",
+              "items": [
+                {
+                  "id": "aej_c_1",
+                  "q": "Export base vers plateforme PNIPM — contraintes juridiques ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_c_2",
+                  "q": "NNI comme clé — état de préparation AEJ ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Actions",
+              "items": [
+                {
+                  "id": "aej_cc_1",
+                  "q": "Échantillon base à verser R4 — format et délai ?",
+                  "hint": ""
+                },
+                {
+                  "id": "aej_cc_2",
+                  "q": "Référent technique pour atelier interop ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "tutelle_oscn": {
+      "label": "OSCN — Service civique national (profondeur)",
+      "dur": "120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Programme & données",
+              "items": [
+                {
+                  "id": "oscn_i_a1",
+                  "q": "Volumes volontaires / service civique par région ?",
+                  "hint": ""
+                },
+                {
+                  "id": "oscn_i_a2",
+                  "q": "Outil de suivi et champs collectés ?",
+                  "hint": ""
+                },
+                {
+                  "id": "oscn_i_a3",
+                  "q": "Articulation avec AEJ et ministère ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Reporting & paiements",
+              "items": [
+                {
+                  "id": "oscn_i_b1",
+                  "q": "Reporting bailleur et ministère — templates ?",
+                  "hint": ""
+                },
+                {
+                  "id": "oscn_i_b2",
+                  "q": "Indemnités et primes — circuit et délais ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Intégration",
+              "items": [
+                {
+                  "id": "oscn_c_1",
+                  "q": "Consolidation OSCN dans vision 360° Cabinet — données clés ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Suite",
+              "items": [
+                {
+                  "id": "oscn_cc_1",
+                  "q": "Documentation technique à partager — délai ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "programme": {
+      "label": "Coordonnateur de programme / projet",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Flow opérationnel",
+              "items": [
+                {
+                  "id": "prg_i_a1",
+                  "q": "Flow du programme : identification → suivi → sortie ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_i_a2",
+                  "q": "Indicateurs suivis (cibles vs réalisé) et sources ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_i_a3",
+                  "q": "Géolocalisation des interventions ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Outils & budget",
+              "items": [
+                {
+                  "id": "prg_i_b1",
+                  "q": "Outils de gestion et reporting bailleur ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_i_b2",
+                  "q": "Suivi budgétaire : dotations, engagements, décaissements ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_i_b3",
+                  "q": "Formats et exigences reporting bailleur ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Douleurs & paiements",
+              "items": [
+                {
+                  "id": "prg_i_c1",
+                  "q": "Principales douleurs opérationnelles ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_i_c2",
+                  "q": "Paiements et traçabilité nominative ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_i_c3",
+                  "q": "Par quel canal vos primes sont-elles décaissées et la traçabilité va-t-elle jusqu'au bénéficiaire individuel ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC programme",
+              "items": [
+                {
+                  "id": "prg_c_1",
+                  "q": "Fonctionnalités CDC nécessaires vs optionnelles pour vous ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_c_2",
+                  "q": "Consolidation ministérielle — impact sur rapport bailleur ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_c_3",
+                  "q": "Écarts majeurs CDC vs réalité terrain ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Consolidation",
+              "items": [
+                {
+                  "id": "prg_cc_1",
+                  "q": "Indicateurs consolidés les plus utiles ?",
+                  "hint": ""
+                },
+                {
+                  "id": "prg_cc_2",
+                  "q": "Conditions remontée fiable et automatisée ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "programme_bailleur": {
+      "label": "Programme cofinancé bailleur (BAD, BM, AFD…)",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Conventions & reporting",
+              "items": [
+                {
+                  "id": "pb_i_a1",
+                  "q": "Convention de financement — indicateurs et échéances clés ?",
+                  "hint": ""
+                },
+                {
+                  "id": "pb_i_a2",
+                  "q": "Templates bailleur imposés — flexibilité de mapping ?",
+                  "hint": ""
+                },
+                {
+                  "id": "pb_i_a3",
+                  "q": "Difficultés récurrentes avec données ministérielles ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Données & systèmes",
+              "items": [
+                {
+                  "id": "pb_i_b1",
+                  "q": "Bases bénéficiaires du programme — structure et volume ?",
+                  "hint": ""
+                },
+                {
+                  "id": "pb_i_b2",
+                  "q": "Croisement avec autres programmes (doublons) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "pb_i_b3",
+                  "q": "Outils numériques utilisés par les bénéficiaires ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Plateforme PNIPM",
+              "items": [
+                {
+                  "id": "pb_c_1",
+                  "q": "La plateforme pourrait-elle générer vos formats bailleur ?",
+                  "hint": ""
+                },
+                {
+                  "id": "pb_c_2",
+                  "q": "Garanties de fiabilité exigées pour adoption ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Alignement",
+              "items": [
+                {
+                  "id": "pb_cc_1",
+                  "q": "Indicateurs prioritaires pour votre supervision ?",
+                  "hint": ""
+                },
+                {
+                  "id": "pb_cc_2",
+                  "q": "Calendrier de partage données avec la mission ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "technique_sigfip": {
+      "label": "Point focal SIGFIP — Finances publiques",
+      "dur": "120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Services & habilitations",
+              "items": [
+                {
+                  "id": "sig_i_a1",
+                  "q": "Services SIGFIP exposés (API, fichiers) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "sig_i_a2",
+                  "q": "Procédure d'habilitation ministère — délais, prérequis ?",
+                  "hint": ""
+                },
+                {
+                  "id": "sig_i_a3",
+                  "q": "Documentation technique disponible ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Données accessibles",
+              "items": [
+                {
+                  "id": "sig_i_b1",
+                  "q": "Données exécution budgétaire accessibles (granularité) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "sig_i_b2",
+                  "q": "Lien engagement budgétaire ↔ paiement prime possible ?",
+                  "hint": ""
+                },
+                {
+                  "id": "sig_i_b3",
+                  "q": "SLA, disponibilité, incidents récents ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Délai mission",
+              "items": [
+                {
+                  "id": "sig_c_1",
+                  "q": "Raccordement réaliste avant déploiement PNIPM phase 1 ?",
+                  "hint": ""
+                },
+                {
+                  "id": "sig_c_2",
+                  "q": "Prérequis côté ministère (DAF, DSI) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Planning",
+              "items": [
+                {
+                  "id": "sig_cc_1",
+                  "q": "Séquence de raccordement recommandée ?",
+                  "hint": ""
+                },
+                {
+                  "id": "sig_cc_2",
+                  "q": "Point focal et étapes formelles ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "technique_uxp": {
+      "label": "Point focal UXP / X-Road",
+      "dur": "120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Raccordement",
+              "items": [
+                {
+                  "id": "uxp_i_a1",
+                  "q": "État du raccordement ministère à UXP/X-Road ?",
+                  "hint": ""
+                },
+                {
+                  "id": "uxp_i_a2",
+                  "q": "Procédure, délais, coûts, documentation OpenAPI ?",
+                  "hint": ""
+                },
+                {
+                  "id": "uxp_i_a3",
+                  "q": "Précédents de raccordement réussis (autres ministères) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Sécurité & données",
+              "items": [
+                {
+                  "id": "uxp_i_b1",
+                  "q": "Contraintes sécurité et conformité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "uxp_i_b2",
+                  "q": "Données NNI / autres registres accessibles via X-Road ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Faisabilité",
+              "items": [
+                {
+                  "id": "uxp_c_1",
+                  "q": "Intégration CDC via X-Road dans délai accéléré ?",
+                  "hint": ""
+                },
+                {
+                  "id": "uxp_c_2",
+                  "q": "Compatibilité couche IA / analytics ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Suite",
+              "items": [
+                {
+                  "id": "uxp_cc_1",
+                  "q": "Specs à verser R7 — délai ?",
+                  "hint": ""
+                },
+                {
+                  "id": "uxp_cc_2",
+                  "q": "Risques techniques majeurs anticipés ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "technique_nni": {
+      "label": "Point focal NNI — Identification nationale",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Accès & juridique",
+              "items": [
+                {
+                  "id": "nni_i_a1",
+                  "q": "Cadre juridique d'accès NNI pour programmes jeunesse ?",
+                  "hint": ""
+                },
+                {
+                  "id": "nni_i_a2",
+                  "q": "Procédure d'habilitation — état côté ministère ?",
+                  "hint": ""
+                },
+                {
+                  "id": "nni_i_a3",
+                  "q": "Modalités techniques (API, volume, quotas) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Usage terrain",
+              "items": [
+                {
+                  "id": "nni_i_b1",
+                  "q": "Utilisation NNI possible sur le terrain aujourd'hui ?",
+                  "hint": ""
+                },
+                {
+                  "id": "nni_i_b2",
+                  "q": "Alternatives si NNI indisponible (ID interne) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC identité",
+              "items": [
+                {
+                  "id": "nni_c_1",
+                  "q": "Référentiel unique bénéficiaire sans NNI — acceptable ?",
+                  "hint": ""
+                },
+                {
+                  "id": "nni_c_2",
+                  "q": "Délais réalistes de mise en production NNI ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Actions",
+              "items": [
+                {
+                  "id": "nni_cc_1",
+                  "q": "Note juridique R9 / modalités à verser — délai ?",
+                  "hint": ""
+                },
+                {
+                  "id": "nni_cc_2",
+                  "q": "Atelier tripartite NNI–DSI–DAJIP ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "technique": {
+      "label": "Point focal technique externe (générique)",
+      "dur": "120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Offre de service",
+              "items": [
+                {
+                  "id": "tec_i_a1",
+                  "q": "Services exposés et modalités (API, protocoles) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tec_i_a2",
+                  "q": "Procédure d'habilitation et de raccordement ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tec_i_a3",
+                  "q": "Documentation, délais, coûts ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Exploitation",
+              "items": [
+                {
+                  "id": "tec_i_b1",
+                  "q": "SLA et disponibilité réelle ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tec_i_b2",
+                  "q": "Précédents de raccordement ministère / programmes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tec_i_b3",
+                  "q": "Données accessibles et conditions juridiques ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "CDC",
+              "items": [
+                {
+                  "id": "tec_c_1",
+                  "q": "Intégration réaliste dans le délai accéléré ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tec_c_2",
+                  "q": "Prérequis bloquants côté ministère ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Planning",
+              "items": [
+                {
+                  "id": "tec_cc_1",
+                  "q": "Séquence de raccordement recommandée ?",
+                  "hint": ""
+                },
+                {
+                  "id": "tec_cc_2",
+                  "q": "Contacts et étapes formelles ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "bailleur": {
+      "label": "Représentant bailleur (BAD, BM, AFD, PNUD, BOAD)",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Exigences reporting",
+              "items": [
+                {
+                  "id": "bai_i_a1",
+                  "q": "Exigences reporting : format, fréquence, indicateurs ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_i_a2",
+                  "q": "Modèles et templates imposés aux programmes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_i_a3",
+                  "q": "Évaluation qualité reporting actuel du ministère ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Données & conformité",
+              "items": [
+                {
+                  "id": "bai_i_b1",
+                  "q": "Données indispensables vs problématiques ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_i_b2",
+                  "q": "Obligations conformité (environnement, RGPD) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_i_b3",
+                  "q": "Missions de supervision — frictions récurrentes ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Plateforme consolidée",
+              "items": [
+                {
+                  "id": "bai_c_1",
+                  "q": "Génération automatique formats bailleur — acceptable ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_c_2",
+                  "q": "Garanties de fiabilité exigées ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_c_3",
+                  "q": "Valorisation dans vos évaluations si plateforme livrée ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Alignement",
+              "items": [
+                {
+                  "id": "bai_cc_1",
+                  "q": "Indicateurs prioritaires pour vos besoins ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_cc_2",
+                  "q": "Niveau d'automatisation acceptable ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bai_cc_3",
+                  "q": "Bonnes pratiques d'autres pays à transposer ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "bailleur_multi": {
+      "label": "Bailleurs groupés (AFD + PNUD + BOAD)",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Par bailleur",
+              "items": [
+                {
+                  "id": "bm_i_a1",
+                  "q": "Synthèse par bailleur : programmes financés, indicateurs clés ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bm_i_a2",
+                  "q": "Points communs et divergences entre exigences reporting ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bm_i_a3",
+                  "q": "Coordination inter-bailleurs sur PNIPM — existe-t-elle ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Données ministère",
+              "items": [
+                {
+                  "id": "bm_i_b1",
+                  "q": "Qualité perçue des données remontées par le ministère ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bm_i_b2",
+                  "q": "Données manquantes bloquant vos revues ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Vision consolidée",
+              "items": [
+                {
+                  "id": "bm_c_1",
+                  "q": "Une plateforme unique simplifierait-elle vos supervisions ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bm_c_2",
+                  "q": "Harmonisation indicateurs — opportunité ou risque ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Suite",
+              "items": [
+                {
+                  "id": "bm_cc_1",
+                  "q": "Format de restitution multi-bailleur souhaité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "bm_cc_2",
+                  "q": "Calendrier de points focal avec la mission ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "terrain_dr": {
+      "label": "Direction régionale — Pilotage & gouvernance locale",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Périmètre & organisation régionale",
+              "items": [
+                {
+                  "id": "dr_i_a1",
+                  "q": "Quel est le périmètre exact de votre direction régionale (structures, programmes, effectifs) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_a2",
+                  "q": "Quels dispositifs jeunesse sont actifs dans la région et avec quels volumes (inscriptions, sorties, en cours) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_a3",
+                  "q": "Comment s'organise la relation avec le siège (Abidjan) : arbitrages, validations, délais de réponse ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_a4",
+                  "q": "Disposez-vous d'un tableau de bord régional consolidé aujourd'hui ? Si oui, lequel ; sinon, comment pilotez-vous ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_a5",
+                  "q": "Au-delà du régional, quelle est la réalité des Directions Départementales de votre ressort (connectivité, équipement, remontées) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Données & remontées vers le central",
+              "items": [
+                {
+                  "id": "dr_i_b1",
+                  "q": "Quels outils utilisez-vous pour la saisie et le suivi (applications, Excel, papier) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_b2",
+                  "q": "À quelle fréquence et par quel canal les données remontent-elles au central ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_b3",
+                  "q": "Quels indicateurs régionaux suivez-vous et sont-ils alignés avec ceux du Cabinet ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_b4",
+                  "q": "Où constatez-vous des retards, ressaisies ou pertes d'information dans la chaîne ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Connectivité & contraintes terrain",
+              "items": [
+                {
+                  "id": "dr_i_c1",
+                  "q": "Quelle est la qualité réelle du réseau sur vos sites (4G, fibre, coupures) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_c2",
+                  "q": "Avez-vous déjà pratiqué un mode déconnecté ou une synchronisation différée ? Résultat ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_c3",
+                  "q": "Quels équipements (PC, tablettes, smartphones) sont disponibles pour les agents ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "D. Paiements & traçabilité locale",
+              "items": [
+                {
+                  "id": "dr_i_d1",
+                  "q": "Comment sont gérés localement les paiements de primes / indemnités (circuit, délais) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_d2",
+                  "q": "Existe-t-il une traçabilité nominative bénéficiaire → paiement ? À quel niveau de fiabilité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_i_d3",
+                  "q": "Quels litiges ou réclamations récurrents observez-vous ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Confrontation CDC / réalité régionale",
+              "items": [
+                {
+                  "id": "dr_c_1",
+                  "q": "Le CDC prévoit une vision consolidée temps réel pour le Cabinet — votre région peut-elle l'alimenter sans surcharge ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_c_2",
+                  "q": "L'identifiant unique bénéficiaire (NNI ou équivalent) est-il utilisable sur le terrain aujourd'hui ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_c_3",
+                  "q": "Le mode offline-first avec synchro est-il indispensable pour vos agents ? Pour quels cas d'usage ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_c_4",
+                  "q": "Quelles exigences du CDC vous semblent inadaptées à la réalité régionale ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Co-construction & priorités",
+              "items": [
+                {
+                  "id": "dr_cc_1",
+                  "q": "Quels 2-3 quick wins régionaux amélioreraient immédiatement le pilotage ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_cc_2",
+                  "q": "Quelles conditions d'adoption par vos équipes (formation, SOP, support) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_cc_3",
+                  "q": "Quels interlocuteurs centraux doivent être impliqués pour lever vos blocages ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dr_cc_4",
+                  "q": "Quelles pièces probantes pouvez-vous verser en Data Room (R11) sous 48h ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "terrain_demo": {
+      "label": "Chefs de service & démonstration écran",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Démonstration des outils en usage",
+              "items": [
+                {
+                  "id": "dm_i_a1",
+                  "q": "Quels écrans / applications démontrez-vous aujourd'hui (nom, version, éditeur) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_a2",
+                  "q": "Parcours type : de la saisie d'un bénéficiaire jusqu'au reporting — décrivez étape par étape.",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_a3",
+                  "q": "Où sont stockées les données (local, serveur régional, central) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_a4",
+                  "q": "Captures d'écran ou exports possibles à verser en Data Room (R7) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Qualité des données saisies",
+              "items": [
+                {
+                  "id": "dm_i_b1",
+                  "q": "Quels champs obligatoires et contrôles de cohérence existent dans vos outils ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_b2",
+                  "q": "Quels doublons ou incohérences détectez-vous régulièrement ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_b3",
+                  "q": "Comment corrigez-vous une erreur après validation / clôture ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_b4",
+                  "q": "Existe-t-il un référentiel territorial normalisé dans la saisie ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Habilitations & sécurité",
+              "items": [
+                {
+                  "id": "dm_i_c1",
+                  "q": "Comment sont créés / révoqués les comptes agents ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_c2",
+                  "q": "Y a-t-il des profils différenciés (lecture, saisie, validation) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_c3",
+                  "q": "Avez-vous des traces d'audit (qui a modifié quoi, quand) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "D. Performance & incidents",
+              "items": [
+                {
+                  "id": "dm_i_d1",
+                  "q": "Temps de réponse perçu, plantages, lenteurs aux heures de pointe ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_d2",
+                  "q": "Incidents majeurs des 12 derniers mois et résolution ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_i_d3",
+                  "q": "Procédure de support (interne DSI, prestataire) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Écarts outils vs cible PNIPM",
+              "items": [
+                {
+                  "id": "dm_c_1",
+                  "q": "Vos outils permettent-ils un drill-down jusqu'au bénéficiaire pour le Cabinet ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_c_2",
+                  "q": "Interopérabilité SIGFIP / UXP / NNI : tentatives, échecs, blocages ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_c_3",
+                  "q": "Le SSO et la 2FA sont-ils envisageables sur votre périmètre ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_c_4",
+                  "q": "Quelles fonctionnalités du CDC sont absentes de vos écrans actuels ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Pistes d'amélioration",
+              "items": [
+                {
+                  "id": "dm_cc_1",
+                  "q": "Quelle évolution minimale de l'existant donnerait le plus de valeur ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_cc_2",
+                  "q": "Quels exports automatisés vers la plateforme cible seraient acceptables ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dm_cc_3",
+                  "q": "Besoins de formation des agents sur un nouvel outil ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "terrain_agents": {
+      "label": "Agents de saisie & opérateurs (collectif)",
+      "dur": "60-90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Pratiques quotidiennes",
+              "items": [
+                {
+                  "id": "ag_i_a1",
+                  "q": "Combien de dossiers / bénéficiaires traitez-vous en moyenne par jour ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_a2",
+                  "q": "Quelle est la durée moyenne d'une saisie complète ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_a3",
+                  "q": "Travaillez-vous plutôt sur PC, tablette ou smartphone ? En agence ou en mobilité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_a4",
+                  "q": "Quelles étapes vous semblent inutiles ou redondantes dans le processus actuel ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Difficultés & contournements",
+              "items": [
+                {
+                  "id": "ag_i_b1",
+                  "q": "Quels champs posez-vous difficilement (manque d'info, règles floues) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_b2",
+                  "q": "Utilisez-vous des contournements (cahiers, Excel personnel, WhatsApp) ? Lesquels et pourquoi ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_b3",
+                  "q": "Que faites-vous en cas de coupure réseau ou panne outil ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_b4",
+                  "q": "Avez-vous déjà perdu des données ? Dans quel contexte ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Relation bénéficiaire",
+              "items": [
+                {
+                  "id": "ag_i_c1",
+                  "q": "Comment vérifiez-vous l'identité du jeune (pièce, NNI, autre) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_c2",
+                  "q": "Comment informez-vous le bénéficiaire du suivi de sa prime / indemnité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_i_c3",
+                  "q": "Quelles questions reviennent le plus souvent des bénéficiaires ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Confrontation avec la cible PNIPM",
+              "items": [
+                {
+                  "id": "ag_c_1",
+                  "q": "Un formulaire unique mobile simplifierait-il votre travail ? Quels écrans regrouper ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_c_2",
+                  "q": "Accepteriez-vous une synchronisation automatique si la connexion revient ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_c_3",
+                  "q": "Qu'est-ce qui vous ferait refuser un nouvel outil ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Propositions terrain",
+              "items": [
+                {
+                  "id": "ag_cc_1",
+                  "q": "Quelle amélioration prioritaire pour votre poste de travail ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_cc_2",
+                  "q": "Quelle formation serait nécessaire (durée, format) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "ag_cc_3",
+                  "q": "Un numéro court / support dédié serait-il utile ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "focusgroup": {
+      "label": "Focus group bénéficiaires jeunes (10-15 pers.)",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "sections": [
+            {
+              "title": "A. Parcours d'entrée dans le dispositif",
+              "items": [
+                {
+                  "id": "fg_i_a1",
+                  "q": "Comment avez-vous connu le programme (bouche-à-oreille, agence, en ligne) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_a2",
+                  "q": "Quelles démarches administratives avez-vous dû faire (documents, délais, allers-retours) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_a3",
+                  "q": "Avez-vous été orienté vers d'autres dispositifs en parallèle ? Lesquels ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "B. Expérience pendant le dispositif",
+              "items": [
+                {
+                  "id": "fg_i_b1",
+                  "q": "Qu'attendiez-vous au départ et qu'avez-vous réellement obtenu ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_b2",
+                  "q": "Comment évaluez-vous l'accompagnement humain (formateurs, agents) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_b3",
+                  "q": "Avez-vous utilisé des outils numériques (Carte Jeunes, plateforme, mobile money) ? Lesquels ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "C. Primes, indemnités & transparence",
+              "items": [
+                {
+                  "id": "fg_i_c1",
+                  "q": "Avez-vous reçu les primes / indemnités prévues ? En combien de temps ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_c2",
+                  "q": "Savez-vous calculer ce qui vous est dû et comment réclamer en cas de retard ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_c3",
+                  "q": "Avez-vous connu des refus ou blocages ? Pour quelle raison affichée ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "D. Après le dispositif",
+              "items": [
+                {
+                  "id": "fg_i_d1",
+                  "q": "Bénéficiez-vous d'un suivi post-programme (emploi, insertion) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_i_d2",
+                  "q": "Recommanderiez-vous le dispositif à un pair ? Pourquoi oui / non ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "sections": [
+            {
+              "title": "Attentes vis-à-vis d'un service numérique unique",
+              "items": [
+                {
+                  "id": "fg_c_1",
+                  "q": "Seriez-vous à l'aise pour suivre votre dossier via une application mobile ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_c_2",
+                  "q": "Quelles informations voudriez-vous voir en priorité (statut, paiement, prochaine étape) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_c_3",
+                  "q": "Quelles craintes (fraude, données personnelles, complexité) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "sections": [
+            {
+              "title": "Propositions des bénéficiaires",
+              "items": [
+                {
+                  "id": "fg_cc_1",
+                  "q": "Quelle amélioration concrète aurait le plus d'impact pour vous ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_cc_2",
+                  "q": "Préférez-vous agence physique, téléphone, SMS, WhatsApp ou application ?",
+                  "hint": ""
+                },
+                {
+                  "id": "fg_cc_3",
+                  "q": "Un numéro unique d'assistance serait-il utile ? Quels horaires ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "flotte": {
+      "label": "Patrimoine, Flotte automobile & Entretien des véhicules",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Parc & inventaire",
+              "items": [
+                {
+                  "id": "flot_i_a1",
+                  "q": "Combien de véhicules compte le parc, par structure et par statut (en service, maintenance, hors service, réformé), et comment l'inventaire est-il tenu aujourd'hui (Excel, papier, logiciel) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_i_a2",
+                  "q": "Quelles informations détenez-vous par véhicule (immatriculation, marque/modèle, date et valeur d'acquisition, kilométrage, affectation, documents) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_i_a3",
+                  "q": "Comment suivez-vous les documents réglementaires (carte grise, assurance, visite technique) et leurs échéances ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Maintenance & réparations",
+              "items": [
+                {
+                  "id": "flot_i_b1",
+                  "q": "Comment planifiez-vous la maintenance préventive (vidanges, révisions, pneumatiques) et selon quels déclencheurs (kilométrage, date) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_i_b2",
+                  "q": "Comment enregistrez-vous les interventions curatives (pannes, accidents) et l'historique par véhicule ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_i_b3",
+                  "q": "Avec quels prestataires travaillez-vous (garages agréés, contrats cadres) et comment suivez-vous les coûts d'intervention ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Carburant & coûts",
+              "items": [
+                {
+                  "id": "flot_i_c1",
+                  "q": "Comment gérez-vous l'approvisionnement en carburant (bons, cartes, stations) et le relevé des consommations ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_i_c2",
+                  "q": "Calculez-vous une consommation moyenne et détectez-vous les anomalies ? Comment ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_i_c3",
+                  "q": "Disposez-vous d'un coût total de possession (TCO) ou d'un coût au kilomètre par véhicule ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / réalité flotte",
+              "items": [
+                {
+                  "id": "flot_c_1",
+                  "q": "Le module flotte du CDC (TCO, alertes automatiques d'échéances, suivi conso) est-il alimentable avec vos données actuelles, et à quelle fréquence ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_c_2",
+                  "q": "Les alertes automatiques (assurance / visite technique expirant, maintenance due) sont-elles fiables au regard de la qualité de vos données de référence ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "flot_cc_1",
+                  "q": "Quel quick win flotte aurait le plus d'impact immédiat (tableau de bord disponibilité, alertes échéances) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_cc_2",
+                  "q": "Quelles pièces (état du parc, contrats d'entretien, relevés de conso) pouvez-vous verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "flot_cc_3",
+                  "q": "Quel référent flotte / patrimoine associer aux ateliers de construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "drh": {
+      "label": "Direction des Ressources Humaines — Effectifs, paie & carrières",
+      "dur": "90 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Effectifs & organisation",
+              "items": [
+                {
+                  "id": "drh_i_a1",
+                  "q": "Quel est l'effectif total et sa répartition (structure, grade, statut, ancienneté), et comment le tenez-vous à jour ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_i_a2",
+                  "q": "Disposez-vous d'un SIRH ou d'un logiciel de paie (nom, éditeur, version) ? Sinon, comment gérez-vous ces fonctions ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_i_a3",
+                  "q": "Comment l'organigramme est-il maintenu et partagé aujourd'hui ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Processus RH",
+              "items": [
+                {
+                  "id": "drh_i_b1",
+                  "q": "Comment gérez-vous les absences (congés, permissions, maladies) et leur validation ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_i_b2",
+                  "q": "Comment se déroulent les évaluations de performance et leur historisation ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_i_b3",
+                  "q": "Comment suivez-vous les formations continues des agents ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Données & douleurs",
+              "items": [
+                {
+                  "id": "drh_i_c1",
+                  "q": "Quelles données RH produisez-vous pour le Cabinet ou la tutelle, à quelle fréquence et sous quel format ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_i_c2",
+                  "q": "Quels processus RH sont les plus manuels et chronophages ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_i_c3",
+                  "q": "Quels indicateurs RH suivez-vous (pyramide des âges, taux d'encadrement, turnover) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / attentes RH",
+              "items": [
+                {
+                  "id": "drh_c_1",
+                  "q": "Quelles données RH partageriez-vous dans une plateforme centralisée, et lesquelles posent un problème de confidentialité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_c_2",
+                  "q": "L'interfaçage avec un SIRH existant ou la solde (Fonction publique) est-il envisageable techniquement et juridiquement ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "drh_cc_1",
+                  "q": "Quel quick win RH améliorerait immédiatement votre quotidien ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_cc_2",
+                  "q": "Quelles pièces (organigramme, états d'effectifs anonymisés, procédures) verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "drh_cc_3",
+                  "q": "Quel référent RH associer à la construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "marches": {
+      "label": "Cellule Passation des Marchés Publics",
+      "dur": "75-90 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Processus & outils",
+              "items": [
+                {
+                  "id": "mp_i_a1",
+                  "q": "Quel est le circuit de passation actuel (de l'expression de besoin à l'attribution) et quels outils l'appuient (SIGOMAP, Excel, papier) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_i_a2",
+                  "q": "Quel volume annuel de marchés gérez-vous, par type (fournitures, services, travaux) et par procédure ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_i_a3",
+                  "q": "Comment suivez-vous l'avancement et les délais de chaque marché ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Articulation & reporting",
+              "items": [
+                {
+                  "id": "mp_i_b1",
+                  "q": "Comment vous articulez-vous avec le budget (DAF) et l'exécution (engagements, paiements) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_i_b2",
+                  "q": "Quelles obligations de reporting (national, bailleurs) pèsent sur la passation ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_i_b3",
+                  "q": "Quels points de friction ou délais récurrents observez-vous ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / réalité marchés",
+              "items": [
+                {
+                  "id": "mp_c_1",
+                  "q": "Quelle articulation souhaitez-vous entre un module marchés de la plateforme, SIGOMAP et SIGFIP ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_c_2",
+                  "q": "Quelles données de passation peuvent être consolidées sans risque (confidentialité, mise en concurrence) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "mp_cc_1",
+                  "q": "Quel quick win sur le suivi des marchés serait le plus utile ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_cc_2",
+                  "q": "Quelles pièces (plan de passation, tableau de bord marchés) verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "mp_cc_3",
+                  "q": "Quel référent marchés associer à la construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "daf": {
+      "label": "Direction des Affaires Financières — Budget, SIGFIP & circuit de paiement des primes",
+      "dur": "120 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Budget & exécution",
+              "items": [
+                {
+                  "id": "daf_i_a1",
+                  "q": "Quels outils utilisez-vous pour l'exécution budgétaire (SIGFIP, autres) et le suivi des engagements / liquidations ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_a2",
+                  "q": "Comment gérez-vous les régies d'avances et leur justification ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_a3",
+                  "q": "Quels états financiers produisez-vous, pour qui, à quelle fréquence ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Circuit de paiement des primes",
+              "items": [
+                {
+                  "id": "daf_i_b1",
+                  "q": "Qui est le payeur de référence des primes (stages, formations, THIMO) par dispositif, et par quel canal (Trésor, banque, mobile money) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_b2",
+                  "q": "Comment se fait aujourd'hui la réconciliation prime versée ↔ bénéficiaire ↔ écriture comptable ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_b3",
+                  "q": "Quel est le délai moyen réel de paiement et le taux de rejet / d'anomalie ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Intégration SIGFIP",
+              "items": [
+                {
+                  "id": "daf_i_c1",
+                  "q": "Quel est l'état du raccordement à SIGFIP (habilitations, périmètre, propriétaire de l'interface) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_c2",
+                  "q": "La réconciliation automatique plateforme ↔ SIGFIP est-elle techniquement envisageable ? Avec quelles limites ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_i_c3",
+                  "q": "Quels écarts fréquents constatez-vous entre données opérationnelles et données comptables ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / réalité financière",
+              "items": [
+                {
+                  "id": "daf_c_1",
+                  "q": "La traçabilité de paiement « par bénéficiaire et par mois » exigée au CDC est-elle alimentable depuis vos systèmes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_c_2",
+                  "q": "L'alerte « retard de paiement > 30 jours » est-elle calculable de façon fiable aujourd'hui ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "daf_cc_1",
+                  "q": "Quel niveau d'automatisation de la réconciliation est réaliste en phase 1 ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_cc_2",
+                  "q": "Quelles pièces (nomenclature budgétaire, états de paiement anonymisés, doc SIGFIP) verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daf_cc_3",
+                  "q": "Quel référent finances / SIGFIP associer à la construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dpsd": {
+      "label": "Planification, Statistique & Documentation — Référentiels, indicateurs & GED",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Référentiels & indicateurs",
+              "items": [
+                {
+                  "id": "dps_i_a1",
+                  "q": "Existe-t-il un dictionnaire d'indicateurs ministériel et un référentiel territorial normalisé (région, département, commune) ? Qui en est propriétaire ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_i_a2",
+                  "q": "Comment sont définis, calculés et harmonisés les indicateurs entre structures et programmes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_i_a3",
+                  "q": "Quelle est l'articulation avec l'appareil statistique national (INS) et les obligations PND / PJGOUV ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Données & qualité",
+              "items": [
+                {
+                  "id": "dps_i_b1",
+                  "q": "Quelles données consolidez-vous aujourd'hui et selon quelle gouvernance de qualité (stewardship, contrôles) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_i_b2",
+                  "q": "Comment gérez-vous les doublons et les écarts de définition entre sources ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_i_b3",
+                  "q": "Quels processus de production statistique sont manuels et chronophages ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Gestion documentaire & archivage",
+              "items": [
+                {
+                  "id": "dps_i_c1",
+                  "q": "Comment sont gérés aujourd'hui les courriers, notes, rapports et leur archivage (outil, versioning, normes) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_i_c2",
+                  "q": "Quelles obligations légales d'archivage s'appliquent aux documents du Ministère ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_i_c3",
+                  "q": "La recherche documentaire (plein texte, métadonnées) est-elle possible aujourd'hui ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / gouvernance de la donnée",
+              "items": [
+                {
+                  "id": "dps_c_1",
+                  "q": "Qui doit porter la gouvernance du référentiel maître bénéficiaire et du dictionnaire d'indicateurs dans la plateforme ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_c_2",
+                  "q": "Le module GED + signature électronique du CDC est-il compatible avec vos normes d'archivage ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "dps_cc_1",
+                  "q": "Quel quick win statistique ou documentaire aurait le plus de valeur ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_cc_2",
+                  "q": "Quelles pièces (dictionnaire d'indicateurs, référentiel territorial, plan d'archivage) verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "dps_cc_3",
+                  "q": "Quel référent data / statistique associer à la construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dajc": {
+      "label": "Affaires Juridiques & Coopération — Instruments juridiques, partage de données & signature électronique",
+      "dur": "75-90 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Cadre juridique du partage de données",
+              "items": [
+                {
+                  "id": "daj_i_a1",
+                  "q": "Quels instruments (conventions de tutelle, décrets, protocoles) encadrent ou permettraient le partage de données entre le Ministère, les structures sous tutelle (AEJ, OSCN, BCP) et les bailleurs ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_i_a2",
+                  "q": "Quelles clauses de confidentialité et de propriété des données s'appliquent dans les conventions existantes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_i_a3",
+                  "q": "Quel cadre national de protection des données personnelles s'applique (autorité, obligations) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Signature électronique & valeur probante",
+              "items": [
+                {
+                  "id": "daj_i_b1",
+                  "q": "Quelle est la valeur juridique de la signature électronique en Côte d'Ivoire pour les documents officiels du Ministère ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_i_b2",
+                  "q": "Quels actes pourraient être dématérialisés et signés électroniquement, et lesquels exigent encore le papier ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Coopération & propriété intellectuelle",
+              "items": [
+                {
+                  "id": "daj_i_c1",
+                  "q": "Comment sécuriser les droits de propriété sur les livrables et les données vis-à-vis d'un prestataire (cf. §9 du CDC) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_i_c2",
+                  "q": "Quelles obligations de coopération internationale (bailleurs) impactent la plateforme ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / sécurisation juridique",
+              "items": [
+                {
+                  "id": "daj_c_1",
+                  "q": "Quels instruments juridiques manquent pour rendre opposable le partage de données vers la plateforme centrale ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_c_2",
+                  "q": "Le partage de données nominatives avec les bailleurs est-il juridiquement sécurisable ? À quelles conditions ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "daj_cc_1",
+                  "q": "Quel acte juridique prioritaire faut-il préparer pour débloquer la construction (convention-cadre, arrêté) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_cc_2",
+                  "q": "Quelles pièces (conventions, textes applicables) verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daj_cc_3",
+                  "q": "Quel référent juridique associer à la construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "carte_jeunes": {
+      "label": "Coordination Carte Jeunes — Identité, NNI & écosystème d'avantages",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Système d'émission & identité",
+              "items": [
+                {
+                  "id": "cj_i_a1",
+                  "q": "Comment fonctionne aujourd'hui l'émission de la Carte Jeunes (enrôlement, support, système d'information) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_i_a2",
+                  "q": "Quelle est la relation entre la Carte Jeunes et le NNI (Numéro National d'Identification) ? Une réconciliation existe-t-elle ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_i_a3",
+                  "q": "Combien de cartes émises, par localité, et quel taux de couverture de la cible ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Données & services",
+              "items": [
+                {
+                  "id": "cj_i_b1",
+                  "q": "Quelles données bénéficiaire la Carte Jeunes détient-elle, et avec quelle fiabilité / unicité ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_i_b2",
+                  "q": "Quels services et avantages sont associés, et quels partenaires sont activés ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_i_b3",
+                  "q": "Quelle utilisation réelle (taux d'activation, transactions) mesurez-vous ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / rôle d'identité maître",
+              "items": [
+                {
+                  "id": "cj_c_1",
+                  "q": "La Carte Jeunes peut-elle servir de référentiel d'identité maître (clé bénéficiaire unique) pour la plateforme ? Quelles limites ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_c_2",
+                  "q": "Le rapprochement Carte Jeunes ↔ bases programmes (AEJ, OSCN, PEJEDEC…) est-il faisable pour dédoublonner ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "cj_cc_1",
+                  "q": "Quelle articulation cible entre Carte Jeunes, NNI et plateforme (qui est maître de quoi) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_cc_2",
+                  "q": "Quelles données prioritaires consolider en premier via la Carte Jeunes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "cj_cc_3",
+                  "q": "Quelles pièces (specs techniques, volumétrie, conventions partenaires) verser en Data Room sous 72h ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dajip": {
+      "label": "Autonomisation des Jeunes & Insertion Pro — Dispositifs & données marché du travail",
+      "dur": "90-120 min",
+      "phases": {
+        "invest": {
+          "duration": "45-55 min",
+          "sections": [
+            {
+              "title": "Dispositifs & parcours",
+              "items": [
+                {
+                  "id": "daji_i_a1",
+                  "q": "Quels dispositifs d'insertion (stages, formations, THIMO, entrepreneuriat) pilotez-vous et avec quels volumes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_i_a2",
+                  "q": "Comment suivez-vous le parcours bénéficiaire de l'entrée à la sortie, et le suivi post-programme ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_i_a3",
+                  "q": "Comment mesurez-vous les taux de conversion (stage → emploi, formation → insertion) ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Captation des données du marché du travail",
+              "items": [
+                {
+                  "id": "daji_i_b1",
+                  "q": "Quelles sources de données marché du travail exploitez-vous (offres d'emploi, secteurs porteurs, statistiques macro) et via quels partenaires (observatoire emploi, AEJ, secteur privé) ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_i_b2",
+                  "q": "Ces données sont-elles structurées, actualisées et exploitables pour orienter la décision ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_i_b3",
+                  "q": "Quel usage en faites-vous aujourd'hui pour cibler les dispositifs ?",
+                  "hint": ""
+                }
+              ]
+            },
+            {
+              "title": "Outils & douleurs",
+              "items": [
+                {
+                  "id": "daji_i_c1",
+                  "q": "Quels outils de suivi / reporting utilisez-vous et quelles données produisez-vous pour le Cabinet / les bailleurs ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_i_c2",
+                  "q": "Quels processus sont manuels et chronophages ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_i_c3",
+                  "q": "Quels points de douleur opérationnels majeurs rencontrez-vous ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "confront": {
+          "duration": "15-20 min",
+          "sections": [
+            {
+              "title": "Confrontation CDC / captation marché du travail",
+              "items": [
+                {
+                  "id": "daji_c_1",
+                  "q": "La fonctionnalité « captation des données du marché du travail » du CDC est-elle alimentable par des sources fiables existantes ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_c_2",
+                  "q": "Quelles données partageriez-vous et lesquelles posent un obstacle (juridique, technique) ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        },
+        "coconstruct": {
+          "duration": "10-15 min",
+          "sections": [
+            {
+              "title": "Co-construction",
+              "items": [
+                {
+                  "id": "daji_cc_1",
+                  "q": "Quel indicateur consolidé d'insertion serait le plus utile au pilotage ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_cc_2",
+                  "q": "Quelles pièces (référentiel dispositifs, sources marché du travail) verser en Data Room sous 72h ?",
+                  "hint": ""
+                },
+                {
+                  "id": "daji_cc_3",
+                  "q": "Quel référent métier / data associer à la construction ?",
+                  "hint": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "meta": {
+    "pnipmTramesRev": "20260619"
+  }
+}

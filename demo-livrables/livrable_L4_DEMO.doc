@@ -1,0 +1,169 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L4 — Matrice des écarts CDC / réalité (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>MATRICE DES ÉCARTS CDC / RÉALITÉ</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Confrontation systématique des exigences PNIPM au terrain observé (G-01 à G-50)</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>MPJIPSC</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA</td></tr>
+<tr><td><b>Référence livrable</b></td><td>L4 — Jalon J+18</td></tr>
+<tr><td><b>Version</b></td><td>1.0 — Projet consolidé</td></tr>
+<tr><td><b>Date</b></td><td>10 avril 2026</td></tr>
+<tr><td><b>Périmètre CDC</b></td><td>Cahier des charges PNIPM v2.3 + additifs bailleurs</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Matrice alimentée par le cockpit mission (module Matrice d&#x27;écart). Verdicts : Confirmé · À ajuster · À compléter · Caduc.</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive</h2>
+<p>La matrice recense <b>50 exigences</b> extraites du CDC, confrontées à la réalité observée (entretiens, Data Room, démonstrations).</p>
+<table>
+<tr><th>Verdict</th><th>Nombre</th><th>%</th><th>Interprétation</th></tr>
+<tr><td><b>Confirmé</b></td><td>8</td><td>16 %</td><td>Exigence pertinente et alignée terrain</td></tr>
+<tr><td><b>À ajuster</b></td><td>6</td><td>12 %</td><td>Direction correcte, niveau ou périmètre à revoir</td></tr>
+<tr><td><b>À compléter</b></td><td>31</td><td>62 %</td><td>Écart majeur — prérequis à lever</td></tr>
+<tr><td><b>Caduc</b></td><td>5</td><td>10 %</td><td>Hors MVP ou redondant (C-10)</td></tr>
+</table>
+<p><b>Écarts bloquants pour le lot 1 (12 exigences) :</b> G-03, G-05, G-07, G-08, G-01, G-47, G-46, G-14, G-09, G-10, G-02, G-11.</p>
+<p><b>Recommandation :</b> réviser le périmètre MVP du CDC pour retirer les exigences <b>caduc</b> (G-13, G-49, G-50) et séquencer le reste sur 3 vagues.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Méthodologie de confrontation</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.1 Grille d&#x27;analyse par exigence</h3>
+<table>
+<tr><th>Champ</th><th>Description</th></tr>
+<tr><td>Ref</td><td>Identifiant G-xx</td></tr>
+<tr><td>Exigence CDC</td><td>Libellé contractuel</td></tr>
+<tr><td>Réf. CDC</td><td>Paragraphe</td></tr>
+<tr><td>Réalité observée</td><td>Fait terrain sourcé</td></tr>
+<tr><td>Verdict</td><td>confirme / ajuster / completer / caduc</td></tr>
+<tr><td>Implication MVP</td><td>Bloquant / Important / Différé</td></tr>
+<tr><td>Source preuve</td><td>Entretien, doc, observation</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.2 Échelle de criticité d&#x27;écart</h3>
+<table>
+<tr><th>Niveau</th><th>Définition</th></tr>
+<tr><td>Critique</td><td>Empêche le MVP ou invalide un objectif Cabinet</td></tr>
+<tr><td>Majeur</td><td>Retard ou surcoût significatif si non traité</td></tr>
+<tr><td>Modéré</td><td>Contournement possible temporaire</td></tr>
+<tr><td>Mineur</td><td>Optimisation ou nice-to-have</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Matrice détaillée — Bloc Technique &amp; Architecture</h2>
+<table>
+<tr><th>Ref</th><th>Exigence</th><th>Réalité</th><th>Verdict</th><th>Criticité</th><th>Implication</th></tr>
+<tr><td>G-01</td><td>Architecture microservices conteneurisée</td><td>Monolithes on-premise</td><td>À compléter</td><td>Majeur</td><td>Trajectoire progressive conteneurisation</td></tr>
+<tr><td>G-02</td><td>PostgreSQL + MongoDB</td><td>Bases hétérogènes</td><td>À ajuster</td><td>Modéré</td><td>Standardiser progressivement</td></tr>
+<tr><td>G-03</td><td>Interop UXP / X-Road</td><td>Aucune intégration</td><td>À compléter</td><td><b>Critique</b></td><td>Prérequis lot 2</td></tr>
+<tr><td>G-04</td><td>IPv6 natif</td><td>IPv4 seul</td><td>À compléter</td><td>Mineur</td><td>Plan réseau long terme</td></tr>
+<tr><td>G-05</td><td>SSO + 2FA</td><td>Comptes locaux</td><td>À compléter</td><td><b>Critique</b></td><td>Lot 1 — sécurité</td></tr>
+<tr><td>G-06</td><td>PWA offline-first</td><td>Besoin confirmé terrain</td><td>Confirmé</td><td>Majeur</td><td>MVP validé</td></tr>
+<tr><td>G-11</td><td>Chiffrement AES-256 / TLS 1.3</td><td>Partiel</td><td>À ajuster</td><td>Majeur</td><td>Politique sécurité</td></tr>
+<tr><td>G-12</td><td>500+ users · SLA 99,9 %</td><td>Capacité limitée</td><td>À ajuster</td><td>Modéré</td><td>Dimensionnement marché</td></tr>
+<tr><td>G-46</td><td>RSSI / DPO distinct DSI</td><td>Entretiens S3 planifiés</td><td>À compléter</td><td>Majeur</td><td>Conformité RGPD</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Matrice détaillée — Données &amp; Fonctionnel</h2>
+<table>
+<tr><th>Ref</th><th>Exigence</th><th>Réalité</th><th>Verdict</th><th>Criticité</th><th>Implication</th></tr>
+<tr><td>G-07</td><td>Identifiant unique NNI</td><td>Absent inter-programmes</td><td>À compléter</td><td><b>Critique</b></td><td>Arbitrage Comité Strat.</td></tr>
+<tr><td>G-08</td><td>Intégration SIGFIP</td><td>Non raccordé</td><td>À compléter</td><td><b>Critique</b></td><td>Atelier DAF</td></tr>
+<tr><td>G-09</td><td>Drill-down Cabinet → bénéficiaire</td><td>Attente forte, data absente</td><td>Confirmé</td><td><b>Critique</b></td><td>Cœur MVP</td></tr>
+<tr><td>G-10</td><td>Traçabilité primes</td><td>Lacunes IG</td><td>Confirmé</td><td><b>Critique</b></td><td>Cœur MVP</td></tr>
+<tr><td>G-13</td><td>Module IA prédictif</td><td>Prématuré (C-10)</td><td><b>Caduc</b></td><td>—</td><td>Phase 3+</td></tr>
+<tr><td>G-14</td><td>Volet B (RH, flotte, GED)</td><td>Dispersé, S3 à faire</td><td>À compléter</td><td>Majeur</td><td>Périmètre lot 2</td></tr>
+<tr><td>G-47</td><td>Grille qualité données</td><td>Initialisée</td><td>À compléter</td><td>Majeur</td><td>DPSD owner</td></tr>
+<tr><td>G-48</td><td>Prog. vs non-prog.</td><td>7 domaines renseignés</td><td>À compléter</td><td>Modéré</td><td>Validation Cabinet</td></tr>
+<tr><td>G-49</td><td>Chatbot NLP jeunes</td><td>Non demandé</td><td><b>Caduc</b></td><td>—</td><td>Retirer MVP</td></tr>
+<tr><td>G-50</td><td>Gamification portail</td><td>Non demandé</td><td><b>Caduc</b></td><td>—</td><td>Retirer MVP</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Synthèse par chapitre CDC</h2>
+<table>
+<tr><th>Chapitre CDC</th><th>Exigences</th><th>Confirmées</th><th>À compléter</th><th>Caduc</th></tr>
+<tr><td>§ Tech. Architecture</td><td>12</td><td>1</td><td>10</td><td>1</td></tr>
+<tr><td>§ Interopérabilité</td><td>8</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>§ Données</td><td>10</td><td>2</td><td>8</td><td>0</td></tr>
+<tr><td>§ Fonctionnel</td><td>14</td><td>4</td><td>7</td><td>3</td></tr>
+<tr><td>§ Sécurité</td><td>6</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>§ Performance / IA</td><td>5</td><td>0</td><td>3</td><td>2</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Implications pour le MVP et le marché</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.1 Périmètre MVP recommandé (post-audit)</h3>
+<p><b>Inclus lot 1 :</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li>Consolidation indicateurs + drill-down (G-09) ;</li>
+<li>Traçabilité primes (G-10) ;</li>
+<li>SSO + RBAC (G-05) ;</li>
+<li>PWA offline saisie (G-06) ;</li>
+<li>Référentiel dispositifs + qualité data (G-47) ;</li>
+<li>Intégration pilote AEJ + DPSD.</li>
+</ul>
+<p><b>Reporté lot 2 :</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li>SIGFIP, NNI, UXP (G-07, G-08, G-03) ;</li>
+<li>Volet B complet (G-14) ;</li>
+<li>Microservices full (G-01).</li>
+</ul>
+<p><b>Retiré MVP :</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li>IA prédictive, chatbot, gamification (G-13, G-49, G-50).</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.2 Estimation effort de rattrapage écarts</h3>
+<table>
+<tr><th>Vague</th><th>Écarts traités</th><th>Effort relatif</th><th>Horizon</th></tr>
+<tr><td>Vague 0 — Prérequis</td><td>G-05, G-47, G-46</td><td>15 % budget</td><td>M0–M6</td></tr>
+<tr><td>Vague 1 — MVP</td><td>G-09, G-10, G-06</td><td>45 % budget</td><td>M6–M15</td></tr>
+<tr><td>Vague 2 — Intégrations</td><td>G-07, G-08, G-03</td><td>30 % budget</td><td>M12–M24</td></tr>
+<tr><td>Vague 3 — Optimisation</td><td>G-01, G-04, G-12</td><td>10 % budget</td><td>M24+</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Arbitrages demandés au Comité Stratégique</h2>
+<table>
+<tr><th>#</th><th>Question</th><th>Options</th><th>Recommandation PORTIA</th></tr>
+<tr><td>A1</td><td>Clé bénéficiaire</td><td>NNI seul / NNI + clé interne</td><td>NNI + clé transition</td></tr>
+<tr><td>A2</td><td>Périmètre MVP</td><td>CDC strict / MVP allégé</td><td>MVP allégé (§5.1)</td></tr>
+<tr><td>A3</td><td>Auditeur X-Road</td><td>Oui / Non / Différé</td><td>Oui si blocage S3</td></tr>
+<tr><td>A4</td><td>Hébergement</td><td>Cloud souverain / On-premise hybride</td><td>Hybride phase 1</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Annexes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe A — Matrice complète G-01 à G-50</h3>
+<p>Export Excel disponible via cockpit → Matrice d&#x27;écart → Export.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe B — Traçabilité constats ↔ gaps</h3>
+<table>
+<tr><th>Constat</th><th>Gaps associés</th></tr>
+<tr><td>C-01 Fragmentation SI</td><td>G-01, G-03</td></tr>
+<tr><td>C-02 Pas de NNI</td><td>G-07</td></tr>
+<tr><td>C-05 Pas UXP</td><td>G-03</td></tr>
+<tr><td>C-06 Primes</td><td>G-10</td></tr>
+<tr><td>C-10 MVP caduc</td><td>G-13, G-49, G-50</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe C — Historique versions CDC</h3>
+<table>
+<tr><th>Version</th><th>Date</th><th>Écarts nouveaux</th></tr>
+<tr><td>v2.3</td><td>01/2026</td><td>Référence audit</td></tr>
+<tr><td>Additif BAD</td><td>02/2026</td><td>Reporting G-10</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,25 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>entretien DSI Directeur des Systèmes d Information DSI </title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Directeur des Systèmes d'Information (DSI)</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:08 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | DSI |
+| Axe | Technique |
+| Semaine | S1 |
+| Date mission | J+1 |
+| Heure | 09:30 |
+| Auditeur(s) | B+T |
+| Statut | realise |
+| Qualification | observe |
+| Triangulation | 2 source(s) |
+| Trame | dsi |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Compte rendu</h2></p><p>État du SI ministériel. Infrastructure on-premise vieillissante, pas d'IPv6 natif, connectivité hétérogène en région. Aucune intégration X-Road active à ce jour. Démonstration des outils en exploitation — captures versées. Sécurité : pas de SSO central, sauvegardes partielles.</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Observations</h2></p><p><li>Pas de raccordement UXP/X-Road à ce stade</li>
+<li>Pas de SSO ; comptes locaux par application</li>
+<li>Démo écran réalisée → captures R7</li>
+</p></body></html>

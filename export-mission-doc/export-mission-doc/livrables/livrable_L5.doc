@@ -1,0 +1,156 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L5 — Analyse des risques &amp; recommandations (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>ANALYSE DES RISQUES &amp; RECOMMANDATIONS</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Registre consolidé mission et solution — Préconisations priorisées et quick wins</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>MPJIPSC</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA</td></tr>
+<tr><td><b>Référence livrable</b></td><td>L5 — Jalon J+25</td></tr>
+<tr><td><b>Version</b></td><td>1.0 — Projet consolidé</td></tr>
+<tr><td><b>Date</b></td><td>17 avril 2026 (instantané J+25)</td></tr>
+<tr><td><b>Classification</b></td><td>Confidentiel</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Registre aligné sur le cockpit mission (RQ-01 à RQ-08) enrichi de risques solution.</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive</h2>
+<p>Le registre consolidé compte <b>18 risques</b> (8 mission + 10 solution), dont <b>4 critiques</b> et <b>6 élevés</b>. Trois risques restent <b>ouverts</b> sans mitigation suffisante : accès Data Room (RQ-02), X-Road (RQ-05), qualité data / IA (RQ-06).</p>
+<p><b>Recommandations prioritaires (Top 5) :</b></p>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Arbitrer la stratégie NNI</b> avant lancement marché (RQ-07) ;</li>
+<li><b>Séquencer l&#x27;IA</b> après fiabilisation data (RQ-06, G-13) ;</li>
+<li><b>Formaliser relances Data Room</b> — désormais opérationnelles dans le cockpit ;</li>
+<li><b>Décider Auditeur X-Road</b> au COPIL #3 (RQ-05) ;</li>
+<li><b>Quick win tableau de bord</b> Cabinet sous 90 jours post-marché.</li>
+</ol>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Méthodologie</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.1 Grille d&#x27;évaluation</h3>
+<table>
+<tr><th>Paramètre</th><th>Échelle</th></tr>
+<tr><td>Probabilité</td><td>1 (Faible) à 5 (Très élevée)</td></tr>
+<tr><td>Impact</td><td>1 (Négligeable) à 5 (Critique)</td></tr>
+<tr><td>Score</td><td>P × I (max 25)</td></tr>
+<tr><td>Niveau</td><td>Faible ≤4 · Moyen ≤8 · Élevé ≤12 · Critique &gt;12</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.2 Typologie</h3>
+<table>
+<tr><th>Catégorie</th><th>Description</th></tr>
+<tr><td><b>Mission</b></td><td>Risques liés à la conduite de l&#x27;audit</td></tr>
+<tr><td><b>Solution</b></td><td>Risques liés au déploiement PNIPM</td></tr>
+<tr><td><b>Organisationnel</b></td><td>Gouvernance, adoption, conduite du changement</td></tr>
+<tr><td><b>Externe</b></td><td>Bailleurs, ANRMP, ADETIC</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Registre des risques mission</h2>
+<table>
+<tr><th>Ref</th><th>Risque</th><th>P</th><th>I</th><th>Score</th><th>Statut</th><th>Mitigation</th><th>Owner</th></tr>
+<tr><td>RQ-01</td><td>Indisponibilité interlocuteurs clés</td><td>3</td><td>3</td><td>9</td><td>Surveillé</td><td>COPIL hebdo, relais</td><td>Secrétariat</td></tr>
+<tr><td>RQ-02</td><td>Versement incomplet Data Room</td><td>3</td><td>4</td><td><b>12</b></td><td><b>Ouvert</b></td><td>Checklists A-F, relances formalisées, escalade</td><td>DPA</td></tr>
+<tr><td>RQ-03</td><td>Accès données sensibles différé</td><td>2</td><td>3</td><td>6</td><td>Surveillé</td><td>Protocole DPO graduel</td><td>DPO</td></tr>
+<tr><td>RQ-04</td><td>Délai 4 semaines accéléré</td><td>3</td><td>3</td><td>9</td><td>Maîtrisé</td><td>Agenda serré, 2 auditeurs</td><td>DM PORTIA</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Registre des risques solution</h2>
+<table>
+<tr><th>Ref</th><th>Risque</th><th>P</th><th>I</th><th>Score</th><th>Statut</th><th>Mitigation</th><th>Owner</th></tr>
+<tr><td>RQ-05</td><td>X-Road non documenté</td><td>3</td><td>4</td><td><b>12</b></td><td><b>Ouvert</b></td><td>Auditeur X-Road additionnel</td><td>COPIL</td></tr>
+<tr><td>RQ-06</td><td>Qualité data insuffisante pour IA</td><td>4</td><td>3</td><td><b>12</b></td><td><b>Ouvert</b></td><td>Séquencer IA phase 3</td><td>DPSD</td></tr>
+<tr><td>RQ-07</td><td>Doublons bénéficiaires</td><td>3</td><td>4</td><td><b>12</b></td><td><b>Ouvert</b></td><td>Stratégie NNI + dédup</td><td>DAJIP</td></tr>
+<tr><td>RQ-08</td><td>Résistance changement terrain</td><td>2</td><td>3</td><td>6</td><td>Surveillé</td><td>Quick wins, formation</td><td>DRH</td></tr>
+<tr><td>RS-01</td><td>Dérive périmètre CDC</td><td>3</td><td>4</td><td>12</td><td>Surveillé</td><td>Matrice L4, comité change</td><td>CT PNIPM</td></tr>
+<tr><td>RS-02</td><td>Intégrateur sans expérience interop</td><td>2</td><td>4</td><td>8</td><td>Surveillé</td><td>Critères marché renforcés</td><td>DMP</td></tr>
+<tr><td>RS-03</td><td>Surcharge DSI</td><td>4</td><td>3</td><td>12</td><td>Ouvert</td><td>Cellule projet dédiée</td><td>DSI</td></tr>
+<tr><td>RS-04</td><td>Non-conformité RGPD</td><td>2</td><td>5</td><td>10</td><td>Surveillé</td><td>DPO, DPIA</td><td>DPO</td></tr>
+<tr><td>RS-05</td><td>Connectivité régions</td><td>3</td><td>3</td><td>9</td><td>Surveillé</td><td>PWA offline (G-06)</td><td>DSI</td></tr>
+<tr><td>RS-06</td><td>Dépendance prestataire unique</td><td>2</td><td>4</td><td>8</td><td>Surveillé</td><td>Transfert compétences</td><td>DSI</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Recommandations priorisées</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.1 Recommandations stratégiques (R-STR)</h3>
+<table>
+<tr><th>ID</th><th>Recommandation</th><th>Priorité</th><th>Horizon</th><th>Effort</th></tr>
+<tr><td>R-STR-01</td><td>Adopter un MVP allégé (cf. L4 §5.1)</td><td>P0</td><td>Immédiat</td><td>Faible</td></tr>
+<tr><td>R-STR-02</td><td>Créer une Cellule PNIPM (MOA + MOE + DPSD)</td><td>P0</td><td>M0</td><td>Moyen</td></tr>
+<tr><td>R-STR-03</td><td>Arbitrer NNI comme clé bénéficiaire</td><td>P0</td><td>M0</td><td>Faible</td></tr>
+<tr><td>R-STR-04</td><td>Lancer protocole accès NNI / SIGFIP</td><td>P0</td><td>M0–M3</td><td>Élevé</td></tr>
+<tr><td>R-STR-05</td><td>Réviser CDC — retirer exigences caduc</td><td>P1</td><td>M1</td><td>Moyen</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.2 Recommandations opérationnelles (R-OPE)</h3>
+<table>
+<tr><th>ID</th><th>Recommandation</th><th>Priorité</th><th>Owner</th></tr>
+<tr><td>R-OPE-01</td><td>Finaliser référentiel dispositifs</td><td>P0</td><td>DAJIP</td></tr>
+<tr><td>R-OPE-02</td><td>Grille qualité data sur 10 sources</td><td>P0</td><td>DPSD</td></tr>
+<tr><td>R-OPE-03</td><td>Pilote SSO sur 2 applications</td><td>P1</td><td>DSI</td></tr>
+<tr><td>R-OPE-04</td><td>Procédure relances Data Room (cockpit)</td><td>P1</td><td>Secrétariat</td></tr>
+<tr><td>R-OPE-05</td><td>Charte gouvernance data (RACI)</td><td>P1</td><td>DPO</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.3 Recommandations marché (R-MAR)</h3>
+<table>
+<tr><th>ID</th><th>Recommandation</th><th>Détail</th></tr>
+<tr><td>R-MAR-01</td><td>Lots séquencés</td><td>Lot 1 socle + MVP, Lot 2 intégrations</td></tr>
+<tr><td>R-MAR-02</td><td>Critères interop</td><td>Expérience X-Road / API Gateway obligatoire</td></tr>
+<tr><td>R-MAR-03</td><td>SLAs progressifs</td><td>99,5 % phase 1 → 99,9 % phase 3</td></tr>
+<tr><td>R-MAR-04</td><td>Réversibilité</td><td>Clauses exit + documentation</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Quick wins (0–6 mois post-marché)</h2>
+<table>
+<tr><th>#</th><th>Quick win</th><th>Impact</th><th>Effort</th><th>KPI succès</th></tr>
+<tr><td>QW-01</td><td>Tableau de bord Cabinet (indicateurs existants)</td><td>Très élevé</td><td>M</td><td>5 KPI live J+90</td></tr>
+<tr><td>QW-02</td><td>Portail unique Data Room / GED</td><td>Moyen</td><td>F</td><td>80 % docs centralisés</td></tr>
+<tr><td>QW-03</td><td>SSO pilote AEJ + DPSD</td><td>Moyen</td><td>M</td><td>-50 % comptes locaux</td></tr>
+<tr><td>QW-04</td><td>Règles dédup provisoires</td><td>Élevé</td><td>M</td><td>-15 % doublons échantillon</td></tr>
+<tr><td>QW-05</td><td>Workflow relances documentaires</td><td>Moyen</td><td>F</td><td>100 % relances tracées</td></tr>
+<tr><td>QW-06</td><td>Formation agents DR (PWA)</td><td>Élevé</td><td>M</td><td>200 agents formés S4</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Plan de mitigation consolidé</h2>
+<table>
+<tr><th>Risque</th><th>Action</th><th>Échéance</th><th>Statut</th></tr>
+<tr><td>RQ-02</td><td>Relances automatisées cockpit</td><td>Opérationnel</td><td>Fait</td></tr>
+<tr><td>RQ-05</td><td>Décision Auditeur X-Road COPIL #3</td><td>10/04</td><td>En cours</td></tr>
+<tr><td>RQ-06</td><td>Roadmap IA phase 3</td><td>L6</td><td>Planifié</td></tr>
+<tr><td>RQ-07</td><td>Atelier NNI + DAJIP</td><td>06/04 Comité</td><td>Arbitré</td></tr>
+<tr><td>RS-03</td><td>Renfort DSI (2 ETP projet)</td><td>M0</td><td>Proposé</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Annexes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe A — Heatmap risques (description)</h3>
+<ul style='margin:8px 0 8px 24px'>
+<li><b>Quadrant critique (P≥3, I≥4) :</b> RQ-02, RQ-05, RQ-06, RQ-07, RS-01, RS-03</li>
+<li><b>Quadrant surveillé :</b> RQ-01, RQ-08, RS-04, RS-05</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe B — Lien risques / constats / gaps</h3>
+<table>
+<tr><th>Risque</th><th>Constat</th><th>Gap</th></tr>
+<tr><td>RQ-07</td><td>C-02, C-03</td><td>G-07</td></tr>
+<tr><td>RQ-06</td><td>C-10</td><td>G-13</td></tr>
+<tr><td>RQ-05</td><td>C-05</td><td>G-03</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe C — Validation COPIL #4</h3>
+<p>Revue registre et quick wins — 17 avril 2026 (planifié).</p>
+</body></html>

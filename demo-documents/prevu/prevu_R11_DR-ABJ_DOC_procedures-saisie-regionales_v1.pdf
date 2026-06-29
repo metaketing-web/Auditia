@@ -1,0 +1,68 @@
+%PDF-1.4
+1 0 obj<< /Type /Catalog /Pages 2 0 R >>endobj
+2 0 obj<< /Type /Pages /Kids [3 0 R] /Count 1 >>endobj
+3 0 obj<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>endobj
+4 0 obj<< /Length 1174 >>stream
+BT
+/F1 11 Tf
+50 800 Td
+(Procédures de saisie régionale ? Direction Régionale Abidjan) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(DOCUMENT DE DÉMONSTRATION ? Mission d'audit PNIPM \(MPJIPSC\). Contenu fictif mais structuré p) Tj
+0 -14 Td
+(our les besoins de l'audit Skydeen.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Objectif) Tj
+0 -14 Td
+(Harmoniser la collecte terrain des données programmes avant consolidation DPSD.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Workflow) Tj
+0 -14 Td
+(1. Agent régional saisit fiche bénéficiaire \(formulaire Excel local\).) Tj
+0 -14 Td
+(2. Chef de service valide hebdomadairement.) Tj
+0 -14 Td
+(3. Envoi e-mail chiffré au référent DPSD \(vendredi 17h\).) Tj
+0 -14 Td
+(4. Contrôle qualité DPSD ? retour corrections sous 72h.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Règles de saisie) Tj
+0 -14 Td
+(Champs obligatoires : nom, prénom, date naissance, sexe, commune, programme, date inscriptio) Tj
+0 -14 Td
+(n.) Tj
+0 -14 Td
+(Pas de NNI systématique ? doublons gérés manuellement.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Écarts identifiés) Tj
+0 -14 Td
+(3 versions de formulaire en circulation \(Abidjan, Centre, Nord\).) Tj
+0 -14 Td
+(Délais de consolidation : 5 à 12 jours selon la région.) Tj
+0 -14 Td
+() Tj
+ET
+endstream endobj
+5 0 obj<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000056 00000 n 
+0000000111 00000 n 
+0000000235 00000 n 
+0000001459 00000 n 
+trailer<< /Size 6 /Root 1 0 R >>
+startxref
+1527
+%%EOF

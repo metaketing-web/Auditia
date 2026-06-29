@@ -1,0 +1,22 @@
+[
+  {
+    "id": "u_aud_b",
+    "email": "diopasse@hotmail.fr",
+    "name": "Asse · auditeur",
+    "role": "auditeur_b",
+    "password": "ChangeMe2026!"
+  },
+  {
+    "id": "u_aud_t",
+    "email": "lbaoka@gmail.com",
+    "name": "Laetitia · auditeur",
+    "role": "auditeur_t",
+    "password": "ChangeMe2026!"
+  },
+  {
+    "email": "sophie.ble@mpjipsc.local",
+    "name": "Sophie Blé — MPJIPSC",
+    "role": "cabinet",
+    "password": "ChangeMe2026!"
+  }
+]

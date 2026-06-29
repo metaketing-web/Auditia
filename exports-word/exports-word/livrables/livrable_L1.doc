@@ -1,0 +1,91 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>livrable L1</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Livrable L1 — Note de cadrage validée</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:08 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p>| Champ | Valeur |
+|-------|--------|
+| Statut | en_cours |
+| Avancement | 40% |
+| Jalon | J+0 |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Description contractuelle</h2></p><p>Périmètre, méthodologie, agenda, gouvernance et engagements réciproques de la mission.</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Contenu / projet de livrable</h2></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Projet de livrable — Note de cadrage validée  </h2>
+<b>Mission : Audit de cadrage stratégique de la PNIPM (Plateforme Numérique Intégrée de Pilotage Ministériel)</b>  
+<b>Mandat : MPJIPSC — République de Côte d’Ivoire</b> | <b>Réalisation : Cabinet PORTIA</b>  
+<b>Période de cadrage : J+2 / S1 (instantané en cours)</b></p><p>---</p><p>### 1) Rappel du contexte et de la commande
+Le MPJIPSC souhaite doter le Cabinet d’une <b>lecture consolidée</b> des informations (politiques, programmatique, données et SI) permettant l’<b>arbitrage</b>. Les interlocuteurs soulignent une attente forte de <b>drill-down jusqu’au bénéficiaire</b> et de <b>traçabilité des primes</b>, notamment pour la redevabilité vis-à-vis des bailleurs.</p><p>À date (J+2 / S1), les premiers constats convergent sur des écarts structurants entre la vision cible (interopérabilité, référentiels, audit trail, consolidation automatisée) et la réalité actuelle : <b>fragmentation SI</b>, <b>absence d’identifiant unique bénéficiaire</b>, <b>données dispersées</b> et <b>reporting manuel</b>, ainsi que des enjeux d’<b>authentification/habilitations</b> et de <b>raccordement X-Road/UXP</b>.</p><p><b>Commande centrale (formulée / confirmée en ouverture politique)</b> : fournir un cadrage actionnable, basé sur des éléments vérifiés, permettant de prioriser les chantiers et sécuriser la trajectoire de mise en œuvre de la PNIPM.</p><p>---</p><p>### 2) Périmètre de la mission</p><p>#### 2.1 Inclus
+<li><b>Analyse “Politique”</b> : objectifs ministériels et exigences attendues par le Cabinet (consolidation, drill-down, redevabilité, traçabilité primes, arbitrages).</li>
+<li><b>Analyse “Programmatique”</b> : cartographie fonctionnelle des dispositifs (notamment dispositifs jeunesse/emploi/autonomisation) et <b>dépendances de consolidation</b> (doublons bénéficiaires, clés de déduplication, continuité de parcours).</li>
+<li><b>Analyse “Technique”</b> : état du SI (applications, intégrations, sécurité, réseau, connectivité terrain), et écarts d’architecture et de gouvernance des données.</li>
+<li><b>Triangulation systématique</b> des éléments recueillis :  </li>
+  - <b>Déclaratif</b> (entretiens)  
+  - <b>Documenté</b> (documents Data Room / notes)  
+  - <b>Observé</b> (démonstrations, captures, éléments vus pendant les entretiens)
+<li><b>Consolidation des écarts</b> (vision cible vs réalité) et <b>proposition d’options</b> de cadrage (priorisation, jalons, dépendances, conditions de succès).</li></p><p>#### 2.2 Exclus (au sens de la mission de cadrage)
+<li>Mise en œuvre opérationnelle, développement logiciel, paramétrage, conduite complète du changement terrain (uniquement cadrage et besoins).</li>
+<li>Audits de sécurité “approfondis” type pentest, ni tests de charge/mesure de performance exhaustifs.</li>
+<li>Reconstitution exhaustive et définitive de l’existant SI (limité à ce qui est documenté/observé dans le cadre de la période et de la Data Room).</li></p><p>---</p><p>### 3) Approche méthodologique : trois axes + triangulation</p><p>#### 3.1 Axes d’analyse
+1. <b>Axe Politique (P)</b>  
+   - Attentes Cabinet : consolidation, drill-down, traçabilité des primes, redevabilité bailleurs.  
+   - Besoins d’arbitrage et niveau de détail attendu (structure, programme, bénéficiaire).  </p><p>2. <b>Axe Programmatique (G)</b>  
+   - Dispositifs, logiques de parcours, liens entre programmes (risques de doublons, données manquantes, continuité).  
+   - Capacité de consolidation sans identifiant unique partagé et impacts sur la fiabilité des indicateurs.</p><p>3. <b>Axe Technique (T)</b>  
+   - Architecture SI et capacité d’intégration (bus, API, référentiels, interopérabilité, raccordements).  
+   - Sécurité (authentification/SSO, habilitations), journalisation/audit trail.  
+   - Données : référentiels, dictionnaire, normalisation territoriale, qualité/traçabilité.</p><p>#### 3.2 Triangulation systématique (Déclaratif / Documenté / Observé)
+Pour chaque constat structurant, PORTIA documentera une <b>triple preuve</b> :
+<li><b>Déclaratif</b> : propos des directions/entités en entretien  </li>
+<li><b>Documenté</b> : notes, échantillons, cartographies, conventions, procédures (Data Room)  </li>
+<li><b>Observé</b> : démos, écrans/captures, éléments techniquement visibles durant les visites/présentations</li></p><p>&gt; En cas d’absence d’un des trois piliers, le sujet est <b>signalé comme “point à investiguer / à documenter”</b> avant conclusion.</p><p>---</p><p>### 4) Gouvernance de la mission
+La gouvernance est organisée pour sécuriser la décision et la continuité malgré le calendrier accéléré.</p><p>#### 4.1 Instances
+<li><b>Comité Stratégique</b> : instance d’arbitrage de haut niveau (revue d’avancement, escalades).</li>
+<li><b>COPIL</b> : instance opérationnelle de pilotage (priorités, validation des livrables, levée des blocages Data Room / accès données).</li>
+<li><b>Équipe d’audit PORTIA</b> : production des livrables, analyse multi-axes, consolidation des constats/écarts, préparation des options et recommandations.</li>
+<li><b>Rôles “référents” côté MPJIPSC identifiés</b> (selon entretiens réalisés) :  </li>
+  - <b>CT référent PNIPM</b> (sponsor politique)  
+  - <b>Référent données</b> (DPSD)  
+  - <b>Référent SI</b> (DSI)  
+  - Directions programmatique (AEJ et autres directions concernées)</p><p>#### 4.2 Modalités de validation
+<li>Validation formelle en COPIL des livrables (ou jalons) avant consolidation “finale”.  </li>
+<li>Toute information manquante ou non vérifiée est <b>maintenue comme point à investiguer</b> et ne doit pas être substituée.</li></p><p>---</p><p>### 5) Agenda de cadrage (4 semaines)
+&gt; <b>[À compléter : dates exactes des COPIL/Comités et jalons de diffusion]</b> selon le calendrier MPJIPSC.</p><p>#### Semaine 1 (cadrage &amp; collecte)
+<li>Finaliser entretiens structurants (objectif : couvrir politique / programmatique / technique).</li>
+<li>Compléter Data Room : référentiels, procédures, conventions bailleurs, éléments d’architecture réseau SI, modalités d’accès NNI, etc.</li>
+<li>Produire/mettre à jour la <b>cartographie des écarts</b> et la liste des dépendances (NNI, normalisation territoriale, raccordements, audit trail, etc.).</li></p><p>#### Semaine 2 (analyse &amp; options)
+<li>Analyse par axe + triangulation consolidée.</li>
+<li>Élaboration d’<b>options de trajectoire</b> : priorisation, jalons “quick wins” et chantiers structurants (notamment déduplication bénéficiaire et traçabilité primes).</li>
+<li>Ateliers de clarification sur points bloquants : identité bénéficiaire, gouvernance des données, raccordement interopérabilité.</li></p><p>#### Semaine 3 (cadrage des exigences &amp; plan de transformation)
+<li>Définir les exigences minimales de la PNIPM à partir des constats (données, sécurité, interop, reporting consolidé).</li>
+<li>Proposer une trajectoire de mise en œuvre alignée sur les contraintes SI terrain (connectivité hétérogène, besoin offline-first).</li>
+<li>Préparer le plan de gouvernance des données et l’organisation cible (RACI à préciser).</li></p><p>#### Semaine 4 (finalisation &amp; validation)
+<li>Finaliser la note de cadrage consolidée et les recommandations prioritaires.</li>
+<li>Valider en COPIL et, si requis, escalade au Comité Stratégique sur les arbitrages majeurs.</li>
+<li>Plan de clôture : synthèse des actions à mener et liste des décisions requises.</li></p><p>---</p><p>### 6) Livrables attendus (cadre)
+<li><b>Livrable 1 : Note de cadrage validée</b> (objet de ce document)  </li>
+  - Périmètre, méthode, gouvernance, agenda, engagements.
+<li><b>Livrable 2 : Diagnostic triangulé (écarts vision cible vs réalité)</b>  </li>
+  - Par axe Politique / Programmatique / Technique, avec statuts : constat établi / point à investiguer.
+<li><b>Livrable 3 : Options de trajectoire &amp; priorisation</b>  </li>
+  - Quick wins, dépendances, risques, conditions de succès.
+<li><b>Livrable 4 : Plan de cadrage transformation PNIPM (exigences minimales + gouvernance données/SI)</b>  </li>
+  - À valider au COPIL.</p><p>&gt; <b>[À compléter : intitulés exacts et format attendu de chaque livrable]</b> conformément aux pratiques MPJIPSC.</p><p>---</p><p>### 7) Engagements réciproques</p><p>#### 7.1 Engagements de PORTIA
+<li>Produire une analyse <b>factuelle, rigoureuse et prudente</b>, sans hypothèses non documentées.</li>
+<li>Appliquer la triangulation systématique Déclaratif / Documenté / Observé.</li>
+<li>Tenir un <b>rythme de restitution</b> adapté au calendrier accéléré (notamment COPIL semaine par semaine).</li>
+<li>Mettre en évidence les informations manquantes comme <b>points à investiguer</b>, avec proposition de collecte ciblée.</li></p><p>#### 7.2 Engagements du MPJIPSC / parties prenantes
+<li>Mettre à disposition la <b>Data Room</b> complète et continue, en priorité :  </li>
+  - modalités d’accès NNI, référentiels donnés (DPSD), base bénéficiaires (AEJ et autres), procédures de saisie régionales, procédures/actes bailleurs, éléments réseau/raccordement (DSI/UXP), conventions bailleurs, etc.  
+  - <b>[À compléter : référents nominalement désignés pour chaque lot de documents]</b>.
+<li>Assurer la <b>disponibilité des interlocuteurs</b> identifiés pour entretiens complémentaires et validations.</li>
+<li>Faciliter les <b>accès aux données sensibles</b> selon un schéma d’accès gradué validé par le sponsor (cadre juridique à confirmer).</li>
+<li>Participer aux ateliers d’arbitrage et COPIL (règles d’escalade).</li></p><p>---</p><p>### 8) Données manquantes et points à investiguer (extraits issus du contexte)
+Les éléments ci-dessous doivent être confirmés/documentés pour consolider définitivement le diagnostic et les options :</p><p><li><b>NNI / modalités d’accès et gouvernance d’identification bénéficiaire</b>  </li>
+  - [À compléter : statut documentaire de “modalites-acces-nni (NNI)” — reçu ou relancé ; contenu et contraintes]
+<li><b>Référentiels et normalisation territoriale</b>  </li>
+  - [À compléter : statuts “referentiel-donnees (DPSD)” et “découpage territorial normalisé”]
+<li><b>Base bénéficiaires et déduplication inter-programmes</b>  </li>
+  - [À compléter : présence/qualité des
+</p></body></html>

@@ -1,0 +1,72 @@
+"""TOTP 2FA — Google Authenticator / Authy compatible."""
+from __future__ import annotations
+
+import base64
+import hashlib
+import hmac
+import os
+import struct
+import time
+from typing import Optional
+
+TOTP_ISSUER = os.environ.get("TOTP_ISSUER", "Skydeen Audit")
+TOTP_DIGITS = 6
+TOTP_PERIOD = 30
+TOTP_ROLES = frozenset(
+    r.strip()
+    for r in os.environ.get("TOTP_ROLES", "admin,juliana").split(",")
+    if r.strip()
+)
+
+
+def _try_pyotp():
+    try:
+        import pyotp  # type: ignore
+
+        return pyotp
+    except ImportError:
+        return None
+
+
+def generate_secret() -> str:
+    pyotp = _try_pyotp()
+    if pyotp:
+        return pyotp.random_base32()
+    return base64.b32encode(os.urandom(20)).decode("ascii").rstrip("=")
+
+
+def provisioning_uri(secret: str, email: str) -> str:
+    pyotp = _try_pyotp()
+    if pyotp:
+        return pyotp.TOTP(secret).provisioning_uri(name=email, issuer_name=TOTP_ISSUER)
+    label = f"{TOTP_ISSUER}:{email}"
+    return f"otpauth://totp/{label}?secret={secret}&issuer={TOTP_ISSUER}&digits={TOTP_DIGITS}&period={TOTP_PERIOD}"
+
+
+def _hotp(secret: str, counter: int) -> str:
+    key = base64.b32decode(secret.upper() + "=" * ((8 - len(secret) % 8) % 8))
+    msg = struct.pack(">Q", counter)
+    digest = hmac.new(key, msg, hashlib.sha1).digest()
+    offset = digest[-1] & 0x0F
+    code = struct.unpack(">I", digest[offset : offset + 4])[0] & 0x7FFFFFFF
+    return str(code % (10**TOTP_DIGITS)).zfill(TOTP_DIGITS)
+
+
+def verify_totp(secret: str, code: str, *, window: int = 1) -> bool:
+    if not secret or not code:
+        return False
+    code = code.strip().replace(" ", "")
+    if not code.isdigit() or len(code) != TOTP_DIGITS:
+        return False
+    pyotp = _try_pyotp()
+    if pyotp:
+        return bool(pyotp.TOTP(secret).verify(code, valid_window=window))
+    counter = int(time.time()) // TOTP_PERIOD
+    for w in range(-window, window + 1):
+        if hmac.compare_digest(_hotp(secret, counter + w), code):
+            return True
+    return False
+
+
+def role_eligible(role: str) -> bool:
+    return role in TOTP_ROLES

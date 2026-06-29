@@ -1,0 +1,140 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>questionnaire vierge Agents de saisie opérateurs Abidjan collectif </title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>Questionnaire vierge — Agents de saisie / opérateurs Abidjan (collectif)</h1>
+<ul style='margin:8px 0 8px 24px'>
+<li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-19 11:26 UTC</li>
+<li><b>J0 mission :</b> 2026-07-06</li>
+</ul>
+<p>_Grille terrain à compléter lors de l&#x27;entretien — aucune réponse ni compte rendu prérempli._</p>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Fiche entretien</h2>
+<table>
+<tr><th>Champ</th><th>Valeur</th></tr>
+<tr><td>Structure</td><td>DR Abidjan</td></tr>
+<tr><td>Axe</td><td>Programmatique</td></tr>
+<tr><td>Semaine</td><td>S4</td></tr>
+<tr><td>Date mission</td><td>J+21</td></tr>
+<tr><td>Heure</td><td>14:30</td></tr>
+<tr><td>Auditeur(s)</td><td>B+T</td></tr>
+<tr><td>Trame</td><td>terrain_agents</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Questionnaire structuré (grille complète)</h2>
+<p><b>Grille :</b> Agents de saisie &amp; opérateurs (collectif) <b>Durée indicative :</b> 60-90 min <b>Clé trame :</b> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>terrain_agents</span></p>
+<p><b>Nombre de questions :</b> 17</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 1 — Investigation</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>A. Pratiques quotidiennes</h4>
+<p><b>1. Combien de dossiers / bénéficiaires traitez-vous en moyenne par jour ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_a1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Quelle est la durée moyenne d&#x27;une saisie complète ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_a2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Travaillez-vous plutôt sur PC, tablette ou smartphone ? En agence ou en mobilité ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_a3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>4. Quelles étapes vous semblent inutiles ou redondantes dans le processus actuel ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_a4</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>B. Difficultés &amp; contournements</h4>
+<p><b>1. Quels champs posez-vous difficilement (manque d&#x27;info, règles floues) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_b1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Utilisez-vous des contournements (cahiers, Excel personnel, WhatsApp) ? Lesquels et pourquoi ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_b2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Que faites-vous en cas de coupure réseau ou panne outil ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_b3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>4. Avez-vous déjà perdu des données ? Dans quel contexte ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_b4</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C. Relation bénéficiaire</h4>
+<p><b>1. Comment vérifiez-vous l&#x27;identité du jeune (pièce, NNI, autre) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_c1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Comment informez-vous le bénéficiaire du suivi de sa prime / indemnité ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_c2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Quelles questions reviennent le plus souvent des bénéficiaires ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_i_c3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 2 — Confrontation</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>Confrontation avec la cible PNIPM</h4>
+<p><b>1. Un formulaire unique mobile simplifierait-il votre travail ? Quels écrans regrouper ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_c_1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Accepteriez-vous une synchronisation automatique si la connexion revient ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_c_2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Qu&#x27;est-ce qui vous ferait refuser un nouvel outil ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_c_3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 3 — Co-construction</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>Propositions terrain</h4>
+<p><b>1. Quelle amélioration prioritaire pour votre poste de travail ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_cc_1</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>2. Quelle formation serait nécessaire (durée, format) ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_cc_2</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+<p><b>3. Un numéro court / support dédié serait-il utile ?</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li><i>Réf. :</i> <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>ag_cc_3</span></li>
+<li><b>Réponse :</b> _… à compléter lors de l&#x27;entretien …_</li>
+</ul>
+</body></html>

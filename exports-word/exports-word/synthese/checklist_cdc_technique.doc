@@ -1,0 +1,107 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Checklist CDC technique</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Checklist CDC technique — export complet</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:08 UTC</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-01 — Architecture</h2></p><p><b>Exigence :</b> Architecture microservices conteneurisée</p><p><b>Réalité :</b> Monolithes on-premise.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-02 — Architecture</h2></p><p><b>Exigence :</b> API Gateway centralisée</p><p><b>Réalité :</b> Absente.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-03 — Données</h2></p><p><b>Exigence :</b> PostgreSQL + MongoDB (polyglotte)</p><p><b>Réalité :</b> Bases hétérogènes.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-04 — Données</h2></p><p><b>Exigence :</b> Référentiel unique bénéficiaire (NNI)</p><p><b>Réalité :</b> Absent.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-05 — Données</h2></p><p><b>Exigence :</b> Dictionnaire de données ministériel</p><p><b>Réalité :</b> Partiel / dispersé.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-06 — Données</h2></p><p><b>Exigence :</b> Découpage territorial normalisé</p><p><b>Réalité :</b> Non harmonisé.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-07 — Interop</h2></p><p><b>Exigence :</b> Bus d'échange / ESB</p><p><b>Réalité :</b> Échanges point à point.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-08 — Interop</h2></p><p><b>Exigence :</b> UXP / X-Road Côte d'Ivoire</p><p><b>Réalité :</b> Non raccordé.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-09 — Interop</h2></p><p><b>Exigence :</b> Intégration SIGFIP</p><p><b>Réalité :</b> Non établie.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-10 — Interop</h2></p><p><b>Exigence :</b> Accès NNI habilité</p><p><b>Réalité :</b> En cours côté juridique.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-11 — Réseau</h2></p><p><b>Exigence :</b> IPv6 natif</p><p><b>Réalité :</b> IPv4 hérité.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-12 — Sécurité</h2></p><p><b>Exigence :</b> SSO + 2FA</p><p><b>Réalité :</b> Comptes locaux.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-13 — Sécurité</h2></p><p><b>Exigence :</b> RBAC 6 niveaux CDC</p><p><b>Réalité :</b> Profils hétérogènes.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-14 — Sécurité</h2></p><p><b>Exigence :</b> Chiffrement AES-256 / TLS 1.3</p><p><b>Réalité :</b> Partiel.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-15 — Sécurité</h2></p><p><b>Exigence :</b> Journal d'audit inviolable</p><p><b>Réalité :</b> Logs applicatifs dispersés.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-16 — Sécurité</h2></p><p><b>Exigence :</b> PRA / PCA testés</p><p><b>Réalité :</b> Sauvegardes partielles.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-17 — Fonctionnel</h2></p><p><b>Exigence :</b> Drill-down Cabinet → bénéficiaire</p><p><b>Réalité :</b> Attente forte, données dispersées.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-18 — Fonctionnel</h2></p><p><b>Exigence :</b> Consolidation programmatique / non-programmatique</p><p><b>Réalité :</b> Excel par mail.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-19 — Fonctionnel</h2></p><p><b>Exigence :</b> Traçabilité primes individuelles</p><p><b>Réalité :</b> Lacunes IG.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-20 — Fonctionnel</h2></p><p><b>Exigence :</b> Workflow validation multi-niveaux</p><p><b>Réalité :</b> Absent.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-21 — Fonctionnel</h2></p><p><b>Exigence :</b> PWA offline-first + synchro</p><p><b>Réalité :</b> Besoin terrain confirmé.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-22 — Fonctionnel</h2></p><p><b>Exigence :</b> Module alertes &amp; relances</p><p><b>Réalité :</b> Manuel.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-23 — Fonctionnel</h2></p><p><b>Exigence :</b> Volet B (RH, flotte, GED, marchés)</p><p><b>Réalité :</b> Dispersé.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-24 — Fonctionnel</h2></p><p><b>Exigence :</b> Cartographie flux données temps réel</p><p><b>Réalité :</b> Inexistante.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-25 — Fonctionnel</h2></p><p><b>Exigence :</b> GED documentaire intégrée</p><p><b>Réalité :</b> Partielle.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-26 — Performance</h2></p><p><b>Exigence :</b> 500+ utilisateurs simultanés</p><p><b>Réalité :</b> Capacité limitée.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-27 — Performance</h2></p><p><b>Exigence :</b> SLA 99,9 %</p><p><b>Réalité :</b> Non mesuré.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-28 — Performance</h2></p><p><b>Exigence :</b> Temps de réponse &lt; 3s tableaux de bord</p><p><b>Réalité :</b> Non benchmarké.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-29 — IA</h2></p><p><b>Exigence :</b> Couche IA prédictive</p><p><b>Réalité :</b> Aucune brique.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-30 — IA</h2></p><p><b>Exigence :</b> Chatbot NLP ministériel</p><p><b>Réalité :</b> Absent.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-31 — IA</h2></p><p><b>Exigence :</b> Gouvernance données pour IA (qualité, biais)</p><p><b>Réalité :</b> Non formalisée.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-32 — Gouvernance</h2></p><p><b>Exigence :</b> COPIL opérationnel avec PV signés</p><p><b>Réalité :</b> Charte signée J0.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-33 — Gouvernance</h2></p><p><b>Exigence :</b> Comité Stratégique mi-parcours</p><p><b>Réalité :</b> Planifié S3.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-34 — Gouvernance</h2></p><p><b>Exigence :</b> RACI données &amp; SI</p><p><b>Réalité :</b> Flou.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-35 — Conformité</h2></p><p><b>Exigence :</b> RGPD / loi données personnelles CI</p><p><b>Réalité :</b> Cadre à préciser.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-36 — Conformité</h2></p><p><b>Exigence :</b> Anonymisation exports &amp; IA</p><p><b>Réalité :</b> Non outillée.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-37 — Conformité</h2></p><p><b>Exigence :</b> Hébergement cloud national</p><p><b>Réalité :</b> On-premise dominant.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-38 — UX</h2></p><p><b>Exigence :</b> Accessibilité WCAG 2.1</p><p><b>Réalité :</b> Non évaluée.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-39 — UX</h2></p><p><b>Exigence :</b> Interface mobile-first agents</p><p><b>Réalité :</b> Desktop hérité.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-40 — Reporting</h2></p><p><b>Exigence :</b> Exports bailleurs automatisés</p><p><b>Réalité :</b> Manuel.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-41 — Reporting</h2></p><p><b>Exigence :</b> Templates BAD / BM / AFD</p><p><b>Réalité :</b> Multiples formats.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-42 — Change</h2></p><p><b>Exigence :</b> Plan conduite du changement</p><p><b>Réalité :</b> À construire.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-43 — Change</h2></p><p><b>Exigence :</b> Formation agents terrain</p><p><b>Réalité :</b> Besoin confirmé S4.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-44 — Legacy</h2></p><p><b>Exigence :</b> Reprise données historiques</p><p><b>Réalité :</b> Qualité hétérogène.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-45 — Legacy</h2></p><p><b>Exigence :</b> Stratégie désengagement SI legacy</p><p><b>Réalité :</b> Non définie.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-46 — Collecte</h2></p><p><b>Exigence :</b> Questionnaire RSSI / DPO distinct DSI</p><p><b>Réalité :</b> Trame rssi_dpo + entretiens planifiés.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-47 — Données</h2></p><p><b>Exigence :</b> Grille qualité (complétude, fraîcheur, lineage)</p><p><b>Réalité :</b> Grille 10 sources initialisée.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-48 — Fonctionnel</h2></p><p><b>Exigence :</b> Module prog. vs non-prog. structuré</p><p><b>Réalité :</b> 7 domaines renseignés dans le cockpit.</p><p><b>Couverture :</b> —
+<b>Preuve :</b> —
+<b>Vérifié :</b> non
+</p></body></html>

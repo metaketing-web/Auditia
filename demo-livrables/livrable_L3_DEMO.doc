@@ -1,0 +1,204 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L3 — Cartographie des données &amp; des systèmes (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>CARTOGRAPHIE DES DONNÉES &amp; DES SYSTÈMES</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Écosystème informationnel MPJIPSC — État des lieux et schéma cible PNIPM</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>MPJIPSC</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA</td></tr>
+<tr><td><b>Référence livrable</b></td><td>L3 — Jalon J+18</td></tr>
+<tr><td><b>Version</b></td><td>1.0 — Projet consolidé</td></tr>
+<tr><td><b>Date</b></td><td>10 avril 2026 (instantané J+18)</td></tr>
+<tr><td><b>Classification</b></td><td>Confidentiel</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Document généré en simulation. Schémas décrits en texte et tableaux ; version graphique dans le cockpit (carto interactive).</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive</h2>
+<p>La cartographie consolidée identifie <b>42 entités</b> (directions, tutelles, bailleurs, opérateurs SI) et <b>14 applications métier</b> en exploitation, reliées par <b>6 flux de données documentés</b> et <b>12 flux déclarés non formalisés</b> (e-mail, Excel, clés USB).</p>
+<p><b>Constats structurants :</b></p>
+<ul style='margin:8px 0 8px 24px'>
+<li>Architecture <b>hub-and-spoke absent</b> — chaque programme possède son silo ;</li>
+<li><b>Aucune MDM</b> (Master Data Management) bénéficiaire ;</li>
+<li>Intégrations <b>SIGFIP, NNI, UXP</b> : 0/3 opérationnelles ;</li>
+<li>Qualité data hétérogène (score moyen 2,3/5 sur grille DPSD).</li>
+</ul>
+<p>Le schéma cible PNIPM repose sur une <b>plateforme intégrée</b> (API Gateway, référentiels, bus événementiel) connectant les SI existants sans big-bang.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Périmètre et méthode</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.1 Périmètre cartographié</h3>
+<table>
+<tr><th>Couche</th><th>Éléments</th><th>Source</th></tr>
+<tr><td>Organisationnelle</td><td>Ministère + 8 tutelles + 12 DR</td><td>Organigrammes R2</td></tr>
+<tr><td>Applicative</td><td>14 apps + 3 outils bureautiques critiques</td><td>DSI, démo</td></tr>
+<tr><td>Données</td><td>10 sources prioritaires</td><td>DPSD, AEJ</td></tr>
+<tr><td>Intégrations</td><td>SIGFIP, NNI, UXP, inter-programmes</td><td>Entretiens, docs R7</td></tr>
+<tr><td>Infrastructure</td><td>On-premise, IPv4, sauvegardes partielles</td><td>DSI</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.2 Légende flux</h3>
+<table>
+<tr><th>Symbole</th><th>Signification</th></tr>
+<tr><td>→ solid</td><td>Flux automatisé</td></tr>
+<tr><td>⇢ dashed</td><td>Flux manuel (Excel, mail)</td></tr>
+<tr><td>⊗</td><td>Flux absent / bloqué</td></tr>
+<tr><td>○</td><td>Référentiel manquant</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Cartographie organisationnelle</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.1 Niveau politique et pilotage</h3>
+<p><span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>`</span> [Cabinet MPJIPSC] ──⇢ [COPIL PNIPM] ──⇢ [Comité Stratégique] │                      │ ├── DPSD (data, indicateurs) ├── DAF (budget, SIGFIP) └── CT PNIPM (sponsor projet) <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>`</span></p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.2 Niveau programmatique</h3>
+<table>
+<tr><th>Entité</th><th>Rôle data</th><th>Outil principal</th><th>Export vers consolidation</th></tr>
+<tr><td>DAJIP</td><td>Coordination programmes</td><td>Excel + mail</td><td>Manuel</td></tr>
+<tr><td>AEJ</td><td>Gestion AEJ</td><td>App métier AEJ</td><td>API absente</td></tr>
+<tr><td>PEJEDEC</td><td>Suivi PEJEDEC</td><td>Base locale</td><td>Manuel</td></tr>
+<tr><td>USEP</td><td>Suivi USEP</td><td>Fichiers CSV</td><td>Manuel</td></tr>
+<tr><td>OSCN</td><td>Service civique</td><td>SI OSCN</td><td>Partiel</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.3 Niveau technique</h3>
+<table>
+<tr><th>Entité</th><th>Responsabilité</th><th>Interaction PNIPM</th></tr>
+<tr><td>DSI</td><td>SI, infra, sécurité</td><td>MOA technique</td></tr>
+<tr><td>ANSUT</td><td>Réseau / connectivité</td><td>Fournisseur infra</td></tr>
+<tr><td>NNI (ANRMP)</td><td>Identité numérique</td><td>Fournisseur API identité</td></tr>
+<tr><td>UXP / ADETIC</td><td>Interopérabilité</td><td>Raccordement à engager</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Cartographie applicative</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.1 Inventaire applications (extrait)</h3>
+<table>
+<tr><th>App</th><th>Éditeur / type</th><th>Users</th><th>Base</th><th>Intégration</th><th>Criticité PNIPM</th></tr>
+<tr><td>SIGFIP (lecture)</td><td>État</td><td>DAF</td><td>Oracle</td><td>Sortante absente</td><td>Must</td></tr>
+<tr><td>SI RH</td><td>Interne</td><td>DRH</td><td>MySQL</td><td>Aucune</td><td>Should</td></tr>
+<tr><td>App AEJ</td><td>Interne / legacy</td><td>AEJ</td><td>PostgreSQL</td><td>Aucune</td><td>Must</td></tr>
+<tr><td>GED partielle</td><td>SharePoint local</td><td>DSI</td><td>Filesystem</td><td>Limitée</td><td>Should</td></tr>
+<tr><td>Reporting DPSD</td><td>Excel + Power BI</td><td>DPSD</td><td>Fichiers</td><td>Manuel</td><td>Must</td></tr>
+<tr><td>Outil primes THIMO</td><td>Interne</td><td>DCEC</td><td>Access</td><td>Aucune</td><td>Must</td></tr>
+<tr><td>Portail jeunes (proto)</td><td>Prestataire externe</td><td>AEJ</td><td>Cloud</td><td>Non prod</td><td>Could</td></tr>
+</table>
+<p><b>Total recensé :</b> 14 applications + 3 outils critiques non intégrés.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.2 Maturité applicative</h3>
+<table>
+<tr><th>Dimension</th><th>Score</th><th>Commentaire</th></tr>
+<tr><td>Couverture fonctionnelle</td><td>3/5</td><td>Outils existants mais silotés</td></tr>
+<tr><td>Interopérabilité</td><td>1/5</td><td>Pas de bus, pas d&#x27;API standard</td></tr>
+<tr><td>Sécurité</td><td>2/5</td><td>Comptes locaux, audit trail partiel</td></tr>
+<tr><td>Scalabilité</td><td>2/5</td><td>On-premise saturé</td></tr>
+<tr><td>Maintenabilité</td><td>2/5</td><td>Dette technique élevée</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Flux de données</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.1 Flux programmatiques (bénéficiaires)</h3>
+<table>
+<tr><th>Flux</th><th>Source</th><th>Destination</th><th>Mode</th><th>Fréquence</th><th>Qualité</th></tr>
+<tr><td>F1</td><td>AEJ</td><td>DPSD</td><td>Excel mail</td><td>Mensuel</td><td>Moyenne</td></tr>
+<tr><td>F2</td><td>PEJEDEC</td><td>DAF / bailleurs</td><td>Template BAD</td><td>Trimestriel</td><td>Faible</td></tr>
+<tr><td>F3</td><td>DR terrain</td><td>Central</td><td>Saisie web + offline partiel</td><td>Hebdo</td><td>Variable</td></tr>
+<tr><td>F4</td><td>NNI</td><td>—</td><td>⊗ Non connecté</td><td>—</td><td>—</td></tr>
+<tr><td>F5</td><td>Programmes → Cabinet</td><td>Consolidation</td><td>⇢ Excel manuel</td><td>Mensuel</td><td>Faible</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.2 Flux financiers</h3>
+<table>
+<tr><th>Flux</th><th>Description</th><th>Statut</th><th>Impact PNIPM</th></tr>
+<tr><td>SIGFIP → DAF</td><td>Exécution budgétaire</td><td>Lecture seule partielle</td><td>Drill-down budget</td></tr>
+<tr><td>Programmes → Paiement primes</td><td>Chaîne THIMO / stages</td><td>Non tracée bout-en-bout</td><td>C-06</td></tr>
+<tr><td>Bailleurs → Reporting</td><td>Formats multiples</td><td>Manuel</td><td>C-04</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.3 Flux cible PNIPM (description textuelle)</h3>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Ingestion</b> — API / batch depuis SI programmes et SIGFIP ;</li>
+<li><b>Référentiel</b> — MDM bénéficiaire (clé NNI) + référentiel dispositifs ;</li>
+<li><b>Consolidation</b> — Entrepôt de données ministériel (EDM) ;</li>
+<li><b>Restitution</b> — Portails Cabinet (web) et agents (PWA offline) ;</li>
+<li><b>Gouvernance</b> — Catalogue de données, lineage, audit trail.</li>
+</ol>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Référentiels et intégrations externes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.1 État des raccordements</h3>
+<table>
+<tr><th>Système</th><th>Rôle</th><th>Statut</th><th>Document R7</th><th>Action</th></tr>
+<tr><td><b>NNI</b></td><td>Identité citoyenne</td><td>Non raccordé</td><td>modalites-acces-nni (attendu)</td><td>Protocole DPO</td></tr>
+<tr><td><b>SIGFIP</b></td><td>Exécution budgétaire</td><td>Non raccordé</td><td>modalites-raccordement-sigfip (relance)</td><td>Atelier DAF S3</td></tr>
+<tr><td><b>UXP/X-Road</b></td><td>Interop. État</td><td>Non raccordé</td><td>specs-raccordement-xroad (relance)</td><td>Auditeur X-Road ?</td></tr>
+<tr><td><b>Carte Jeunes</b></td><td>Portail jeune</td><td>Pilote isolé</td><td>—</td><td>Périmètre MVP</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.2 Référentiels internes</h3>
+<table>
+<tr><th>Référentiel</th><th>Existe</th><th>Qualité</th><th>Owner</th><th>Priorité création</th></tr>
+<tr><td>Bénéficiaires</td><td>Non</td><td>—</td><td>DAJIP</td><td>P0</td></tr>
+<tr><td>Dispositifs / programmes</td><td>Partiel</td><td>2/5</td><td>DAJIP</td><td>P0</td></tr>
+<tr><td>Territoires</td><td>Non harmonisé</td><td>2/5</td><td>DPSD</td><td>P1</td></tr>
+<tr><td>Indicateurs</td><td>Partiel</td><td>3/5</td><td>DPSD</td><td>P1</td></tr>
+<tr><td>Structures / orga</td><td>Oui</td><td>4/5</td><td>DRH</td><td>P2</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Schéma cible de circulation (narratif)</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.1 Principes directeurs</h3>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Ne pas remplacer brutalement</b> les SI métier en phase 1 ;</li>
+<li><b>API-first</b> — exposer les données avant de migrer les applications ;</li>
+<li><b>Identité d&#x27;abord</b> — NNI comme clé de voûte ;</li>
+<li><b>Offline-ready</b> pour le terrain ivoirien.</li>
+</ol>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.2 Composants cibles</h3>
+<table>
+<tr><th>Composant</th><th>Fonction</th><th>Technologie indicative (CDC)</th></tr>
+<tr><td>API Gateway</td><td>Routage, sécurité, throttling</td><td>Kong / équivalent</td></tr>
+<tr><td>EDM PNIPM</td><td>Consolidation analytique</td><td>PostgreSQL + MongoDB</td></tr>
+<tr><td>MDM Bénéficiaire</td><td>Golden record</td><td>Module dédié</td></tr>
+<tr><td>Portail Cabinet</td><td>Dashboards drill-down</td><td>Web responsive</td></tr>
+<tr><td>Agent PWA</td><td>Saisie terrain offline</td><td>PWA + sync</td></tr>
+<tr><td>IAM</td><td>SSO, 2FA, RBAC 6 niveaux</td><td>Keycloak / AD</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.3 Phases d&#x27;intégration</h3>
+<table>
+<tr><th>Phase</th><th>Intégrations</th><th>Horizon</th></tr>
+<tr><td>0</td><td>Référentiels, SSO pilote</td><td>M0–M3</td></tr>
+<tr><td>1</td><td>AEJ, DPSD, 1 bailleur</td><td>M3–M9</td></tr>
+<tr><td>2</td><td>SIGFIP, NNI, 2e vague programmes</td><td>M9–M18</td></tr>
+<tr><td>3</td><td>UXP, volet B, IA (si data OK)</td><td>M18+</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Annexes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe A — Correspondance Data Room</h3>
+<table>
+<tr><th>Répertoire</th><th>Pièces exploitées</th></tr>
+<tr><td>R3</td><td>Échantillon data, référentiel</td></tr>
+<tr><td>R5</td><td>Budget, SIGFIP</td></tr>
+<tr><td>R7</td><td>SI, architecture, UXP</td></tr>
+<tr><td>R10</td><td>Modèles reporting</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe B — Glossaire</h3>
+<table>
+<tr><th>Terme</th><th>Définition</th></tr>
+<tr><td>MDM</td><td>Master Data Management</td></tr>
+<tr><td>EDM</td><td>Entrepôt de données</td></tr>
+<tr><td>UXP</td><td>Unified Exchange Platform (X-Road CI)</td></tr>
+<tr><td>NNI</td><td>Numéro National d&#x27;Identification</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe C — Prochaines mises à jour (S4)</h3>
+<p>Cartographie géographique DR, flux terrain observés, schéma graphique export PNG.</p>
+</body></html>

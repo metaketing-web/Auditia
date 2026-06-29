@@ -1,0 +1,261 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L8 — Annexe — chiffrage par scénario (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>ANNEXE — CHIFFRAGE PAR SCÉNARIO</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Déploiement PNIPM — Hypothèses, fourchettes de coûts et délais pour arbitrage Cabinet</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>MPJIPSC</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA</td></tr>
+<tr><td><b>Référence livrable</b></td><td>L8 — Annexe au rapport final (L7)</td></tr>
+<tr><td><b>Version</b></td><td>1.0 — Projet chiffrage</td></tr>
+<tr><td><b>Date</b></td><td>22 avril 2026</td></tr>
+<tr><td><b>Horizon budgétaire</b></td><td>24 mois (T0 = lancement marché développement)</td></tr>
+<tr><td><b>Devise</b></td><td>FCFA (millions) — taux indicatif 1 EUR ≈ 655 FCFA</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Fourchettes d&#x27;ordre de grandeur pour arbitrage Cabinet. Les montants ne constituent pas une offre commerciale ; ils s&#x27;appuient sur les benchmarks marchés publics SI en Afrique de l&#x27;Ouest et la trajectoire L6.</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive</h2>
+<p>La présente annexe chiffre <b>trois scénarios de déploiement</b> de la PNIPM, cohérents avec la feuille de route L6 :</p>
+<table>
+<tr><th>Scénario</th><th>MVP opérationnel</th><th>Coût total 24 mois</th><th>Profil de risque</th></tr>
+<tr><td><b>Minimal</b></td><td>M+9</td><td>2,1 – 2,6 Md FCFA</td><td>Redevabilité limitée</td></tr>
+<tr><td><b>Cible (recommandé)</b></td><td>M+12</td><td>3,0 – 3,8 Md FCFA</td><td>Maîtrisé</td></tr>
+<tr><td><b>Accéléré</b></td><td>M+6</td><td>3,9 – 4,9 Md FCFA</td><td>Élevé</td></tr>
+</table>
+<p><b>Recommandation PORTIA :</b> retenir le <b>scénario Cible</b> — meilleur équilibre entre visibilité politique (drill-down Cabinet, traçabilité primes), faisabilité technique (identité NNI séquencée) et maîtrise des risques d&#x27;intégration.</p>
+<p><b>Message Cabinet :</b> le scénario Minimal économise ~30 % mais ne couvre pas les exigences bailleurs sur la traçabilité individuelle ; le scénario Accéléré compresse les délais au prix d&#x27;un surcoût ~30 % et d&#x27;un risque d&#x27;échec d&#x27;intégration SIGFIP/NNI.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Périmètre et hypothèses communes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.1 Périmètre chiffré</h3>
+<table>
+<tr><th>Poste</th><th>Inclus</th><th>Exclus</th></tr>
+<tr><td>Développement plateforme</td><td>Oui (3 scénarios)</td><td>Remplacement des 14 SI existants</td></tr>
+<tr><td>Intégrations</td><td>Variable selon scénario</td><td>Refonte complète AEJ / DPSD</td></tr>
+<tr><td>Infra cloud / hébergement</td><td>Oui (24 mois)</td><td>Datacenter souverain dédié</td></tr>
+<tr><td>Conduite du changement</td><td>Oui (DR pilotes)</td><td>Formation nationale 10 000 agents</td></tr>
+<tr><td>Audit mission PORTIA</td><td>Non</td><td>Déjà réalisé (L1–L7)</td></tr>
+<tr><td>Auditeur X-Road additionnel</td><td>Option</td><td>Hors base</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.2 Hypothèses macro</h3>
+<table>
+<tr><th>#</th><th>Hypothèse</th><th>Impact chiffrage</th></tr>
+<tr><td>H1</td><td>T0 = signature marché développement (juin 2026)</td><td>Base calendrier</td></tr>
+<tr><td>H2</td><td>Cellule PNIPM MOA = 6 ETP ministère</td><td>Coût interne non inclus</td></tr>
+<tr><td>H3</td><td>Intégrateur unique (marché public)</td><td>Économies d&#x27;échelle</td></tr>
+<tr><td>H4</td><td>Hébergement cloud zone Afrique / EU</td><td>18–22 % du CAPEX</td></tr>
+<tr><td>H5</td><td>Cofinancements bailleurs mobilisables à hauteur de 40 %</td><td>Scénario Cible</td></tr>
+<tr><td>H6</td><td>NNI : protocole DPO signé sous 4 mois post-T0</td><td>Bloquant scénarios Cible et Accéléré</td></tr>
+<tr><td>H7</td><td>Inflation matériel / licences +8 % / an</td><td>Fourchette haute</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.3 Structure de coûts (répartition type — scénario Cible)</h3>
+<table>
+<tr><th>Nature</th><th>Part</th><th>Détail</th></tr>
+<tr><td><b>CAPEX développement</b></td><td>55 %</td><td>Lots fonctionnels, API, PWA offline</td></tr>
+<tr><td><b>Intégrations SI</b></td><td>20 %</td><td>AEJ, DPSD, NNI, SIGFIP, UXP pilote</td></tr>
+<tr><td><b>Infra &amp; licences</b></td><td>12 %</td><td>Cloud, SSO, monitoring, sauvegardes</td></tr>
+<tr><td><b>Conduite du changement</b></td><td>8 %</td><td>Formation DR, communication, support</td></tr>
+<tr><td><b>Gouvernance &amp; MOE</b></td><td>5 %</td><td>AMO, recette, sécurité</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Scénario MINIMAL</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.1 Description</h3>
+<p>Déploiement <b>restreint</b> : tableau de bord Cabinet consolidé (5 KPI), drill-down sur <b>1 programme pilote</b> (AEJ), sans intégration NNI ni SIGFIP en phase 1. Les données bénéficiaires restent en <b>import batch</b> hebdomadaire.</p>
+<p><b>Objectif :</b> visibilité politique rapide à coût contenu — <b>non conforme</b> aux exigences intégrales du CDC sur l&#x27;identité unique et la traçabilité temps réel des primes.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.2 Phasage et jalons</h3>
+<table>
+<tr><th>Phase</th><th>Durée</th><th>Livrables clés</th></tr>
+<tr><td>Phase 0 — Fondations</td><td>M0–M2</td><td>Ref dispositifs v1, infra dev/recette</td></tr>
+<tr><td>Phase 1 — MVP dashboard</td><td>M2–M9</td><td>5 KPI Cabinet, drill-down AEJ, export bailleur manuel</td></tr>
+<tr><td>Phase 2 — Extension limitée</td><td>M9–M18</td><td>2e programme, PWA offline 2 DR</td></tr>
+<tr><td>Phase 3 — Stabilisation</td><td>M18–M24</td><td>SLA 99 %, documentation</td></tr>
+</table>
+<p><b>Go-live MVP : M+9</b></p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.3 Chiffrage détaillé (fourchettes FCFA, millions)</h3>
+<table>
+<tr><th>Poste</th><th>Bas</th><th>Haut</th></tr>
+<tr><td>Développement MVP</td><td>680</td><td>850</td></tr>
+<tr><td>Intégrations (AEJ API + DPSD batch)</td><td>120</td><td>180</td></tr>
+<tr><td>Infra 24 mois</td><td>180</td><td>240</td></tr>
+<tr><td>Conduite du changement</td><td>90</td><td>120</td></tr>
+<tr><td>MOE / recette / sécurité</td><td>80</td><td>110</td></tr>
+<tr><td>Contingence 10 %</td><td>115</td><td>150</td></tr>
+<tr><td><b>TOTAL</b></td><td><b>1 265</b></td><td><b>1 650</b></td></tr>
+<tr><td>+ Cellule MOA externe (option)</td><td>850</td><td>950</td></tr>
+<tr><td><b>TOTAL avec MOA</b></td><td><b>2 115</b></td><td><b>2 600</b></td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.4 Profil risques</h3>
+<table>
+<tr><th>Risque</th><th>Probabilité</th><th>Impact</th></tr>
+<tr><td>Insatisfaction bailleurs (pas de traçabilité prime temps réel)</td><td>Élevée</td><td>Critique</td></tr>
+<tr><td>Double comptage bénéficiaires</td><td>Moyenne</td><td>Élevé</td></tr>
+<tr><td>Reprise technique à M+18 pour NNI</td><td>Élevée</td><td>Moyen</td></tr>
+</table>
+<p><b>Verdict :</b> scénario de <b>transition</b> uniquement — non recommandé comme cible finale.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Scénario CIBLE (recommandé)</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.1 Description</h3>
+<p>Trajectoire <b>L6 scénario A</b> : MVP à M+12 avec consolidation Cabinet, drill-down multi-programmes (AEJ + PEJEDEC pilotes), <b>traçabilité primes THIMO</b>, intégration <b>NNI en M+14–M+18</b>, <b>SIGFIP en M+16</b>, PWA offline 5 DR, SSO pilote.</p>
+<p>Aligné sur les <b>17 besoins Must</b> (L2) et la levée des <b>8 prérequis bloquants</b> (L6).</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.2 Phasage et jalons</h3>
+<table>
+<tr><th>Phase</th><th>Durée</th><th>Livrables clés</th></tr>
+<tr><td>Phase 0 — Fondations</td><td>M0–M3</td><td>Cellule, ref data, SSO pilote, IAM</td></tr>
+<tr><td>Phase 1 — MVP consolidation</td><td>M3–M12</td><td>5 KPI live, drill-down, primes THIMO, 2 API</td></tr>
+<tr><td>Phase 2 — Intégrations</td><td>M12–M18</td><td>NNI, SIGFIP, UXP pilote, 2e vague programmes</td></tr>
+<tr><td>Phase 3 — Optimisation</td><td>M18–M24</td><td>IA prédictif (si data OK), extension 10 DR</td></tr>
+</table>
+<p><b>Go-live MVP : M+12 · Intégrations v1 : M+18</b></p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.3 Chiffrage détaillé (fourchettes FCFA, millions)</h3>
+<table>
+<tr><th>Poste</th><th>Bas</th><th>Haut</th></tr>
+<tr><td>Développement (4 phases)</td><td>1 050</td><td>1 320</td></tr>
+<tr><td>Intégrations (AEJ, DPSD, NNI, SIGFIP, UXP)</td><td>420</td><td>580</td></tr>
+<tr><td>Infra 24 mois</td><td>280</td><td>360</td></tr>
+<tr><td>Conduite du changement</td><td>180</td><td>240</td></tr>
+<tr><td>MOE / recette / RSSI</td><td>150</td><td>200</td></tr>
+<tr><td>Contingence 12 %</td><td>246</td><td>324</td></tr>
+<tr><td><b>TOTAL</b></td><td><b>2 326</b></td><td><b>3 024</b></td></tr>
+<tr><td>+ AMO pluriannuel</td><td>450</td><td>550</td></tr>
+<tr><td>+ Licences &amp; support éditeurs</td><td>220</td><td>280</td></tr>
+<tr><td><b>TOTAL avec AMO</b></td><td><b>2 996</b></td><td><b>3 854</b></td></tr>
+<tr><td><b>Arrondi recommandé Cabinet</b></td><td><b>3 000</b></td><td><b>3 800</b></td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.4 Plan de financement indicatif</h3>
+<table>
+<tr><th>Source</th><th>Part</th><th>Montant (Md FCFA, milieu fourchette)</th></tr>
+<tr><td>Budget État MPJIPSC</td><td>35 %</td><td>1,2</td></tr>
+<tr><td>Cofinancements bailleurs (BM, AFD, BAD)</td><td>40 %</td><td>1,4</td></tr>
+<tr><td>Fonds d&#x27;équipement numérique</td><td>15 %</td><td>0,5</td></tr>
+<tr><td>Réserves / contingence mobilisée</td><td>10 %</td><td>0,35</td></tr>
+<tr><td><b>Total</b></td><td><b>100 %</b></td><td><b>~3,45</b></td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.5 Profil risques</h3>
+<table>
+<tr><th>Risque</th><th>Mitigation</th><th>Coût résiduel</th></tr>
+<tr><td>Retard protocole NNI</td><td>COPIL mensuel + sponsor Cabinet</td><td>Faible</td></tr>
+<tr><td>Qualité data DPSD</td><td>Grille qualité L2, cellule data</td><td>Moyen</td></tr>
+<tr><td>Résistance DR</td><td>Conduite changement + quick wins</td><td>Faible</td></tr>
+</table>
+<p><b>Verdict :</b> <b>scénario recommandé</b> pour décision Comité Stratégique.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Scénario ACCÉLÉRÉ</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.1 Description</h3>
+<p>Compression du calendrier : <b>MVP à M+6</b>, intégrations NNI et SIGFIP <b>dès M+8</b> en parallèle du développement (approche big-bang partielle). Nécessite <b>double équipe intégration</b>, environnements stabilisés précocement et arbitrages COPIL hebdomadaires.</p>
+<p><b>Objectif :</b> satisfaire une contrainte politique de visibilité avant échéance électorale / instance internationale — <b>surcoût et risque technique élevés</b>.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.2 Phasage et jalons</h3>
+<table>
+<tr><th>Phase</th><th>Durée</th><th>Livrables clés</th></tr>
+<tr><td>Phase 0 accélérée</td><td>M0–M1,5</td><td>Fondations compressées</td></tr>
+<tr><td>Phase 1 parallèle</td><td>M1,5–M6</td><td>MVP + NNI + SIGFIP en parallèle</td></tr>
+<tr><td>Phase 2 rattrapage</td><td>M6–M12</td><td>Stabilisation, dette technique</td></tr>
+<tr><td>Phase 3</td><td>M12–M24</td><td>Extension et optimisation</td></tr>
+</table>
+<p><b>Go-live MVP : M+6 · Stabilisation : M+12</b></p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.3 Chiffrage détaillé (fourchettes FCFA, millions)</h3>
+<table>
+<tr><th>Poste</th><th>Bas</th><th>Haut</th></tr>
+<tr><td>Développement accéléré (+30 %)</td><td>1 365</td><td>1 720</td></tr>
+<tr><td>Intégrations parallèles (+40 %)</td><td>590</td><td>810</td></tr>
+<tr><td>Infra renforcée 24 mois</td><td>340</td><td>430</td></tr>
+<tr><td>Conduite du changement renforcée</td><td>240</td><td>310</td></tr>
+<tr><td>MOE / war room COPIL</td><td>220</td><td>290</td></tr>
+<tr><td>Contingence 15 %</td><td>413</td><td>546</td></tr>
+<tr><td><b>TOTAL</b></td><td><b>3 168</b></td><td><b>4 106</b></td></tr>
+<tr><td>+ Surcoût reprise / dette technique</td><td>350</td><td>450</td></tr>
+<tr><td><b>TOTAL avec reprise</b></td><td><b>3 518</b></td><td><b>4 556</b></td></tr>
+<tr><td><b>Arrondi Cabinet</b></td><td><b>3 900</b></td><td><b>4 900</b></td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.4 Profil risques</h3>
+<table>
+<tr><th>Risque</th><th>Probabilité</th><th>Impact</th></tr>
+<tr><td>Échec intégration NNI (non aboutie M+8)</td><td>Élevée</td><td>Critique</td></tr>
+<tr><td>Instabilité MVP en production</td><td>Moyenne</td><td>Élevé</td></tr>
+<tr><td>Burn-out cellule MOA</td><td>Moyenne</td><td>Moyen</td></tr>
+<tr><td>Dépassement budget &gt; 20 %</td><td>Élevée</td><td>Élevé</td></tr>
+</table>
+<p><b>Verdict :</b> réservé à <b>impératif politique daté</b> — nécessite lettre de mission Cabinet explicite.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Tableau comparatif consolidé</h2>
+<table>
+<tr><th>Critère</th><th>Minimal</th><th>Cible</th><th>Accéléré</th></tr>
+<tr><td><b>Délai MVP</b></td><td>M+9</td><td>M+12</td><td>M+6</td></tr>
+<tr><td><b>Coût total (Md FCFA)</b></td><td>2,1–2,6</td><td>3,0–3,8</td><td>3,9–4,9</td></tr>
+<tr><td><b>NNI intégré</b></td><td>Non (M+24+)</td><td>Oui M+14–18</td><td>Oui M+8 (risqué)</td></tr>
+<tr><td><b>SIGFIP</b></td><td>Non</td><td>Oui M+16</td><td>Oui M+8</td></tr>
+<tr><td><b>Traçabilité primes</b></td><td>Partielle</td><td>Complète THIMO</td><td>Cible M+6</td></tr>
+<tr><td><b>Drill-down bénéficiaire</b></td><td>1 programme</td><td>2+ programmes</td><td>2+ programmes</td></tr>
+<tr><td><b>Offline terrain</b></td><td>2 DR</td><td>5 DR</td><td>3 DR</td></tr>
+<tr><td><b>Conformité CDC lot 1</b></td><td>~45 %</td><td>~75 %</td><td>~60 % (instable)</td></tr>
+<tr><td><b>Risque global</b></td><td>Moyen (redevabilité)</td><td><b>Faible</b></td><td><b>Élevé</b></td></tr>
+<tr><td><b>Recommandation</b></td><td>Transition</td><td><b>Retenir</b></td><td>Si contrainte date</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Détail OPEX récurrent (annuel, post M+24)</h2>
+<table>
+<tr><th>Poste</th><th>Minimal</th><th>Cible</th><th>Accéléré</th></tr>
+<tr><td>Hébergement &amp; infra</td><td>85–110 M</td><td>120–150 M</td><td>140–180 M</td></tr>
+<tr><td>Support &amp; maintenance (15 %)</td><td>45–60 M</td><td>70–90 M</td><td>90–120 M</td></tr>
+<tr><td>Licences</td><td>25–35 M</td><td>40–55 M</td><td>45–60 M</td></tr>
+<tr><td>Équipe RUN DSI (4 ETP)</td><td>48 M</td><td>48 M</td><td>52 M</td></tr>
+<tr><td><b>Total OPEX / an</b></td><td><b>203–253 M</b></td><td><b>278–343 M</b></td><td><b>327–412 M</b></td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Calendrier de décaissement (scénario Cible)</h2>
+<table>
+<tr><th>Trimestre</th><th>% cumulé</th><th>Montant cumulé (Md)</th><th>Jalons</th></tr>
+<tr><td>T0–T1</td><td>15 %</td><td>0,5</td><td>Phase 0, marché signé</td></tr>
+<tr><td>T2–T3</td><td>35 %</td><td>1,2</td><td>Alpha MVP</td></tr>
+<tr><td>T4–T5</td><td>60 %</td><td>2,1</td><td>Go-live MVP M+12</td></tr>
+<tr><td>T6–T7</td><td>80 %</td><td>2,8</td><td>Intégrations NNI/SIGFIP</td></tr>
+<tr><td>T8</td><td>100 %</td><td>3,4</td><td>Bilan M+24</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>8. Recommandation et prochaines étapes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>8.1 Décision proposée au Comité Stratégique</h3>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Retenir le scénario Cible</b> (3,0–3,8 Md FCFA / 24 mois) ;</li>
+<li><b>Lancer le marché développement</b> au T0 (juin 2026) avec périmètre MVP issu de L4 (G-01 à G-50) ;</li>
+<li><b>Sécuriser le protocole NNI</b> avant notification du marché (P0-4) ;</li>
+<li><b>Mobiliser 40 % cofinancement bailleurs</b> via dossier joint L7 ;</li>
+<li><b>Rejeter le scénario Minimal</b> comme cible finale (acceptable uniquement en phase transitoire 6 mois).</li>
+</ol>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>8.2 Options complémentaires</h3>
+<table>
+<tr><th>Option</th><th>Surcoût</th><th>Délai</th><th>Commentaire</th></tr>
+<tr><td>Auditeur X-Road additionnel</td><td>45–65 M</td><td>+2 mois</td><td>Recommandé si UXP critique</td></tr>
+<tr><td>Extension portail jeunes</td><td>180–240 M</td><td>+4 mois</td><td>Phase 3</td></tr>
+<tr><td>Datacenter souverain</td><td>400–600 M</td><td>+6 mois</td><td>Non recommandé phase 1</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>8.3 Documents de référence</h3>
+<table>
+<tr><th>Réf.</th><th>Document</th><th>Lien</th></tr>
+<tr><td>L6</td><td>Feuille de route déploiement</td><td>Scénarios A–D</td></tr>
+<tr><td>L4</td><td>Matrice écarts CDC</td><td>Périmètre MVP</td></tr>
+<tr><td>L5</td><td>Risques RQ-01 à RQ-08</td><td>Contingences</td></tr>
+<tr><td>L7</td><td>Rapport final</td><td>Synthèse décision</td></tr>
+</table>
+<hr style='border:none;border-top:1px solid #ccc;margin:18px 0'/>
+<p><i>Document produit par le cabinet PORTIA — Mission AO-MPJIPSC-PNIPM-2026 · Annexe L8 · VERSION DÉMO</i></p>
+</body></html>

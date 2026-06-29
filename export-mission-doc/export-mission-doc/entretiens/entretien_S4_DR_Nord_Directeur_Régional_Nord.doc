@@ -1,0 +1,69 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Directeur Régional Nord</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Directeur Régional Nord</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | DR Nord |
+| Axe | Politique |
+| Semaine | S4 |
+| Date mission | J+23 |
+| Heure | 09:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | direction |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Direction régionale — Pilotage &amp; gouvernance locale
+<b>Durée indicative :</b> 90 min
+<b>Clé trame :</b> `terrain_dr`</p><p><b>Nombre de questions :</b> 22</p><p>### Phase 1 — Investigation</p><p>#### A. Périmètre &amp; organisation régionale</p><p><b>1. Quel est le périmètre exact de votre direction régionale (structures, programmes, effectifs) ?</b>
+<li>*Réf. :* `dr_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quels dispositifs jeunesse sont actifs dans la région et avec quels volumes (inscriptions, sorties, en cours) ?</b>
+<li>*Réf. :* `dr_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Comment s'organise la relation avec le siège (Abidjan) : arbitrages, validations, délais de réponse ?</b>
+<li>*Réf. :* `dr_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Disposez-vous d'un tableau de bord régional consolidé aujourd'hui ? Si oui, lequel ; sinon, comment pilotez-vous ?</b>
+<li>*Réf. :* `dr_i_a4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Données &amp; remontées vers le central</p><p><b>1. Quels outils utilisez-vous pour la saisie et le suivi (applications, Excel, papier) ?</b>
+<li>*Réf. :* `dr_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. À quelle fréquence et par quel canal les données remontent-elles au central ?</b>
+<li>*Réf. :* `dr_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Quels indicateurs régionaux suivez-vous et sont-ils alignés avec ceux du Cabinet ?</b>
+<li>*Réf. :* `dr_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Où constatez-vous des retards, ressaisies ou pertes d'information dans la chaîne ?</b>
+<li>*Réf. :* `dr_i_b4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### C. Connectivité &amp; contraintes terrain</p><p><b>1. Quelle est la qualité réelle du réseau sur vos sites (4G, fibre, coupures) ?</b>
+<li>*Réf. :* `dr_i_c1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Avez-vous déjà pratiqué un mode déconnecté ou une synchronisation différée ? Résultat ?</b>
+<li>*Réf. :* `dr_i_c2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Quels équipements (PC, tablettes, smartphones) sont disponibles pour les agents ?</b>
+<li>*Réf. :* `dr_i_c3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### D. Paiements &amp; traçabilité locale</p><p><b>1. Comment sont gérés localement les paiements de primes / indemnités (circuit, délais) ?</b>
+<li>*Réf. :* `dr_i_d1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Existe-t-il une traçabilité nominative bénéficiaire → paiement ? À quel niveau de fiabilité ?</b>
+<li>*Réf. :* `dr_i_d2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Quels litiges ou réclamations récurrents observez-vous ?</b>
+<li>*Réf. :* `dr_i_d3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### Confrontation CDC / réalité régionale</p><p><b>1. Le CDC prévoit une vision consolidée temps réel pour le Cabinet — votre région peut-elle l'alimenter sans surcharge ?</b>
+<li>*Réf. :* `dr_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. L'identifiant unique bénéficiaire (NNI ou équivalent) est-il utilisable sur le terrain aujourd'hui ?</b>
+<li>*Réf. :* `dr_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Le mode offline-first avec synchro est-il indispensable pour vos agents ? Pour quels cas d'usage ?</b>
+<li>*Réf. :* `dr_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Quelles exigences du CDC vous semblent inadaptées à la réalité régionale ?</b>
+<li>*Réf. :* `dr_c_4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Co-construction &amp; priorités</p><p><b>1. Quels 2-3 quick wins régionaux amélioreraient immédiatement le pilotage ?</b>
+<li>*Réf. :* `dr_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quelles conditions d'adoption par vos équipes (formation, SOP, support) ?</b>
+<li>*Réf. :* `dr_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Quels interlocuteurs centraux doivent être impliqués pour lever vos blocages ?</b>
+<li>*Réf. :* `dr_cc_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Quelles pièces probantes pouvez-vous verser en Data Room (R11) sous 48h ?</b>
+<li>*Réf. :* `dr_cc_4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

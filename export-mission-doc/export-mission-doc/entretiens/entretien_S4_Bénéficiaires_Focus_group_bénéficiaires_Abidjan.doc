@@ -1,0 +1,59 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Focus group bénéficiaires Abidjan</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Focus group bénéficiaires Abidjan</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | Bénéficiaires |
+| Axe | Programmatique |
+| Semaine | S4 |
+| Date mission | J+21 |
+| Heure | 16:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | direction |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Focus group bénéficiaires jeunes (10-15 pers.)
+<b>Durée indicative :</b> 90 min
+<b>Clé trame :</b> `focusgroup`</p><p><b>Nombre de questions :</b> 17</p><p>### Phase 1 — Investigation</p><p>#### A. Parcours d'entrée dans le dispositif</p><p><b>1. Comment avez-vous connu le programme (bouche-à-oreille, agence, en ligne) ?</b>
+<li>*Réf. :* `fg_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quelles démarches administratives avez-vous dû faire (documents, délais, allers-retours) ?</b>
+<li>*Réf. :* `fg_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Avez-vous été orienté vers d'autres dispositifs en parallèle ? Lesquels ?</b>
+<li>*Réf. :* `fg_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Expérience pendant le dispositif</p><p><b>1. Qu'attendiez-vous au départ et qu'avez-vous réellement obtenu ?</b>
+<li>*Réf. :* `fg_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Comment évaluez-vous l'accompagnement humain (formateurs, agents) ?</b>
+<li>*Réf. :* `fg_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Avez-vous utilisé des outils numériques (Carte Jeunes, plateforme, mobile money) ? Lesquels ?</b>
+<li>*Réf. :* `fg_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### C. Primes, indemnités &amp; transparence</p><p><b>1. Avez-vous reçu les primes / indemnités prévues ? En combien de temps ?</b>
+<li>*Réf. :* `fg_i_c1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Savez-vous calculer ce qui vous est dû et comment réclamer en cas de retard ?</b>
+<li>*Réf. :* `fg_i_c2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Avez-vous connu des refus ou blocages ? Pour quelle raison affichée ?</b>
+<li>*Réf. :* `fg_i_c3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### D. Après le dispositif</p><p><b>1. Bénéficiez-vous d'un suivi post-programme (emploi, insertion) ?</b>
+<li>*Réf. :* `fg_i_d1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Recommanderiez-vous le dispositif à un pair ? Pourquoi oui / non ?</b>
+<li>*Réf. :* `fg_i_d2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### Attentes vis-à-vis d'un service numérique unique</p><p><b>1. Seriez-vous à l'aise pour suivre votre dossier via une application mobile ?</b>
+<li>*Réf. :* `fg_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quelles informations voudriez-vous voir en priorité (statut, paiement, prochaine étape) ?</b>
+<li>*Réf. :* `fg_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Quelles craintes (fraude, données personnelles, complexité) ?</b>
+<li>*Réf. :* `fg_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Propositions des bénéficiaires</p><p><b>1. Quelle amélioration concrète aurait le plus d'impact pour vous ?</b>
+<li>*Réf. :* `fg_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Préférez-vous agence physique, téléphone, SMS, WhatsApp ou application ?</b>
+<li>*Réf. :* `fg_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Un numéro unique d'assistance serait-il utile ? Quels horaires ?</b>
+<li>*Réf. :* `fg_cc_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

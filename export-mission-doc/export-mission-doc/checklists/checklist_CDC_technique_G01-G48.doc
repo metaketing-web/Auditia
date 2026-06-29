@@ -1,0 +1,101 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Checklist CDC technique</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Checklist CDC technique — besoins SI / PNIPM</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-01 — Architecture</h2></p><p><b>Exigence CDC :</b> Architecture microservices conteneurisée</p><p><b>Réalité observée :</b> Monolithes on-premise.</p><p><b>Réf. CDC :</b> § Tech 4.1</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-02 — Architecture</h2></p><p><b>Exigence CDC :</b> API Gateway centralisée</p><p><b>Réalité observée :</b> Absente.</p><p><b>Réf. CDC :</b> § Tech 4.1.b</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-03 — Données</h2></p><p><b>Exigence CDC :</b> PostgreSQL + MongoDB (polyglotte)</p><p><b>Réalité observée :</b> Bases hétérogènes.</p><p><b>Réf. CDC :</b> § Tech 4.2</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-04 — Données</h2></p><p><b>Exigence CDC :</b> Référentiel unique bénéficiaire (NNI)</p><p><b>Réalité observée :</b> Absent.</p><p><b>Réf. CDC :</b> § Données 2.3</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-05 — Données</h2></p><p><b>Exigence CDC :</b> Dictionnaire de données ministériel</p><p><b>Réalité observée :</b> Partiel / dispersé.</p><p><b>Réf. CDC :</b> § Données 2.1</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-06 — Données</h2></p><p><b>Exigence CDC :</b> Découpage territorial normalisé</p><p><b>Réalité observée :</b> Non harmonisé.</p><p><b>Réf. CDC :</b> § Données 2.4</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-07 — Interop</h2></p><p><b>Exigence CDC :</b> Bus d'échange / ESB</p><p><b>Réalité observée :</b> Échanges point à point.</p><p><b>Réf. CDC :</b> § Interop 5.0</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-08 — Interop</h2></p><p><b>Exigence CDC :</b> UXP / X-Road Côte d'Ivoire</p><p><b>Réalité observée :</b> Non raccordé.</p><p><b>Réf. CDC :</b> § Interop 5.1</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-09 — Interop</h2></p><p><b>Exigence CDC :</b> Intégration SIGFIP</p><p><b>Réalité observée :</b> Non établie.</p><p><b>Réf. CDC :</b> § Interop 5.2</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-10 — Interop</h2></p><p><b>Exigence CDC :</b> Accès NNI habilité</p><p><b>Réalité observée :</b> En cours côté juridique.</p><p><b>Réf. CDC :</b> § Interop 5.3</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-11 — Réseau</h2></p><p><b>Exigence CDC :</b> IPv6 natif</p><p><b>Réalité observée :</b> IPv4 hérité.</p><p><b>Réf. CDC :</b> § Réseau 4.5</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-12 — Sécurité</h2></p><p><b>Exigence CDC :</b> SSO + 2FA</p><p><b>Réalité observée :</b> Comptes locaux.</p><p><b>Réf. CDC :</b> § Sécu 6.2</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-13 — Sécurité</h2></p><p><b>Exigence CDC :</b> RBAC 6 niveaux CDC</p><p><b>Réalité observée :</b> Profils hétérogènes.</p><p><b>Réf. CDC :</b> § Sécu 6.3</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-14 — Sécurité</h2></p><p><b>Exigence CDC :</b> Chiffrement AES-256 / TLS 1.3</p><p><b>Réalité observée :</b> Partiel.</p><p><b>Réf. CDC :</b> § Sécu 6.4</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-15 — Sécurité</h2></p><p><b>Exigence CDC :</b> Journal d'audit inviolable</p><p><b>Réalité observée :</b> Logs applicatifs dispersés.</p><p><b>Réf. CDC :</b> § Sécu 6.5</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-16 — Sécurité</h2></p><p><b>Exigence CDC :</b> PRA / PCA testés</p><p><b>Réalité observée :</b> Sauvegardes partielles.</p><p><b>Réf. CDC :</b> § Sécu 6.6</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-17 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Drill-down Cabinet → bénéficiaire</p><p><b>Réalité observée :</b> Attente forte, données dispersées.</p><p><b>Réf. CDC :</b> § Fonc 3.1</p><p><b>Verdict audit :</b> confirme</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-18 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Consolidation programmatique / non-programmatique</p><p><b>Réalité observée :</b> Excel par mail.</p><p><b>Réf. CDC :</b> § Fonc 3.2</p><p><b>Verdict audit :</b> confirme</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-19 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Traçabilité primes individuelles</p><p><b>Réalité observée :</b> Lacunes IG.</p><p><b>Réf. CDC :</b> § Fonc 3.4</p><p><b>Verdict audit :</b> confirme</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-20 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Workflow validation multi-niveaux</p><p><b>Réalité observée :</b> Absent.</p><p><b>Réf. CDC :</b> § Fonc 3.5</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-21 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> PWA offline-first + synchro</p><p><b>Réalité observée :</b> Besoin terrain confirmé.</p><p><b>Réf. CDC :</b> § Fonc 3.7</p><p><b>Verdict audit :</b> confirme</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-22 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Module alertes &amp; relances</p><p><b>Réalité observée :</b> Manuel.</p><p><b>Réf. CDC :</b> § Fonc 3.8</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-23 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Volet B (RH, flotte, GED, marchés)</p><p><b>Réalité observée :</b> Dispersé.</p><p><b>Réf. CDC :</b> § Fonc 3.9</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-24 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Cartographie flux données temps réel</p><p><b>Réalité observée :</b> Inexistante.</p><p><b>Réf. CDC :</b> § Fonc 3.10</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-25 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> GED documentaire intégrée</p><p><b>Réalité observée :</b> Partielle.</p><p><b>Réf. CDC :</b> § Fonc 3.11</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-26 — Performance</h2></p><p><b>Exigence CDC :</b> 500+ utilisateurs simultanés</p><p><b>Réalité observée :</b> Capacité limitée.</p><p><b>Réf. CDC :</b> § Perf 7.1</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-27 — Performance</h2></p><p><b>Exigence CDC :</b> SLA 99,9 %</p><p><b>Réalité observée :</b> Non mesuré.</p><p><b>Réf. CDC :</b> § Perf 7.2</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-28 — Performance</h2></p><p><b>Exigence CDC :</b> Temps de réponse &lt; 3s tableaux de bord</p><p><b>Réalité observée :</b> Non benchmarké.</p><p><b>Réf. CDC :</b> § Perf 7.3</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-29 — IA</h2></p><p><b>Exigence CDC :</b> Couche IA prédictive</p><p><b>Réalité observée :</b> Aucune brique.</p><p><b>Réf. CDC :</b> § IA 8.1</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-30 — IA</h2></p><p><b>Exigence CDC :</b> Chatbot NLP ministériel</p><p><b>Réalité observée :</b> Absent.</p><p><b>Réf. CDC :</b> § IA 8.2</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-31 — IA</h2></p><p><b>Exigence CDC :</b> Gouvernance données pour IA (qualité, biais)</p><p><b>Réalité observée :</b> Non formalisée.</p><p><b>Réf. CDC :</b> § IA 8.3</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-35 — Conformité</h2></p><p><b>Exigence CDC :</b> RGPD / loi données personnelles CI</p><p><b>Réalité observée :</b> Cadre à préciser.</p><p><b>Réf. CDC :</b> § Conf 9.1</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-36 — Conformité</h2></p><p><b>Exigence CDC :</b> Anonymisation exports &amp; IA</p><p><b>Réalité observée :</b> Non outillée.</p><p><b>Réf. CDC :</b> § Conf 9.2</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-37 — Conformité</h2></p><p><b>Exigence CDC :</b> Hébergement cloud national</p><p><b>Réalité observée :</b> On-premise dominant.</p><p><b>Réf. CDC :</b> § Conf 9.3</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-38 — UX</h2></p><p><b>Exigence CDC :</b> Accessibilité WCAG 2.1</p><p><b>Réalité observée :</b> Non évaluée.</p><p><b>Réf. CDC :</b> § UX 10.1</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-39 — UX</h2></p><p><b>Exigence CDC :</b> Interface mobile-first agents</p><p><b>Réalité observée :</b> Desktop hérité.</p><p><b>Réf. CDC :</b> § UX 10.2</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-40 — Reporting</h2></p><p><b>Exigence CDC :</b> Exports bailleurs automatisés</p><p><b>Réalité observée :</b> Manuel.</p><p><b>Réf. CDC :</b> § Rep 11.1</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-41 — Reporting</h2></p><p><b>Exigence CDC :</b> Templates BAD / BM / AFD</p><p><b>Réalité observée :</b> Multiples formats.</p><p><b>Réf. CDC :</b> § Rep 11.2</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-42 — Change</h2></p><p><b>Exigence CDC :</b> Plan conduite du changement</p><p><b>Réalité observée :</b> À construire.</p><p><b>Réf. CDC :</b> § Change 12.1</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-43 — Change</h2></p><p><b>Exigence CDC :</b> Formation agents terrain</p><p><b>Réalité observée :</b> Besoin confirmé S4.</p><p><b>Réf. CDC :</b> § Change 12.2</p><p><b>Verdict audit :</b> confirme</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-44 — Legacy</h2></p><p><b>Exigence CDC :</b> Reprise données historiques</p><p><b>Réalité observée :</b> Qualité hétérogène.</p><p><b>Réf. CDC :</b> § Migr 13.1</p><p><b>Verdict audit :</b> ajuster</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-45 — Legacy</h2></p><p><b>Exigence CDC :</b> Stratégie désengagement SI legacy</p><p><b>Réalité observée :</b> Non définie.</p><p><b>Réf. CDC :</b> § Migr 13.2</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-46 — Collecte</h2></p><p><b>Exigence CDC :</b> Questionnaire RSSI / DPO distinct DSI</p><p><b>Réalité observée :</b> Trame rssi_dpo + entretiens planifiés.</p><p><b>Réf. CDC :</b> § Tech. · RGPD</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-47 — Données</h2></p><p><b>Exigence CDC :</b> Grille qualité (complétude, fraîcheur, lineage)</p><p><b>Réalité observée :</b> Grille 10 sources initialisée.</p><p><b>Réf. CDC :</b> § Données L3</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non</p><p><h2 style='color:#5c4033;margin-top:1.2em'>G-48 — Fonctionnel</h2></p><p><b>Exigence CDC :</b> Module prog. vs non-prog. structuré</p><p><b>Réalité observée :</b> 7 domaines renseignés dans le cockpit.</p><p><b>Réf. CDC :</b> § Fonc. 3.2</p><p><b>Verdict audit :</b> completer</p><p><b>Couverture technique :</b> —
+<b>Preuve / source :</b> —
+<b>Point vérifié :</b> non
+</p></body></html>

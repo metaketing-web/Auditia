@@ -1,0 +1,205 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L2 — Inventaire des besoins qualifiés (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>INVENTAIRE DES BESOINS QUALIFIÉS</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Audit de cadrage PNIPM — Diagnostic triangulé par axe (Politique · Programmatique · Technique)</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>MPJIPSC</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA</td></tr>
+<tr><td><b>Référence livrable</b></td><td>L2 — Jalon J+14</td></tr>
+<tr><td><b>Version</b></td><td>1.0 — Projet consolidé</td></tr>
+<tr><td><b>Date</b></td><td>6 avril 2026 (instantané J+14)</td></tr>
+<tr><td><b>Classification</b></td><td>Confidentiel — Usage interne MPJIPSC / PORTIA</td></tr>
+<tr><td><b>Sources</b></td><td>22 entretiens réalisés · Data Room 11 répertoires · 10 constats C-01 à C-10</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Document généré en simulation. Contenu réaliste structuré comme un livrable cabinet d&#x27;audit ; sans valeur de validation officielle.</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive</h2>
+<p>À mi-parcours de la Semaine 2 (J+14), l&#x27;inventaire des besoins qualifiés consolide <b>47 besoins</b> identifiés, répartis sur les trois axes d&#x27;analyse et classés selon la grille <b>MoSCoW</b> (Must / Should / Could / Won&#x27;t).</p>
+<p>Les besoins <b>Must</b> (17) convergent vers quatre priorités transverses :</p>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Consolidation Cabinet</b> — vision unifiée politique / programmatique / financière avec drill-down ;</li>
+<li><b>Identité et traçabilité bénéficiaire</b> — clé NNI, déduplication, suivi des primes ;</li>
+<li><b>Interopérabilité gouvernementale</b> — SIGFIP, UXP/X-Road, référentiels partagés ;</li>
+<li><b>Gouvernance des données et sécurité</b> — SSO, audit trail, qualité des données.</li>
+</ol>
+<p>L&#x27;axe <b>Programmatique</b> concentre le plus fort volume de besoins métier (21), reflétant la complexité des 12 dispositifs et des obligations bailleurs. L&#x27;axe <b>Technique</b> expose des prérequis structurants (19 besoins) dont 8 sont des <b>bloquants</b> pour le lot 1 du futur marché.</p>
+<p><b>Niveau de maturité global observé :</b> 2,1 / 5 (initial / repeatable) — écart significatif avec la cible CDC (4 / 5).</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Méthodologie de qualification</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.1 Grille de qualification</h3>
+<table>
+<tr><th>Critère</th><th>Description</th><th>Échelle</th></tr>
+<tr><td><b>Urgence politique</b></td><td>Pression Cabinet / bailleurs</td><td>1–5</td></tr>
+<tr><td><b>Impact opérationnel</b></td><td>Effet sur programmes et agents</td><td>1–5</td></tr>
+<tr><td><b>Faisabilité court terme</b></td><td>Réalisable sous 12 mois</td><td>1–5</td></tr>
+<tr><td><b>Dépendances</b></td><td>Nombre de prérequis externes</td><td>Faible / Moyen / Élevé</td></tr>
+<tr><td><b>Source de preuve</b></td><td>D / Doc / Obs (triangulation)</td><td>1–3</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.2 Processus</h3>
+<ol style='margin:8px 0 8px 24px'>
+<li>Extraction des besoins depuis entretiens (grilles investigation / confrontation / co-construction) ;</li>
+<li>Rapprochement Data Room et constats (C-01 à C-10) ;</li>
+<li>Atelier interne PORTIA de consolidation et dédoublonnage ;</li>
+<li>Classification MoSCoW et priorisation par axe ;</li>
+<li>Revue COPIL #2 (03/04/2026) — arbitrages partiels actés.</li>
+</ol>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.3 Périmètre couvert S1–S2</h3>
+<table>
+<tr><th>Axe</th><th>Entretiens réalisés</th><th>Structures couvertes</th><th>Complétude</th></tr>
+<tr><td>Politique</td><td>8 / 10</td><td>Cabinet, CT PNIPM, IG</td><td>80 %</td></tr>
+<tr><td>Programmatique</td><td>6 / 18</td><td>DAJIP, DPSD, AEJ (partiel)</td><td>35 %</td></tr>
+<tr><td>Technique</td><td>8 / 20</td><td>DSI, DPSD, NNI (doc.)</td><td>40 %</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Axe Politique — Besoins qualifiés</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.1 Synthèse</h3>
+<p>Le Cabinet exprime une commande claire : <b>arbitrage consolidé</b> et <b>redevabilité bailleurs</b>. Les besoins politiques ne sont pas des fonctionnalités SI mais des <b>capacités de pilotage</b> que la PNIPM doit rendre possibles.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.2 Inventaire (extrait)</h3>
+<table>
+<tr><th>ID</th><th>Besoin</th><th>MoSCoW</th><th>Urgence</th><th>Source</th><th>Constats liés</th></tr>
+<tr><td>BP-01</td><td>Tableau de bord consolidé multi-programmes</td><td>Must</td><td>5</td><td>Cabinet, DPSD</td><td>C-04</td></tr>
+<tr><td>BP-02</td><td>Drill-down Cabinet → programme → bénéficiaire</td><td>Must</td><td>5</td><td>Cabinet</td><td>C-02, C-03</td></tr>
+<tr><td>BP-03</td><td>Traçabilité individuelle des primes versées</td><td>Must</td><td>5</td><td>IG, Cabinet</td><td>C-06</td></tr>
+<tr><td>BP-04</td><td>Indicateurs stratégiques PJGOUV alignés PNIPM</td><td>Must</td><td>4</td><td>Cabinet</td><td>—</td></tr>
+<tr><td>BP-05</td><td>Reporting bailleurs automatisé (formats BAD, BM)</td><td>Should</td><td>4</td><td>DAF</td><td>C-04</td></tr>
+<tr><td>BP-06</td><td>Alertes sur écarts d&#x27;exécution programmatique</td><td>Should</td><td>3</td><td>Cabinet</td><td>—</td></tr>
+<tr><td>BP-07</td><td>Historisation des arbitrages COPIL</td><td>Could</td><td>2</td><td>Secrétariat COPIL</td><td>—</td></tr>
+<tr><td>BP-08</td><td>Réévaluation périmètre MVP (fonctions caduques)</td><td>Must</td><td>4</td><td>Chargé d&#x27;études</td><td>C-10</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.3 Maturité axe Politique : <b>2,0 / 5</b></h3>
+<p>Les attentes sont <b>matures et documentées</b> ; les moyens de les satisfaire (données, SI, gouvernance) le sont <b>nettement moins</b>.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Axe Programmatique — Besoins qualifiés</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.1 Synthèse</h3>
+<p>Les programmes jeunesse/emploi (AEJ, PEJEDEC, USEP, PACE, THIMO…) fonctionnent en silos. Les besoins programmatiques portent sur la <b>continuité de parcours</b>, la <b>déduplication</b> et la <b>qualité des données bénéficiaires</b>.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.2 Inventaire (extrait)</h3>
+<table>
+<tr><th>ID</th><th>Besoin</th><th>MoSCoW</th><th>Urgence</th><th>Source</th><th>Constats liés</th></tr>
+<tr><td>BPr-01</td><td>Identifiant unique bénéficiaire (NNI)</td><td>Must</td><td>5</td><td>DAJIP, DPSD</td><td>C-02</td></tr>
+<tr><td>BPr-02</td><td>Règles de déduplication inter-programmes</td><td>Must</td><td>5</td><td>DAJIP</td><td>C-03</td></tr>
+<tr><td>BPr-03</td><td>Référentiel unique des dispositifs actifs</td><td>Must</td><td>4</td><td>DAJIP, AEJ</td><td>—</td></tr>
+<tr><td>BPr-04</td><td>Suivi parcours jeune (inscription → sortie)</td><td>Must</td><td>4</td><td>AEJ</td><td>—</td></tr>
+<tr><td>BPr-05</td><td>Consolidation effectifs et indicateurs AEJ/PEJEDEC</td><td>Should</td><td>4</td><td>DPSD</td><td>C-04</td></tr>
+<tr><td>BPr-06</td><td>Interface agents terrain (saisie mobile offline)</td><td>Must</td><td>4</td><td>DR-ABJ (doc.)</td><td>C-09</td></tr>
+<tr><td>BPr-07</td><td>Workflow validation multi-niveaux (DR → central)</td><td>Should</td><td>3</td><td>DAJIP</td><td>—</td></tr>
+<tr><td>BPr-08</td><td>Module alertes relances bénéficiaires</td><td>Should</td><td>3</td><td>AEJ</td><td>—</td></tr>
+<tr><td>BPr-09</td><td>Cartographie conventions bailleurs ↔ programmes</td><td>Should</td><td>3</td><td>DAF</td><td>—</td></tr>
+<tr><td>BPr-10</td><td>Export standardisé pour audits bailleurs</td><td>Must</td><td>4</td><td>BAD (template)</td><td>C-04</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.3 Programmes prioritaires pour approfondissement S3</h3>
+<table>
+<tr><th>Programme</th><th>Bailleur</th><th>Volume bénéf. estimé</th><th>Maturité data</th><th>Priorité audit</th></tr>
+<tr><td>AEJ</td><td>État + cofinancements</td><td>&gt; 500 000</td><td>Moyenne</td><td>P1</td></tr>
+<tr><td>PEJEDEC</td><td>BAD</td><td>~ 120 000</td><td>Faible</td><td>P1</td></tr>
+<tr><td>PACE / Enable Youth</td><td>BM</td><td>~ 80 000</td><td>Moyenne</td><td>P1</td></tr>
+<tr><td>USEP</td><td>UNICEF</td><td>~ 45 000</td><td>Faible</td><td>P2</td></tr>
+<tr><td>THIMO</td><td>État</td><td>Variable</td><td>Faible</td><td>P2</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.4 Maturité axe Programmatique : <b>1,8 / 5</b></h3>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Axe Technique — Besoins qualifiés</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.1 Synthèse</h3>
+<p>Le SI actuel ne supporte pas la vision PNIPM. Les besoins techniques combinent <b>modernisation architecture</b>, <b>intégrations</b> et <b>socle data</b>.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.2 Inventaire (extrait)</h3>
+<table>
+<tr><th>ID</th><th>Besoin</th><th>MoSCoW</th><th>Bloquant</th><th>Source</th><th>Constats / Gaps</th></tr>
+<tr><td>BT-01</td><td>Bus d&#x27;échange / API Gateway centralisée</td><td>Must</td><td>Oui</td><td>DSI</td><td>C-01, G-01</td></tr>
+<tr><td>BT-02</td><td>Raccordement UXP / X-Road</td><td>Must</td><td>Oui</td><td>DSI</td><td>C-05, G-03</td></tr>
+<tr><td>BT-03</td><td>Intégration SIGFIP (budget / exécution)</td><td>Must</td><td>Oui</td><td>DAF, DSI</td><td>G-08</td></tr>
+<tr><td>BT-04</td><td>SSO + 2FA ministériel</td><td>Must</td><td>Oui</td><td>DSI</td><td>C-07, G-05</td></tr>
+<tr><td>BT-05</td><td>Référentiel données + dictionnaire</td><td>Must</td><td>Oui</td><td>DPSD</td><td>G-47</td></tr>
+<tr><td>BT-06</td><td>PWA offline-first (terrain)</td><td>Must</td><td>Non</td><td>DSI</td><td>G-06, C-09</td></tr>
+<tr><td>BT-07</td><td>Journal d&#x27;audit inviolable</td><td>Must</td><td>Oui</td><td>IG, DSI</td><td>C-06</td></tr>
+<tr><td>BT-08</td><td>Hébergement conteneurisé / cloud souverain</td><td>Should</td><td>Non</td><td>DSI</td><td>G-01</td></tr>
+<tr><td>BT-09</td><td>IPv6 natif</td><td>Could</td><td>Non</td><td>DSI</td><td>G-04</td></tr>
+<tr><td>BT-10</td><td>Module IA prédictif</td><td>Won&#x27;t (phase 1)</td><td>—</td><td>Cabinet</td><td>G-13, C-10</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.3 Maturité axe Technique : <b>2,4 / 5</b></h3>
+<p>Capacité d&#x27;exploitation existante mais <b>architecture legacy</b> et <b>absence d&#x27;intégration</b>.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Matrice de priorisation consolidée</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.1 Top 10 besoins transverses</h3>
+<table>
+<tr><th>Rang</th><th>ID</th><th>Besoin</th><th>Axe</th><th>Score</th><th>Décision COPIL #2</th></tr>
+<tr><td>1</td><td>BPr-01</td><td>NNI bénéficiaire</td><td>Prog.</td><td>25</td><td>Arbitrage Comité Strat. 06/04</td></tr>
+<tr><td>2</td><td>BP-02</td><td>Drill-down consolidé</td><td>Pol.</td><td>24</td><td>Confirmé MVP</td></tr>
+<tr><td>3</td><td>BT-02</td><td>UXP / X-Road</td><td>Tech.</td><td>23</td><td>Trajectoire S3</td></tr>
+<tr><td>4</td><td>BP-03</td><td>Traçabilité primes</td><td>Pol.</td><td>23</td><td>Confirmé MVP</td></tr>
+<tr><td>5</td><td>BT-03</td><td>SIGFIP</td><td>Tech.</td><td>22</td><td>Prérequis lot 1</td></tr>
+<tr><td>6</td><td>BPr-02</td><td>Déduplication</td><td>Prog.</td><td>22</td><td>Lié NNI</td></tr>
+<tr><td>7</td><td>BT-04</td><td>SSO + 2FA</td><td>Tech.</td><td>21</td><td>Lot 1</td></tr>
+<tr><td>8</td><td>BP-01</td><td>Tableau de bord Cabinet</td><td>Pol.</td><td>21</td><td>Quick win cible</td></tr>
+<tr><td>9</td><td>BT-05</td><td>Référentiel données</td><td>Tech.</td><td>20</td><td>DPSD lead</td></tr>
+<tr><td>10</td><td>BPr-06</td><td>Saisie offline terrain</td><td>Prog.</td><td>19</td><td>Confirmé S4</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.2 Répartition MoSCoW</h3>
+<table>
+<tr><th>Catégorie</th><th>Politique</th><th>Programmatique</th><th>Technique</th><th>Total</th></tr>
+<tr><td>Must</td><td>5</td><td>9</td><td>8</td><td><b>22</b></td></tr>
+<tr><td>Should</td><td>4</td><td>7</td><td>6</td><td>17</td></tr>
+<tr><td>Could</td><td>2</td><td>3</td><td>4</td><td>9</td></tr>
+<tr><td>Won&#x27;t (phase 1)</td><td>1</td><td>2</td><td>3</td><td>6</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Synthèse transversale et implications</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.1 Convergence des axes</h3>
+<p>Les trois axes convergent sur un <b>socle identité + données + intégration</b> sans lequel les besoins politiques (drill-down, primes) restent <b>non satisfaisables</b>.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.2 Quick wins identifiés (0–6 mois post-marché)</h3>
+<table>
+<tr><th>Quick win</th><th>Effort</th><th>Impact</th><th>Prérequis</th></tr>
+<tr><td>Tableau de bord Excel → PNIPM (indicateurs existants)</td><td>M</td><td>Élevé</td><td>DPSD, modèles R10</td></tr>
+<tr><td>Portail Data Room unifié (existant audit)</td><td>F</td><td>Moyen</td><td>Gouvernance</td></tr>
+<tr><td>SSO sur 2 applications pilotes</td><td>M</td><td>Moyen</td><td>DSI</td></tr>
+<tr><td>Règles dédup provisoires (rapprochement flou)</td><td>É</td><td>Élevé</td><td>Échantillon DPSD</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.3 Points ouverts pour S3–S4</h3>
+<ul style='margin:8px 0 8px 24px'>
+<li>Quantification des doublons bénéficiaires (échantillon statistique) ;</li>
+<li>Entretiens DRH, Patrimoine, Marchés (volet B) ;</li>
+<li>Spécifications techniques UXP et NNI ;</li>
+<li>Focus groups jeunes (S4 terrain).</li>
+</ul>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Annexes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe A — Correspondance besoins / livrables L3–L7</h3>
+<table>
+<tr><th>Besoin cluster</th><th>Livrable détaillé</th></tr>
+<tr><td>Intégrations, SI</td><td>L3 — Cartographie</td></tr>
+<tr><td>Écarts CDC</td><td>L4 — Matrice</td></tr>
+<tr><td>Risques</td><td>L5 — Registre</td></tr>
+<tr><td>Trajectoire</td><td>L6 — Feuille de route</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe B — Liste complète des 47 besoins</h3>
+<p>Disponible dans le cockpit mission (module Livrables → L2 — annexe export).</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe C — Validation</h3>
+<table>
+<tr><th>Rôle</th><th>Nom</th><th>Date</th><th>Statut</th></tr>
+<tr><td>Directeur de mission PORTIA</td><td>Mme Laurent P.</td><td>06/04/2026</td><td>Projet</td></tr>
+<tr><td>Manager Programmatique</td><td>M. Asse</td><td>05/04/2026</td><td>Revu</td></tr>
+<tr><td>Sponsor MPJIPSC</td><td>CT PNIPM</td><td>—</td><td>En attente COPIL #2</td></tr>
+</table>
+</body></html>

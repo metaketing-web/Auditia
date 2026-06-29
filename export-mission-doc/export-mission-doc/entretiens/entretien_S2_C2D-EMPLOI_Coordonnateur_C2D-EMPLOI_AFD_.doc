@@ -1,0 +1,51 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Coordonnateur C2D-EMPLOI (AFD)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Coordonnateur C2D-EMPLOI (AFD)</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | C2D-EMPLOI |
+| Axe | Programmatique |
+| Semaine | S2 |
+| Date mission | J+10 |
+| Heure | 12:00 |
+| Auditeur(s) | B |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | programme |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Coordonnateur de programme / projet
+<b>Durée indicative :</b> 90-120 min
+<b>Clé trame :</b> `programme`</p><p><b>Nombre de questions :</b> 13</p><p>### Phase 1 — Investigation</p><p>#### A. Flow opérationnel</p><p><b>1. Flow du programme : identification → suivi → sortie ?</b>
+<li>*Réf. :* `prg_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Indicateurs suivis (cibles vs réalisé) et sources ?</b>
+<li>*Réf. :* `prg_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Géolocalisation des interventions ?</b>
+<li>*Réf. :* `prg_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Outils &amp; budget</p><p><b>1. Outils de gestion et reporting bailleur ?</b>
+<li>*Réf. :* `prg_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Suivi budgétaire : dotations, engagements, décaissements ?</b>
+<li>*Réf. :* `prg_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Formats et exigences reporting bailleur ?</b>
+<li>*Réf. :* `prg_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### C. Douleurs &amp; paiements</p><p><b>1. Principales douleurs opérationnelles ?</b>
+<li>*Réf. :* `prg_i_c1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Paiements et traçabilité nominative ?</b>
+<li>*Réf. :* `prg_i_c2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### CDC programme</p><p><b>1. Fonctionnalités CDC nécessaires vs optionnelles pour vous ?</b>
+<li>*Réf. :* `prg_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Consolidation ministérielle — impact sur rapport bailleur ?</b>
+<li>*Réf. :* `prg_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Écarts majeurs CDC vs réalité terrain ?</b>
+<li>*Réf. :* `prg_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Consolidation</p><p><b>1. Indicateurs consolidés les plus utiles ?</b>
+<li>*Réf. :* `prg_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Conditions remontée fiable et automatisée ?</b>
+<li>*Réf. :* `prg_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

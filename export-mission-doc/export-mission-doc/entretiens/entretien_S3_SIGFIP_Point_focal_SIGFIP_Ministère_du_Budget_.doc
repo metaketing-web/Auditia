@@ -1,0 +1,45 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Point focal SIGFIP (Ministère du Budget)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Point focal SIGFIP (Ministère du Budget)</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | SIGFIP |
+| Axe | Technique |
+| Semaine | S3 |
+| Date mission | J+16 |
+| Heure | 09:30 |
+| Auditeur(s) | T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | technique |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Point focal technique externe (générique)
+<b>Durée indicative :</b> 120 min
+<b>Clé trame :</b> `technique`</p><p><b>Nombre de questions :</b> 10</p><p>### Phase 1 — Investigation</p><p>#### A. Offre de service</p><p><b>1. Services exposés et modalités (API, protocoles) ?</b>
+<li>*Réf. :* `tec_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Procédure d'habilitation et de raccordement ?</b>
+<li>*Réf. :* `tec_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Documentation, délais, coûts ?</b>
+<li>*Réf. :* `tec_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Exploitation</p><p><b>1. SLA et disponibilité réelle ?</b>
+<li>*Réf. :* `tec_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Précédents de raccordement ministère / programmes ?</b>
+<li>*Réf. :* `tec_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Données accessibles et conditions juridiques ?</b>
+<li>*Réf. :* `tec_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### CDC</p><p><b>1. Intégration réaliste dans le délai accéléré ?</b>
+<li>*Réf. :* `tec_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Prérequis bloquants côté ministère ?</b>
+<li>*Réf. :* `tec_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Planning</p><p><b>1. Séquence de raccordement recommandée ?</b>
+<li>*Réf. :* `tec_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Contacts et étapes formelles ?</b>
+<li>*Réf. :* `tec_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

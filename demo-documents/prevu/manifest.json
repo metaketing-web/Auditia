@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-06-19T11:33:22.396923+00:00",
+  "missionJ": 8,
+  "outDir": "/opt/portia-audit/demo-documents/prevu",
+  "ok": [
+    {
+      "key": "R2/CABINET/fiches-poste-directions",
+      "file": "prevu_R2_CABINET_DOC_fiches-poste-directions_v1.docx",
+      "bytes": 1652
+    },
+    {
+      "key": "R3/DPSD/referentiel-donnees",
+      "file": "prevu_R3_DPSD_REF_referentiel-donnees_v1.xlsx",
+      "bytes": 5597
+    },
+    {
+      "key": "R3/NNI/modalites-acces-nni",
+      "file": "prevu_R3_NNI_DOC_modalites-acces-nni_v1.pdf",
+      "bytes": 1767
+    },
+    {
+      "key": "R4/AEJ/base-beneficiaires-aej",
+      "file": "prevu_R4_AEJ_BASE_base-beneficiaires-aej_v1.csv",
+      "bytes": 1197
+    },
+    {
+      "key": "R4/PEJEDEC/base-beneficiaires-pejedec",
+      "file": "prevu_R4_PEJEDEC_BASE_base-beneficiaires-pejedec_v1.csv",
+      "bytes": 1297
+    },
+    {
+      "key": "R4/USEP/rapport-activite-usep-2025",
+      "file": "prevu_R4_USEP_RAPPORT_rapport-activite-usep-2025_v1.pdf",
+      "bytes": 1619
+    },
+    {
+      "key": "R5/DAF/budget-programmes-2026",
+      "file": "prevu_R5_DAF_BUDGET_budget-programmes-2026_v1.xlsx",
+      "bytes": 5288
+    },
+    {
+      "key": "R5/DAF/export-sigfip-execution",
+      "file": "prevu_R5_DAF_EXPORT_export-sigfip-execution_v1.xlsx",
+      "bytes": 5151
+    },
+    {
+      "key": "R5/SIGFIP/modalites-raccordement-sigfip",
+      "file": "prevu_R5_SIGFIP_DOC_modalites-raccordement-sigfip_v1.pdf",
+      "bytes": 1552
+    },
+    {
+      "key": "R6/DRH/etat-effectifs-ministere",
+      "file": "prevu_R6_DRH_EFFECTIF_etat-effectifs-ministere_v1.xlsx",
+      "bytes": 5235
+    },
+    {
+      "key": "R7/DSI/cartographie-applicative",
+      "file": "prevu_R7_DSI_DOC_cartographie-applicative_v1.pdf",
+      "bytes": 1615
+    },
+    {
+      "key": "R7/DSI/architecture-reseau-ipv6",
+      "file": "prevu_R7_DSI_DOC_architecture-reseau-ipv6_v1.pdf",
+      "bytes": 1520
+    },
+    {
+      "key": "R7/UXP/specs-raccordement-xroad",
+      "file": "prevu_R7_UXP_SPEC_specs-raccordement-xroad_v1.pdf",
+      "bytes": 1560
+    },
+    {
+      "key": "R8/PATRI/inventaire-flotte-automobile",
+      "file": "prevu_R8_PATRI_INVENTAIRE_inventaire-flotte-automobile_v1.xlsx",
+      "bytes": 5355
+    },
+    {
+      "key": "R9/DAJC/conventions-bailleurs",
+      "file": "prevu_R9_DAJC_CONVENTION_conventions-bailleurs_v1.pdf",
+      "bytes": 1703
+    },
+    {
+      "key": "R10/BAD/template-reporting-bad",
+      "file": "prevu_R10_BAD_MODELE_template-reporting-bad_v1.pdf",
+      "bytes": 1601
+    },
+    {
+      "key": "R11/DR-ABJ/procedures-saisie-regionales",
+      "file": "prevu_R11_DR-ABJ_DOC_procedures-saisie-regionales_v1.pdf",
+      "bytes": 1709
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

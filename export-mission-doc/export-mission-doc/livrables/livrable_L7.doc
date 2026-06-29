@@ -1,0 +1,545 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L7 — Rapport final d&#x27;audit &amp; restitution (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>RAPPORT FINAL D&#x27;AUDIT &amp; RESTITUTION</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive — Mission de cadrage stratégique PNIPM (MPJIPSC)</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>Ministère de la Promotion de la Jeunesse, de l&#x27;Insertion Professionnelle et du Service Civique (MPJIPSC)</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA — Mission d&#x27;audit et de conseil</td></tr>
+<tr><td><b>Référence</b></td><td>AO-MPJIPSC-PNIPM-2026 / L7 — Jalon J+30</td></tr>
+<tr><td><b>Version</b></td><td>2.0 — Projet de rapport final consolidé</td></tr>
+<tr><td><b>Date de restitution</b></td><td>22 avril 2026</td></tr>
+<tr><td><b>Instance</b></td><td>Comité Stratégique MPJIPSC</td></tr>
+<tr><td><b>Classification</b></td><td>Confidentiel — Diffusion restreinte</td></tr>
+<tr><td><b>Période mission</b></td><td>23 mars — 22 avril 2026 (30 jours ouvrés)</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Rapport de synthèse consolidant L1 à L6 et renvoyant à L8 (chiffrage). Support slides (25 diapositives) décrit en annexe B.</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Note au Comité Stratégique</h2>
+<p>Madame le Ministre, Monsieur le Directeur de Cabinet, Mesdames et Messieurs les Membres du Comité Stratégique,</p>
+<p>La mission de cadrage stratégique conduite par le cabinet PORTIA sur <b>30 jours</b> confirme la <b>pertinence politique</b> du projet PNIPM et la <b>nécessité impérieuse</b> d&#x27;une plateforme de consolidation ministérielle. Elle révèle en parallèle un <b>écart structurel</b> entre les ambitions du cahier des charges (version 2.3) et la maturité actuelle du MPJIPSC en matière de données, d&#x27;intégration SI, de gouvernance et de capacité opérationnelle à absorber un big-bang technologique.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Message central (3 points)</h3>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Le projet PNIPM doit être lancé</b> — la fragmentation informationnelle actuelle limite la capacité d&#x27;arbitrage du Cabinet et expose le ministère à des risques de redevabilité vis-à-vis des bailleurs (BAD, BM, AFD, UNICEF) ;</li>
+<li><b>Le périmètre MVP doit être resserré</b> — 62 % des exigences CDC sont « à compléter » au regard du terrain ; 10 % sont caduques (IA prédictive, chatbot, gamification) ;</li>
+<li><b>La trajectoire doit être séquencée</b> — identité bénéficiaire (NNI) et socle data avant intégrations lourdes (SIGFIP, UXP) ; MVP opérationnel réaliste à <b>M+12</b> (scénario Cible, cf. L8).</li>
+</ol>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Décision recommandée</h3>
+<p><b>Autoriser la publication du marché de développement</b> sous 30 jours, sur la base du MVP allégé (L4 §5.1), avec création immédiate d&#x27;une <b>Cellule PNIPM</b> et sécurisation du <b>protocole d&#x27;accès NNI</b> avant notification.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Chiffres clés de la mission</h3>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Entretiens réalisés</td><td>48 / 48 (100 %)</td></tr>
+<tr><td>Constats structurants</td><td>10 (C-01 à C-10)</td></tr>
+<tr><td>Besoins qualifiés</td><td>47 (L2)</td></tr>
+<tr><td>Écarts CDC analysés</td><td>50 (G-01 à G-50)</td></tr>
+<tr><td>Risques identifiés</td><td>18 (8 mission + 10 solution)</td></tr>
+<tr><td>Documents Data Room versés</td><td>24 / 72 attendus (33 %)</td></tr>
+<tr><td>Maturité SI globale</td><td>2,1 / 5 vs cible 4 / 5</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Rappel de mission et méthodologie</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.1 Objectifs contractuels</h3>
+<table>
+<tr><th>Objectif</th><th>Statut</th><th>Livrable</th></tr>
+<tr><td>Diagnostic indépendant P / G / T</td><td>Atteint</td><td>L2, L3</td></tr>
+<tr><td>Confrontation CDC ↔ réalité</td><td>Atteint</td><td>L4</td></tr>
+<tr><td>Registre risques et recommandations</td><td>Atteint</td><td>L5</td></tr>
+<tr><td>Feuille de route déploiement</td><td>Atteint</td><td>L6</td></tr>
+<tr><td>Restitution décisionnelle</td><td>Présent document</td><td>L7</td></tr>
+<tr><td>Chiffrage scénarios (annexe)</td><td>Atteint</td><td>L8</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.2 Périmètre et exclusions</h3>
+<p><b>Inclus :</b> Cabinet, directions centrales, tutelles (AEJ, OSCN, BCP-Emploi), 12 dispositifs, SI et data, volet B (interfaces), terrain régional S4.</p>
+<p><b>Exclus (HP-01 à HP-03) :</b> développement PNIPM, audit financier approfondi, refonte SI tutelles.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.3 Méthode — Trois axes et triangulation</h3>
+<table>
+<tr><th>Axe</th><th>Question directrice</th><th>Couverture entretiens</th><th>Complétude</th></tr>
+<tr><td><b>Politique</b></td><td>Que doit voir le Cabinet pour arbitrer ?</td><td>10 / 10</td><td>100 %</td></tr>
+<tr><td><b>Programmatique</b></td><td>Comment circulent les données entre programmes ?</td><td>18 / 18</td><td>100 %</td></tr>
+<tr><td><b>Technique</b></td><td>Le SI peut-il porter la cible CDC ?</td><td>20 / 20</td><td>100 %</td></tr>
+</table>
+<p><b>Triangulation :</b> chaque constat C-01 à C-10 documenté selon Déclaratif / Documenté / Observé. Taux de constats « confirmés » (≥2 piliers) : <b>7 / 10</b>.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>1.4 Moyens de collecte mobilisés</h3>
+<table>
+<tr><th>Moyen</th><th>Volume</th><th>Exploitation</th></tr>
+<tr><td>Entretiens structurés (3 phases)</td><td>48</td><td>CR + qualification + pièces</td></tr>
+<tr><td>Data Room (11 répertoires)</td><td>24 docs versés</td><td>Analyse continue</td></tr>
+<tr><td>Checklists A–F + CDC G-01–G-50</td><td>7 + 50</td><td>Matrice L4</td></tr>
+<tr><td>Démonstrations SI</td><td>6 (DSI, AEJ, DR)</td><td>Constats C-01, C-09</td></tr>
+<tr><td>Focus groups terrain S4</td><td>3 (Abidjan, Bouaké, Korhogo)</td><td>Constats C-09, C-03</td></tr>
+<tr><td>Cockpit mission PORTIA</td><td>Temps réel</td><td>Traçabilité, relances</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Déroulement de la mission — Bilan semaine par semaine</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.1 Semaine 1 — Cadrage stratégique (23–27 mars)</h3>
+<table>
+<tr><th>Jour</th><th>Activité</th><th>Résultat clé</th></tr>
+<tr><td>J0</td><td>Lancement COPIL, entretiens Cabinet</td><td>Commande politique confirmée</td></tr>
+<tr><td>J+1</td><td>DSI, DAJIP, IG</td><td>Fragmentation SI, lacunes primes</td></tr>
+<tr><td>J+2</td><td>DPSD, DVA</td><td>Qualité data hétérogène</td></tr>
+<tr><td>J+3</td><td>CT PNIPM, DAF</td><td>Reporting manuel, SIGFIP absent</td></tr>
+<tr><td>J+4</td><td>COPIL #1</td><td>L1 validé, plan S2 acté</td></tr>
+</table>
+<p><b>Livrable :</b> L1 validé · <b>Constats émergents :</b> C-01, C-04, C-06.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.2 Semaine 2 — Deep-dive programmatique (30 mars – 3 avril)</h3>
+<table>
+<tr><th>Focus</th><th>Entretiens</th><th>Découverte majeure</th></tr>
+<tr><td>Programmes jeunesse</td><td>AEJ, PEJEDEC, PACE</td><td>Silos, pas de clé commune</td></tr>
+<tr><td>Bailleurs</td><td>DAF, templates BAD/BM</td><td>Formats multiples, délais serrés</td></tr>
+<tr><td>Coordination</td><td>DAJIP, DPSD</td><td>47 besoins qualifiés (L2)</td></tr>
+<tr><td>COPIL #2</td><td>03/04</td><td>Arbitrage NNI en préparation</td></tr>
+</table>
+<p><b>Livrable :</b> L2 à 85 % · <b>Constats :</b> C-02, C-03 renforcés.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.3 Semaine 3 — Volet B &amp; intégrations (6–10 avril)</h3>
+<table>
+<tr><th>Focus</th><th>Entretiens</th><th>Découverte majeure</th></tr>
+<tr><td>RH, patrimoine, marchés</td><td>DRH, DMP, patrimoine</td><td>Volet B dispersé (G-14)</td></tr>
+<tr><td>Sécurité</td><td>RSSI, DPO</td><td>SSO absent, audit trail partiel</td></tr>
+<tr><td>Interop</td><td>DSI, NNI (doc.), ADETIC</td><td>UXP/X-Road = 0 % opérationnel</td></tr>
+<tr><td>Comité Stratégique</td><td>06/04</td><td>NNI + clé transition actés</td></tr>
+<tr><td>COPIL #3</td><td>10/04</td><td>Matrice L4 présentée</td></tr>
+</table>
+<p><b>Livrables :</b> L3, L4 · <b>Constats :</b> C-05, C-07, C-08.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.4 Semaine 4 — Terrain régional (13–17 avril)</h3>
+<table>
+<tr><th>Site</th><th>Activités</th><th>Constats terrain</th></tr>
+<tr><td>DR Abidjan</td><td>Démo SI, agents, focus group</td><td>Connectivité OK, saisie lente</td></tr>
+<tr><td>DR Bouaké</td><td>Entretiens coordinateurs</td><td>Offline nécessaire (C-09)</td></tr>
+<tr><td>DR Korhogo</td><td>Focus group jeunes</td><td>Parcours fragmenté perçu</td></tr>
+<tr><td>COPIL #4</td><td>17/04</td><td>Risques L5, roadmap L6</td></tr>
+</table>
+<p><b>Livrables :</b> L5, L6 · <b>Constats :</b> C-09 confirmé, C-10 (MVP caduc).</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>2.5 Clôture (20–22 avril)</h3>
+<table>
+<tr><th>Date</th><th>Instance</th><th>Contenu</th></tr>
+<tr><td>20/04</td><td>Remise dossier</td><td>L1–L7 + L8 annexe</td></tr>
+<tr><td>22/04</td><td>Restitution Comité Strat.</td><td>Présent document + 25 slides</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Synthèse des constats majeurs — Analyse détaillée</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.1 Tableau récapitulatif</h3>
+<table>
+<tr><th>#</th><th>Constat</th><th>Axe</th><th>Criticité</th><th>Piliers</th><th>Réf.</th></tr>
+<tr><td>1</td><td>Fragmentation SI — 14 apps sans intégration</td><td>Technique</td><td>Élevée</td><td>D+Doc+Obs</td><td>C-01</td></tr>
+<tr><td>2</td><td>Absence identifiant unique bénéficiaire</td><td>Programmatique</td><td><b>Critique</b></td><td>D+Doc</td><td>C-02</td></tr>
+<tr><td>3</td><td>Doublons inter-programmes probables</td><td>Programmatique</td><td>Élevée</td><td>D+Doc</td><td>C-03</td></tr>
+<tr><td>4</td><td>Reporting Cabinet manuel (Excel)</td><td>Programmatique</td><td>Moyenne</td><td>D+Obs</td><td>C-04</td></tr>
+<tr><td>5</td><td>Pas d&#x27;intégration UXP / X-Road</td><td>Technique</td><td>Élevée</td><td>Doc</td><td>C-05</td></tr>
+<tr><td>6</td><td>Traçabilité primes insuffisante</td><td>Politique</td><td>Élevée</td><td>D+Doc+Obs</td><td>C-06</td></tr>
+<tr><td>7</td><td>Pas de SSO / 2FA centralisé</td><td>Technique</td><td>Moyenne</td><td>Obs</td><td>C-07</td></tr>
+<tr><td>8</td><td>Territoires non normalisés</td><td>Technique</td><td>Moyenne</td><td>Doc</td><td>C-08</td></tr>
+<tr><td>9</td><td>Connectivité régionale hétérogène</td><td>Technique</td><td>Moyenne</td><td>Obs</td><td>C-09</td></tr>
+<tr><td>10</td><td>Fonctions MVP CDC partiellement caduques</td><td>Politique</td><td>Faible</td><td>D+Doc</td><td>C-10</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>3.2 Analyse approfondie par constat</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-01 — Fragmentation du système d&#x27;information</h4>
+<p><b>Constat :</b> 14 applications métier en silos, aucun bus d&#x27;échange, consolidation par Excel et e-mail.</p>
+<p><b>Preuves :</b> Entretien DSI (24/03, démo observée) · Cartographie R7 · Matrice G-01, G-03.</p>
+<p><b>Implication :</b> La PNIPM ne peut pas « remplacer » ces SI en phase 1 ; une stratégie <b>API-first</b> et intégration progressive est obligatoire.</p>
+<p><b>Recommandation :</b> Lot 1 = socle + API Gateway + 2 intégrations pilotes (AEJ, DPSD).</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-02 — Absence d&#x27;identifiant unique bénéficiaire (CRITIQUE)</h4>
+<p><b>Constat :</b> Chaque programme gère sa propre clé ; NNI non exploité opérationnellement.</p>
+<p><b>Preuves :</b> DAJIP, DPSD, AEJ · Comité Strat. 06/04 · Gap G-07.</p>
+<p><b>Implication :</b> Drill-down Cabinet, déduplication et traçabilité bailleurs <b>impossibles</b> sans arbitrage NNI.</p>
+<p><b>Décision actée :</b> NNI + clé interne de transition sur 12 mois.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-03 — Doublons inter-programmes probables</h4>
+<p><b>Constat :</b> Même individu inscrit AEJ + PEJEDEC sans rapprochement ; estimation 8–15 % doublons (échantillon non statistique).</p>
+<p><b>Preuves :</b> Entretiens DAJIP, focus group Bouaké · Échantillon DPSD 600 lignes.</p>
+<p><b>Implication :</b> Indicateurs PJGOUV et reporting bailleurs potentiellement faussés.</p>
+<p><b>Recommandation :</b> Règles dédup provisoires (QW-04) en attendant NNI.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-04 — Reporting Cabinet manuel</h4>
+<p><b>Constat :</b> Consolidation mensuelle Excel, délai 15–20 jours, pas de drill-down temps réel.</p>
+<p><b>Preuves :</b> Entretiens Cabinet, DPSD · Modèles R10.</p>
+<p><b>Implication :</b> Arbitrages retardés ; quick win prioritaire = 5 KPI live.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-05 — Pas d&#x27;intégration UXP / X-Road</h4>
+<p><b>Constat :</b> Spécifications attendues en R7 non versées ; aucun service en production.</p>
+<p><b>Preuves :</b> DSI, relances Data Room · Gap G-03 · Risque RQ-05.</p>
+<p><b>Implication :</b> Interopérabilité gouvernementale reportée phase 2 ; option Auditeur X-Road.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-06 — Traçabilité primes insuffisante</h4>
+<p><b>Constat :</b> Chaîne inscription → paiement prime non tracée bout-en-bout (THIMO, stages).</p>
+<p><b>Preuves :</b> IG (24/03), DCEC · Exigence bailleurs · Gap G-10.</p>
+<p><b>Implication :</b> Risque contentieux et signalements IG ; cœur du MVP politique.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>C-07 à C-10 — Synthèse</h4>
+<table>
+<tr><th>Constat</th><th>Synthèse one-liner</th><th>Action</th></tr>
+<tr><td>C-07 SSO</td><td>Comptes locaux, pas de 2FA</td><td>Lot 1 — G-05</td></tr>
+<tr><td>C-08 Territoires</td><td>Codes région/district incohérents</td><td>Référentiel DPSD</td></tr>
+<tr><td>C-09 Offline</td><td>Réseau instable en DR</td><td>PWA G-06 confirmé</td></tr>
+<tr><td>C-10 MVP caduc</td><td>IA, chatbot, gamification non demandés</td><td>Retirer G-13, G-49, G-50</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Conclusions consolidées par axe</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.1 Axe Politique — Capacité d&#x27;arbitrage du Cabinet</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.1.1 Vision et attentes</h4>
+<p>Le Cabinet et le CT PNIPM partagent une vision <b>claire et légitime</b> : tableau de bord consolidé, drill-down jusqu&#x27;au bénéficiaire, traçabilité des primes, redevabilité bailleurs. Cette vision est <b>alignée</b> avec le PJGOUV 2026-2030 (4 millions d&#x27;emplois) et les conventions de financement.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.1.2 Écart vision / moyens</h4>
+<table>
+<tr><th>Capacité attendue</th><th>Moyen actuel</th><th>Écart</th></tr>
+<tr><td>Vision temps réel</td><td>Reporting Excel mensuel</td><td>Critique</td></tr>
+<tr><td>Drill-down bénéficiaire</td><td>Données silotées</td><td>Critique</td></tr>
+<tr><td>Traçabilité primes</td><td>Outils THIMO isolés</td><td>Élevé</td></tr>
+<tr><td>Arbitrage data-driven</td><td>Intuition + pièces partielles</td><td>Élevé</td></tr>
+</table>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.1.3 KPI Cabinet recommandés (MVP)</h4>
+<table>
+<tr><th>#</th><th>Indicateur</th><th>Source</th><th>Fréquence</th></tr>
+<tr><td>1</td><td>Bénéficiaires actifs (consolidé)</td><td>EDM PNIPM</td><td>Hebdo</td></tr>
+<tr><td>2</td><td>Taux d&#x27;exécution programmatique</td><td>DPSD + SIGFIP (phase 2)</td><td>Mensuel</td></tr>
+<tr><td>3</td><td>Primes versées / engagées</td><td>THIMO pilote</td><td>Mensuel</td></tr>
+<tr><td>4</td><td>Taux de sortie positive (emploi)</td><td>AEJ pilote</td><td>Trimestriel</td></tr>
+<tr><td>5</td><td>Alertes data quality</td><td>Grille DPSD</td><td>Continu</td></tr>
+</table>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.1.4 Conclusion politique</h4>
+<p><b>Go confirmé</b> — ajuster le périmètre MVP (retirer fonctions caduques), concentrer sur 5 KPI et traçabilité primes THIMO. Sponsor Cabinet doit rester engagé post-audit (COPIL mensuel).</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.2 Axe Programmatique — Écosystème des dispositifs</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.2.1 Cartographie des 12 dispositifs</h4>
+<table>
+<tr><th>Dispositif</th><th>Bailleur principal</th><th>Maturité data</th><th>Priorité intégration</th></tr>
+<tr><td>AEJ</td><td>État</td><td>Moyenne</td><td><b>P1 — pilote</b></td></tr>
+<tr><td>PEJEDEC</td><td>BAD</td><td>Faible</td><td><b>P1</b></td></tr>
+<tr><td>PACE / Enable Youth</td><td>BM</td><td>Moyenne</td><td><b>P1</b></td></tr>
+<tr><td>USEP</td><td>UNICEF</td><td>Faible</td><td>P2</td></tr>
+<tr><td>THIMO</td><td>État</td><td>Faible</td><td>P1 (primes)</td></tr>
+<tr><td>OSCN / Service civique</td><td>État</td><td>Moyenne</td><td>P2</td></tr>
+<tr><td>Carte Jeunes</td><td>État</td><td>Pilote</td><td>P2</td></tr>
+<tr><td>BCP-Emploi</td><td>État</td><td>Faible</td><td>P3</td></tr>
+<tr><td>PSIE, PNBV, C2D, UGP-CSC</td><td>Divers</td><td>Variable</td><td>P3</td></tr>
+</table>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.2.2 Parcours bénéficiaire — État constaté</h4>
+<p><span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>`</span> Inscription programme A → [pas de lien] → Inscription programme B ↓                                        ↓ Clé interne A                            Clé interne B ↓                                        ↓ Prime versée                             Prime versée (?) ↓                                        ↓ [Aucune vue consolidée Cabinet] <span style='font-family:Consolas,monospace;background:#f4f0eb;padding:1px 4px'>`</span></p>
+<p><b>Conséquence :</b> double comptage possible, parcours invisible, reporting bailleur manuel.</p>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.2.3 Stratégie identité recommandée</h4>
+<table>
+<tr><th>Phase</th><th>Clé</th><th>Usage</th></tr>
+<tr><td>M0–M6</td><td>Clé interne + rapprochement flou</td><td>Transition, QW-04</td></tr>
+<tr><td>M6–M12</td><td>NNI pilote AEJ + PEJEDEC</td><td>Golden record v1</td></tr>
+<tr><td>M12–M18</td><td>NNI généralisé</td><td>Dédup inter-programmes</td></tr>
+<tr><td>M18+</td><td>NNI seul (clé interne archivée)</td><td>Conformité CDC G-07</td></tr>
+</table>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.2.4 Conclusion programmatique</h4>
+<p>Prioriser <b>AEJ + PEJEDEC + PACE + THIMO</b> comme vagues d&#x27;intégration. Finaliser référentiel dispositifs (P0-5) et grille qualité data (P0-6) avant marché.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>4.3 Axe Technique — Maturité SI et prérequis</h3>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.3.1 Score de maturité (CMMI simplifié)</h4>
+<table>
+<tr><th>Domaine</th><th>Score actuel</th><th>Cible CDC</th><th>Écart</th></tr>
+<tr><td>Architecture</td><td>2/5</td><td>4/5</td><td>-2</td></tr>
+<tr><td>Intégration</td><td>1/5</td><td>4/5</td><td>-3</td></tr>
+<tr><td>Sécurité</td><td>2/5</td><td>4/5</td><td>-2</td></tr>
+<tr><td>Data</td><td>2/5</td><td>4/5</td><td>-2</td></tr>
+<tr><td>Exploitation</td><td>3/5</td><td>4/5</td><td>-1</td></tr>
+<tr><td><b>Moyenne</b></td><td><b>2,0/5</b></td><td><b>4/5</b></td><td><b>-2</b></td></tr>
+</table>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.3.2 Prérequis bloquants (8)</h4>
+<table>
+<tr><th>#</th><th>Prérequis</th><th>Statut audit</th><th>Délai recommandé</th></tr>
+<tr><td>P0-1</td><td>Arbitrage NNI</td><td>Acté 06/04</td><td>Fait</td></tr>
+<tr><td>P0-2</td><td>Cellule PNIPM</td><td>Proposé</td><td>T0</td></tr>
+<tr><td>P0-3</td><td>Révision MVP CDC</td><td>En cours</td><td>T0-2 mois</td></tr>
+<tr><td>P0-4</td><td>Protocole NNI (DPO)</td><td>Négociation</td><td>T0+1 mois</td></tr>
+<tr><td>P0-5</td><td>Référentiel dispositifs</td><td>60 %</td><td>T0+2 mois</td></tr>
+<tr><td>P0-6</td><td>Grille qualité data</td><td>40 %</td><td>T0+2 mois</td></tr>
+<tr><td>P0-7</td><td>SSO / IAM cible</td><td>Esquisse</td><td>T0+1 mois</td></tr>
+<tr><td>P0-8</td><td>Marché lancé</td><td>Post-audit</td><td>T0</td></tr>
+</table>
+<h4 style='font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold'>4.3.3 Conclusion technique</h4>
+<p>Marché en <b>2 lots minimum</b> : Lot 1 socle + MVP (M0–M12), Lot 2 intégrations NNI/SIGFIP/UXP (M12–M18). Ne pas exiger microservices full dès le lot 1 (G-01 à ajuster).</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Matrice des écarts CDC — Synthèse décisionnelle</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.1 Distribution des verdicts (50 exigences)</h3>
+<table>
+<tr><th>Verdict</th><th>Nombre</th><th>%</th><th>Interprétation pour le marché</th></tr>
+<tr><td>Confirmé</td><td>8</td><td>16 %</td><td>Intégrer tel quel au MVP</td></tr>
+<tr><td>À ajuster</td><td>6</td><td>12 %</td><td>Reformuler au CCTP</td></tr>
+<tr><td>À compléter</td><td>31</td><td>62 %</td><td>Prérequis ou phase 2</td></tr>
+<tr><td>Caduc</td><td>5</td><td>10 %</td><td><b>Retirer</b> du MVP</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.2 Top 12 écarts bloquants</h3>
+<table>
+<tr><th>Ref</th><th>Exigence</th><th>Criticité</th><th>Vague traitement</th></tr>
+<tr><td>G-07</td><td>NNI bénéficiaire</td><td>Critique</td><td>Vague 2 (M12+)</td></tr>
+<tr><td>G-09</td><td>Drill-down Cabinet</td><td>Critique</td><td>Vague 1 — MVP</td></tr>
+<tr><td>G-10</td><td>Traçabilité primes</td><td>Critique</td><td>Vague 1 — MVP</td></tr>
+<tr><td>G-05</td><td>SSO + 2FA</td><td>Critique</td><td>Vague 0</td></tr>
+<tr><td>G-03</td><td>UXP / X-Road</td><td>Critique</td><td>Vague 2</td></tr>
+<tr><td>G-08</td><td>SIGFIP</td><td>Critique</td><td>Vague 2</td></tr>
+<tr><td>G-01</td><td>Microservices</td><td>Majeur</td><td>Vague 3</td></tr>
+<tr><td>G-47</td><td>Qualité data</td><td>Majeur</td><td>Vague 0</td></tr>
+<tr><td>G-06</td><td>PWA offline</td><td>Majeur</td><td>Vague 1</td></tr>
+<tr><td>G-14</td><td>Volet B</td><td>Majeur</td><td>Vague 2</td></tr>
+<tr><td>G-02</td><td>Bases PostgreSQL/Mongo</td><td>Modéré</td><td>Vague 1–2</td></tr>
+<tr><td>G-11</td><td>Chiffrement</td><td>Majeur</td><td>Vague 0–1</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.3 Exigences caduques — Retrait recommandé</h3>
+<table>
+<tr><th>Ref</th><th>Exigence</th><th>Motif</th></tr>
+<tr><td>G-13</td><td>Module IA prédictif</td><td>Data immature (RQ-06, C-10)</td></tr>
+<tr><td>G-49</td><td>Chatbot NLP jeunes</td><td>Non demandé Cabinet</td></tr>
+<tr><td>G-50</td><td>Gamification portail</td><td>Non demandé</td></tr>
+<tr><td>G-04</td><td>IPv6 natif</td><td>Priorité basse</td></tr>
+<tr><td>G-12 (partiel)</td><td>SLA 99,9 % immédiat</td><td>Progressif</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>5.4 Périmètre MVP validé (synthèse L4)</h3>
+<p><b>Inclus lot 1 :</b> consolidation 5 KPI, drill-down AEJ, primes THIMO, SSO/RBAC, PWA offline 2 DR, référentiel dispositifs, intégration AEJ + DPSD.</p>
+<p><b>Reporté lot 2 :</b> NNI, SIGFIP, UXP, volet B complet, microservices.</p>
+<p><b>Retiré :</b> IA, chatbot, gamification.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Risques, recommandations et quick wins</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.1 Registre consolidé — Vue heatmap</h3>
+<table>
+<tr><th>Niveau</th><th>Risques mission</th><th>Risques solution</th></tr>
+<tr><td><b>Critique (&gt;12)</b></td><td>—</td><td>—</td></tr>
+<tr><td><b>Élevé (9–12)</b></td><td>RQ-02 Data Room</td><td>RQ-05 X-Road, RQ-06 Data/IA, RQ-07 NNI, RS-01 Dérive, RS-03 DSI</td></tr>
+<tr><td><b>Moyen (5–8)</b></td><td>RQ-01, RQ-03, RQ-04</td><td>RQ-08, RS-02, RS-04, RS-05, RS-06</td></tr>
+<tr><td><b>Faible (&lt;5)</b></td><td>—</td><td>—</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.2 Risques résiduels post-mission</h3>
+<table>
+<tr><th>Ref</th><th>Risque</th><th>Statut</th><th>Action post-restitution</th></tr>
+<tr><td>RQ-02</td><td>Data Room incomplète (33 %)</td><td>Ouvert</td><td>Relances cockpit — opérationnel</td></tr>
+<tr><td>RQ-05</td><td>X-Road non documenté</td><td>Ouvert</td><td>Décision Auditeur ou différé</td></tr>
+<tr><td>RQ-06</td><td>IA prématurée</td><td>Maîtrisé</td><td>Roadmap phase 3 actée</td></tr>
+<tr><td>RQ-07</td><td>Doublons bénéficiaires</td><td>Arbitré</td><td>Protocole NNI en cours</td></tr>
+<tr><td>RS-03</td><td>Surcharge DSI</td><td>Ouvert</td><td>Cellule + 2 ETP projet</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.3 Recommandations stratégiques (R-STR)</h3>
+<table>
+<tr><th>ID</th><th>Recommandation</th><th>Priorité</th><th>Owner</th><th>Horizon</th></tr>
+<tr><td>R-STR-01</td><td>MVP allégé (L4 §5.1)</td><td>P0</td><td>Comité Strat.</td><td>22/04</td></tr>
+<tr><td>R-STR-02</td><td>Cellule PNIPM</td><td>P0</td><td>Cabinet</td><td>T0</td></tr>
+<tr><td>R-STR-03</td><td>NNI clé bénéficiaire</td><td>P0</td><td>DAJIP/DPO</td><td>Acté</td></tr>
+<tr><td>R-STR-04</td><td>Protocole NNI + SIGFIP</td><td>P0</td><td>DPO/DAF</td><td>T0+3 mois</td></tr>
+<tr><td>R-STR-05</td><td>Révision CDC (retirer caduc)</td><td>P1</td><td>CT PNIPM</td><td>M1</td></tr>
+<tr><td>R-STR-06</td><td>Marché lots séquencés</td><td>P0</td><td>DMP</td><td>T0</td></tr>
+<tr><td>R-STR-07</td><td>Cofinancement bailleurs 40 %</td><td>P1</td><td>DAF</td><td>T0+2 mois</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>6.4 Quick wins (0–6 mois post-marché)</h3>
+<table>
+<tr><th>#</th><th>Quick win</th><th>Impact</th><th>Effort</th><th>KPI J+90</th></tr>
+<tr><td>QW-01</td><td>Tableau de bord Cabinet</td><td>Très élevé</td><td>M</td><td>5 KPI live</td></tr>
+<tr><td>QW-02</td><td>Portail Data Room unifié</td><td>Moyen</td><td>F</td><td>80 % docs</td></tr>
+<tr><td>QW-03</td><td>SSO pilote 2 apps</td><td>Moyen</td><td>M</td><td>-50 % comptes locaux</td></tr>
+<tr><td>QW-04</td><td>Règles dédup provisoires</td><td>Élevé</td><td>M</td><td>-15 % doublons</td></tr>
+<tr><td>QW-05</td><td>Relances documentaires</td><td>Moyen</td><td>F</td><td>100 % tracées</td></tr>
+<tr><td>QW-06</td><td>Formation agents DR (PWA)</td><td>Élevé</td><td>M</td><td>200 agents</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Feuille de route et chiffrage — Synthèse</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>7.1 Trajectoire recommandée (L6 scénario A)</h3>
+<table>
+<tr><th>Phase</th><th>Horizon</th><th>Objectif</th><th>Budget relatif</th></tr>
+<tr><td>0 — Fondations</td><td>M0–M3</td><td>Gouvernance, ref, SSO</td><td>15 %</td></tr>
+<tr><td>1 — MVP</td><td>M3–M12</td><td>Consolidation, drill-down, primes</td><td>45 %</td></tr>
+<tr><td>2 — Intégrations</td><td>M12–M18</td><td>NNI, SIGFIP, UXP</td><td>30 %</td></tr>
+<tr><td>3 — Optimisation</td><td>M18–M24</td><td>IA (si data OK), scale</td><td>10 %</td></tr>
+</table>
+<p><b>Jalon clé :</b> Go-live MVP <b>M+12</b> — restitution COPIL + Comité Stratégique.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>7.2 Scénarios chiffrés (renvoi L8)</h3>
+<table>
+<tr><th>Scénario</th><th>MVP</th><th>Coût 24 mois (Md FCFA)</th><th>Recommandation</th></tr>
+<tr><td>Minimal</td><td>M+9</td><td>2,1 – 2,6</td><td>Transition seulement</td></tr>
+<tr><td><b>Cible</b></td><td>M+12</td><td><b>3,0 – 3,8</b></td><td><b>Retenir</b></td></tr>
+<tr><td>Accéléré</td><td>M+6</td><td>3,9 – 4,9</td><td>Si contrainte date</td></tr>
+</table>
+<p><b>Plan financement indicatif (Cible) :</b> 35 % État · 40 % bailleurs · 15 % fonds numérique · 10 % réserves.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>7.3 Gouvernance post-audit</h3>
+<table>
+<tr><th>Instance</th><th>Fréquence</th><th>Rôle</th></tr>
+<tr><td>Comité Stratégique</td><td>Trimestriel</td><td>Jalons majeurs, budget</td></tr>
+<tr><td>COPIL PNIPM</td><td>Mensuel</td><td>Déblocage, suivi</td></tr>
+<tr><td>Cellule PNIPM</td><td>Quotidien</td><td>MOA opérationnel</td></tr>
+<tr><td>DPO</td><td>Continu</td><td>Conformité NNI/data</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>8. Décisions demandées au Comité Stratégique</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>8.1 Tableau des décisions</h3>
+<table>
+<tr><th>#</th><th>Décision</th><th>Options</th><th>Recommandation PORTIA</th><th>Délai</th><th>Impact si non tranché</th></tr>
+<tr><td>D1</td><td>Périmètre MVP</td><td>CDC strict / Allégé</td><td><b>Allégé</b> (L4 §5.1)</td><td>22/04</td><td>Retard 6–12 mois</td></tr>
+<tr><td>D2</td><td>Clé bénéficiaire</td><td>NNI / Interne / Hybride</td><td><b>NNI + transition</b></td><td>Acté</td><td>—</td></tr>
+<tr><td>D3</td><td>Lancement marché</td><td>Oui / Report 6 mois</td><td><b>Oui sous 30 j</b></td><td>Mai 2026</td><td>Perte momentum</td></tr>
+<tr><td>D4</td><td>Cellule PNIPM</td><td>Créer / Différer</td><td><b>Créer T0</b></td><td>Juin 2026</td><td>Échec MOA</td></tr>
+<tr><td>D5</td><td>Auditeur X-Road</td><td>Oui / Non / Différé</td><td><b>Oui si blocage</b></td><td>Juin 2026</td><td>Retard UXP</td></tr>
+<tr><td>D6</td><td>Budget quick wins</td><td>150 M / 0</td><td><b>150 M FCFA</b></td><td>T0</td><td>Pas de visibilité M+3</td></tr>
+<tr><td>D7</td><td>Scénario chiffrage</td><td>Minimal / Cible / Accéléré</td><td><b>Cible (L8)</b></td><td>22/04</td><td>Arbitrage budget flou</td></tr>
+<tr><td>D8</td><td>Accompagnement MOA</td><td>PORTIA 12 mois / Interne</td><td><b>PORTIA ou équivalent</b></td><td>T0</td><td>Risque RS-03</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>8.2 Formulation proposée des résolutions</h3>
+<ol style='margin:8px 0 8px 24px'>
+<li><i>« Le Comité Stratégique valide le périmètre MVP allégé tel que décrit au §5.4 du présent rapport et au livrable L4. »</i></li>
+<li><i>« Le Comité autorise la publication du marché de développement PNIPM sous 30 jours calendaires, en deux lots séquencés. »</i></li>
+<li><i>« Le Comité acte la création de la Cellule PNIPM (6 ETP) et l&#x27;enveloppe de 150 M FCFA pour les quick wins de phase 0. »</i></li>
+<li><i>« Le Comité retient le scénario de déploiement Cible (3,0–3,8 Md FCFA / 24 mois) et charge la DAF de mobiliser 40 % de cofinancement bailleurs. »</i></li>
+</ol>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>9. Bilan de la mission d&#x27;audit</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>9.1 Indicateurs de performance</h3>
+<table>
+<tr><th>Indicateur</th><th>Cible contractuelle</th><th>Réalisé</th><th>Écart</th><th>Commentaire</th></tr>
+<tr><td>Entretiens</td><td>48</td><td>48</td><td>0</td><td>100 % — toutes trames</td></tr>
+<tr><td>Data Room</td><td>70 % docs</td><td>33 %</td><td>-37 pts</td><td>Relances actives fin mission</td></tr>
+<tr><td>Constats</td><td>≥ 8</td><td>10</td><td>+2</td><td>Triangulation OK</td></tr>
+<tr><td>Livrables L1–L7</td><td>7</td><td>7</td><td>0</td><td>100 %</td></tr>
+<tr><td>Matrice G-01–G-50</td><td>48 min.</td><td>50</td><td>+2</td><td>L4 complet</td></tr>
+<tr><td>Satisfaction sponsor</td><td>≥ 4/5</td><td>4,2/5</td><td>OK</td><td>Sondage CT PNIPM</td></tr>
+<tr><td>Restitution</td><td>J+30</td><td>J+30</td><td>0</td><td>Respect délai</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>9.2 Points forts de la mission</h3>
+<ul style='margin:8px 0 8px 24px'>
+<li><b>Couverture entretiens</b> exhaustive (48/48) malgré calendrier serré ;</li>
+<li><b>Cockpit PORTIA</b> : traçabilité temps réel, relances Data Room, exports ;</li>
+<li><b>Arbitrage NNI</b> obtenu au Comité Stratégique mi-parcours ;</li>
+<li><b>Matrice d&#x27;écarts</b> opérationnelle et liée aux constats ;</li>
+<li><b>Quick wins</b> identifiés et chiffrables.</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>9.3 Points de vigilance et limites</h3>
+<table>
+<tr><th>Limite</th><th>Impact conclusions</th><th>Atténuation</th></tr>
+<tr><td>Data Room 33 % seulement</td><td>Conclusions prudentes sur SIGFIP, UXP</td><td>Relances post-mission</td></tr>
+<tr><td>Pas d&#x27;audit financier (HP-02)</td><td>Pas de chiffrage programmes</td><td>Hors périmètre</td></tr>
+<tr><td>Pas de pentest</td><td>Recommandations sécurité génériques</td><td>Audit sécurité marché</td></tr>
+<tr><td>Échantillon data 600 lignes</td><td>Doublons = estimation</td><td>Mission data ciblée</td></tr>
+<tr><td>Terrain S4 partiel</td><td>Constats C-09 confirmés Abidjan/Bouaké</td><td>Extension S4 si besoin</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>9.4 Engagements réciproques — Bilan</h3>
+<table>
+<tr><th>Engagement</th><th>MPJIPSC</th><th>PORTIA</th></tr>
+<tr><td>Disponibilité référents</td><td>Partiel (S2 chargé)</td><td>Respecté</td></tr>
+<tr><td>Data Room 72 h</td><td>Partiel (33 %)</td><td>Relances formalisées</td></tr>
+<tr><td>Validation livrables 5 j</td><td>L1 validé, autres en cours</td><td>Livrés à J+30</td></tr>
+<tr><td>Confidentialité</td><td>Respectée</td><td>Respectée</td></tr>
+<tr><td>COPIL hebdo</td><td>4/4 tenus</td><td>4/4</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>9.5 Suite recommandée post-mission</h3>
+<table>
+<tr><th>Option</th><th>Durée</th><th>Objectif</th><th>Budget indicatif</th></tr>
+<tr><td>Accompagnement MOA PORTIA</td><td>12 mois</td><td>Pilotage marché, COPIL</td><td>450–550 M FCFA</td></tr>
+<tr><td>Auditeur X-Road</td><td>15 jours</td><td>Specs UXP, faisabilité</td><td>45–65 M FCFA</td></tr>
+<tr><td>Audit qualité data DPSD</td><td>10 jours</td><td>Golden record, dédup</td><td>35–50 M FCFA</td></tr>
+<tr><td>Extension terrain S4</td><td>5 jours</td><td>3 DR supplémentaires</td><td>20 M FCFA</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>10. Restitution — Support et format</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>10.1 Structure de la présentation (25 slides)</h3>
+<table>
+<tr><th>Bloc</th><th>Slides</th><th>Contenu</th></tr>
+<tr><td>Contexte</td><td>1–3</td><td>PJGOUV, enjeux, périmètre mission</td></tr>
+<tr><td>Constats</td><td>4–10</td><td>C-01 à C-10, 1 slide / constat majeur</td></tr>
+<tr><td>Écarts CDC</td><td>11–14</td><td>Verdicts, MVP, retrait caduc</td></tr>
+<tr><td>Risques</td><td>15–17</td><td>Top 5, heatmap, mitigations</td></tr>
+<tr><td>Roadmap</td><td>18–21</td><td>4 phases, jalons, prérequis</td></tr>
+<tr><td>Chiffrage</td><td>22–23</td><td>3 scénarios L8, recommandation</td></tr>
+<tr><td>Décisions</td><td>24–25</td><td>8 décisions, prochaines étapes</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>10.2 Documents remis au Comité Stratégique</h3>
+<table>
+<tr><th>Document</th><th>Format</th><th>Destinataire</th></tr>
+<tr><td>Rapport final L7</td><td>Word/PDF</td><td>Comité Strat.</td></tr>
+<tr><td>Livrables L1–L6</td><td>Word</td><td>COPIL, directions</td></tr>
+<tr><td>Annexe L8 chiffrage</td><td>Word</td><td>DAF, Cabinet</td></tr>
+<tr><td>Matrice écarts L4</td><td>Excel + Word</td><td>DSI, CT PNIPM</td></tr>
+<tr><td>Support slides</td><td>PPT/PDF</td><td>Restitution 22/04</td></tr>
+<tr><td>Export cockpit ZIP</td><td>ZIP</td><td>Archives mission</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>11. Annexes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe A — Index des livrables remis</h3>
+<table>
+<tr><th>Ref</th><th>Titre</th><th>Pages</th><th>Statut</th><th>Date</th></tr>
+<tr><td>L1</td><td>Note de cadrage validée</td><td>~15</td><td>Validé COPIL</td><td>22/03</td></tr>
+<tr><td>L2</td><td>Inventaire besoins qualifiés</td><td>~12</td><td>Projet revu</td><td>06/04</td></tr>
+<tr><td>L3</td><td>Cartographie données &amp; SI</td><td>~12</td><td>Projet revu</td><td>10/04</td></tr>
+<tr><td>L4</td><td>Matrice écarts CDC G-01–G-50</td><td>~12</td><td>Projet revu</td><td>10/04</td></tr>
+<tr><td>L5</td><td>Risques &amp; recommandations</td><td>~12</td><td>Projet revu</td><td>17/04</td></tr>
+<tr><td>L6</td><td>Feuille de route 24 mois</td><td>~12</td><td>Projet revu</td><td>17/04</td></tr>
+<tr><td>L7</td><td>Rapport final (présent)</td><td>~25</td><td>Projet restitution</td><td>22/04</td></tr>
+<tr><td>L8</td><td>Chiffrage scénarios</td><td>~12</td><td>Annexe disponible</td><td>22/04</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe B — Décisions COPIL et Comité Stratégique (extrait PV)</h3>
+<table>
+<tr><th>Date</th><th>Instance</th><th>Décision</th></tr>
+<tr><td>22/03</td><td>Lancement</td><td>Charte COPIL, L1 validé, HP confirmés</td></tr>
+<tr><td>27/03</td><td>COPIL #1</td><td>Plan S2, relances Data Room A–F</td></tr>
+<tr><td>03/04</td><td>COPIL #2</td><td>Priorisation programmes AEJ/PEJEDEC</td></tr>
+<tr><td>06/04</td><td>Comité Strat.</td><td><b>NNI + clé transition actés</b></td></tr>
+<tr><td>10/04</td><td>COPIL #3</td><td>Matrice L4, option Auditeur X-Road</td></tr>
+<tr><td>17/04</td><td>COPIL #4</td><td>Roadmap L6, registre risques L5</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe C — Correspondance constats / gaps / risques / livrables</h3>
+<table>
+<tr><th>Constat</th><th>Gaps</th><th>Risques</th><th>Livrable détail</th></tr>
+<tr><td>C-01</td><td>G-01, G-03</td><td>RS-02</td><td>L3</td></tr>
+<tr><td>C-02</td><td>G-07</td><td>RQ-07</td><td>L2, L4</td></tr>
+<tr><td>C-03</td><td>G-07</td><td>RQ-07</td><td>L2</td></tr>
+<tr><td>C-04</td><td>G-09</td><td>—</td><td>L2</td></tr>
+<tr><td>C-05</td><td>G-03</td><td>RQ-05</td><td>L3, L5</td></tr>
+<tr><td>C-06</td><td>G-10</td><td>RS-04</td><td>L4, L5</td></tr>
+<tr><td>C-07</td><td>G-05</td><td>—</td><td>L4</td></tr>
+<tr><td>C-08</td><td>G-47</td><td>RQ-06</td><td>L2</td></tr>
+<tr><td>C-09</td><td>G-06</td><td>RS-05</td><td>L3, L6</td></tr>
+<tr><td>C-10</td><td>G-13, G-49, G-50</td><td>RQ-06</td><td>L4</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe D — Liste des 48 entretiens (synthèse)</h3>
+<table>
+<tr><th>Semaine</th><th>Politique</th><th>Programmatique</th><th>Technique</th><th>Total</th></tr>
+<tr><td>S1</td><td>8</td><td>2</td><td>4</td><td>14</td></tr>
+<tr><td>S2</td><td>2</td><td>10</td><td>4</td><td>16</td></tr>
+<tr><td>S3</td><td>0</td><td>4</td><td>10</td><td>14</td></tr>
+<tr><td>S4</td><td>0</td><td>2</td><td>2</td><td>4</td></tr>
+<tr><td><b>Total</b></td><td><b>10</b></td><td><b>18</b></td><td><b>20</b></td><td><b>48</b></td></tr>
+</table>
+<p><i>Détail nominatif : cockpit mission → Entretiens → Export.</i></p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe E — Data Room — État des lieux clôture</h3>
+<table>
+<tr><th>Répertoire</th><th>Attendus</th><th>Versés</th><th>Taux</th><th>Bloquant</th></tr>
+<tr><td>R1 Gouvernance</td><td>8</td><td>6</td><td>75 %</td><td>Non</td></tr>
+<tr><td>R2 Politique</td><td>6</td><td>5</td><td>83 %</td><td>Non</td></tr>
+<tr><td>R3 Données</td><td>12</td><td>4</td><td>33 %</td><td><b>Oui</b></td></tr>
+<tr><td>R4 Programmes</td><td>10</td><td>3</td><td>30 %</td><td><b>Oui</b></td></tr>
+<tr><td>R5 Budget/SIGFIP</td><td>8</td><td>2</td><td>25 %</td><td><b>Oui</b></td></tr>
+<tr><td>R6 Juridique</td><td>6</td><td>4</td><td>67 %</td><td>Non</td></tr>
+<tr><td>R7 SI/Architecture</td><td>10</td><td>2</td><td>20 %</td><td><b>Oui</b></td></tr>
+<tr><td>R8 Sécurité</td><td>4</td><td>2</td><td>50 %</td><td>Non</td></tr>
+<tr><td>R9 Terrain</td><td>4</td><td>0</td><td>0 %</td><td>Non</td></tr>
+<tr><td>R10 Reporting</td><td>4</td><td>2</td><td>50 %</td><td>Non</td></tr>
+<tr><td><b>Total</b></td><td><b>72</b></td><td><b>24</b></td><td><b>33 %</b></td><td>—</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe F — Remerciements</h3>
+<p>PORTIA remercie chaleureusement le Directeur de Cabinet, le Conseiller Technique référent PNIPM, les directeurs centraux (DAJIP, DPSD, DSI, DAF, DRH), les tutelles (AEJ, OSCN), les équipes des directions régionales d&#x27;Abidjan, Bouaké et Korhogo, ainsi que le secrétariat du COPIL pour leur disponibilité et leur franchise dans un calendrier exigeant de 30 jours.</p>
+<hr style='border:none;border-top:1px solid #ccc;margin:18px 0'/>
+<p><b>Pour le cabinet PORTIA</b></p>
+<table>
+<tr><th>Rôle</th><th>Nom</th><th>Signature</th></tr>
+<tr><td>Directeur de mission</td><td>Mme Laurent P.</td><td>[simulation démo]</td></tr>
+<tr><td>Manager Programmatique</td><td>M. Asse</td><td>[simulation démo]</td></tr>
+<tr><td>Manager Technique</td><td>Mme Laetitia</td><td>[simulation démo]</td></tr>
+<tr><td>Analyste data</td><td>M. Koné</td><td>[simulation démo]</td></tr>
+</table>
+<p><i>Abidjan, le 22 avril 2026</i></p>
+<hr style='border:none;border-top:1px solid #ccc;margin:18px 0'/>
+<p><i>Document L7 — Version démo 2.0 — Cabinet PORTIA — Confidentiel — Usage interne MPJIPSC / PORTIA</i></p>
+</body></html>

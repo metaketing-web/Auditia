@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj<< /Type /Catalog /Pages 2 0 R >>endobj
+2 0 obj<< /Type /Pages /Kids [3 0 R] /Count 1 >>endobj
+3 0 obj<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>endobj
+4 0 obj<< /Length 1017 >>stream
+BT
+/F1 11 Tf
+50 800 Td
+(Modalités de raccordement SIGFIP ? MPJIPSC) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(DOCUMENT DE DÉMONSTRATION ? Mission d'audit PNIPM \(MPJIPSC\). Contenu fictif mais structuré p) Tj
+0 -14 Td
+(our les besoins de l'audit Skydeen.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Contexte) Tj
+0 -14 Td
+(Le SIGFIP \(Système Intégré de Gestion des Finances Publiques\) est opéré par le Ministère du ) Tj
+0 -14 Td
+(Budget.) Tj
+0 -14 Td
+(Le MPJIPSC consulte les données d'exécution via export mensuel ? pas d'interface temps réel.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Modalités actuelles) Tj
+0 -14 Td
+(Export Excel mensuel transmis par la DAF \(délai J+15 après clôture mensuelle\).) Tj
+0 -14 Td
+(Pas de webservice dédié. Pas de réconciliation automatique avec les indicateurs programmes.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Besoin PNIPM) Tj
+0 -14 Td
+(Flux automatisé ou API pour alimenter le tableau de bord consolidé.) Tj
+0 -14 Td
+(Traçabilité engagement ? liquidation ? ordonnancement ? bénéficiaire \(cible long terme\).) Tj
+0 -14 Td
+() Tj
+ET
+endstream endobj
+5 0 obj<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000056 00000 n 
+0000000111 00000 n 
+0000000235 00000 n 
+0000001302 00000 n 
+trailer<< /Size 6 /Root 1 0 R >>
+startxref
+1370
+%%EOF

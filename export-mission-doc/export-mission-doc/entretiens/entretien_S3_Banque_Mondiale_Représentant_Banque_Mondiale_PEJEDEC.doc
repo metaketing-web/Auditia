@@ -1,0 +1,49 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Représentant Banque Mondiale — PEJEDEC</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Représentant Banque Mondiale — PEJEDEC</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | Banque Mondiale |
+| Axe | Technique |
+| Semaine | S3 |
+| Date mission | J+17 |
+| Heure | 11:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | bailleur |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Représentant bailleur (BAD, BM, AFD, PNUD, BOAD)
+<b>Durée indicative :</b> 90 min
+<b>Clé trame :</b> `bailleur`</p><p><b>Nombre de questions :</b> 12</p><p>### Phase 1 — Investigation</p><p>#### A. Exigences reporting</p><p><b>1. Exigences reporting : format, fréquence, indicateurs ?</b>
+<li>*Réf. :* `bai_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Modèles et templates imposés aux programmes ?</b>
+<li>*Réf. :* `bai_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Évaluation qualité reporting actuel du ministère ?</b>
+<li>*Réf. :* `bai_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Données &amp; conformité</p><p><b>1. Données indispensables vs problématiques ?</b>
+<li>*Réf. :* `bai_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Obligations conformité (environnement, RGPD) ?</b>
+<li>*Réf. :* `bai_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Missions de supervision — frictions récurrentes ?</b>
+<li>*Réf. :* `bai_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### Plateforme consolidée</p><p><b>1. Génération automatique formats bailleur — acceptable ?</b>
+<li>*Réf. :* `bai_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Garanties de fiabilité exigées ?</b>
+<li>*Réf. :* `bai_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Valorisation dans vos évaluations si plateforme livrée ?</b>
+<li>*Réf. :* `bai_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Alignement</p><p><b>1. Indicateurs prioritaires pour vos besoins ?</b>
+<li>*Réf. :* `bai_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Niveau d'automatisation acceptable ?</b>
+<li>*Réf. :* `bai_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Bonnes pratiques d'autres pays à transposer ?</b>
+<li>*Réf. :* `bai_cc_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

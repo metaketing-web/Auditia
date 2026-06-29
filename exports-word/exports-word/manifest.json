@@ -1,0 +1,13 @@
+{
+  "exportedAt": "2026-06-08T15:08:45.309286+00:00",
+  "format": "doc",
+  "counts": {
+    "entretiens": 48,
+    "constats": 10,
+    "matrice_cdc": 48,
+    "livrables": 7,
+    "synthese": 3
+  },
+  "total": 116,
+  "errors": []
+}

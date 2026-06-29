@@ -1,0 +1,12 @@
+{
+  "name": "correction-plateforme-auditia",
+  "version": "1.0.0",
+  "main": "cartographie-interactions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

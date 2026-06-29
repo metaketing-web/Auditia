@@ -1,0 +1,17 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>matrice G-28</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Matrice CDC — G-28</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:08 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p>| Champ | Valeur |
+|-------|--------|
+| Référence | G-28 |
+| Thème | Performance |
+| Verdict | À ajuster |
+| Référence CDC | § Perf 7.3 |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Exigence du cahier des charges</h2></p><p>Temps de réponse &lt; 3s tableaux de bord</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Réalité observée</h2></p><p>Non benchmarké.
+</p></body></html>

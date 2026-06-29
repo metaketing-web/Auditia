@@ -1,0 +1,281 @@
+/**
+ * Skydeen — 2FA TOTP (comptes pilotage) dans Réglages + aide login.
+ */
+(function () {
+  "use strict";
+
+  const TOTP_ELIGIBLE_ROLES = new Set(["admin", "juliana", "auditeur_b", "auditeur_t"]);
+
+  function eligible() {
+    const u = App.user;
+    return u && TOTP_ELIGIBLE_ROLES.has(u.serverRole || u.role);
+  }
+
+  function esc(s) {
+    return String(s || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  async function totpStatus() {
+    const r = await fetch("/api/auth/totp/status");
+    if (!r.ok) return null;
+    return r.json();
+  }
+
+  function cardHtml(st) {
+    if (!st || !st.eligible) return "";
+    if (st.enabled) {
+      return `
+        <div class="card" id="totpCard" style="margin-top:16px">
+          <div class="card-h"><span class="ic ok">✓</span> Authentification à deux facteurs (2FA)</div>
+          <p class="note ok" style="margin:12px 0">2FA activée — Google Authenticator, Authy ou équivalent.</p>
+          <div class="field"><label>Mot de passe</label><input id="totpDisPass" type="password" autocomplete="current-password"></div>
+          <div class="field"><label>Code 2FA actuel</label><input id="totpDisCode" type="text" inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code"></div>
+          <button type="button" class="btn warn" id="totpDisableBtn">Désactiver la 2FA</button>
+        </div>`;
+    }
+    return `
+      <div class="card" id="totpCard" style="margin-top:16px">
+        <div class="card-h">Authentification à deux facteurs (2FA)</div>
+        <p class="note slate" style="margin:12px 0">Recommandé pour tous les comptes mission. Scannez le QR avec Google Authenticator ou Authy.</p>
+        <div id="totpSetupArea">
+          <button type="button" class="btn terra" id="totpSetupBtn">Configurer la 2FA</button>
+        </div>
+        <div id="totpConfirmArea" style="display:none;margin-top:12px">
+          <div id="totpQrWrap" style="text-align:center;margin:12px 0"></div>
+          <p class="note slate" style="font-size:11px">Clé manuelle : <code id="totpSecretLbl"></code></p>
+          <div class="field"><label>Code à 6 chiffres</label><input id="totpConfirmCode" type="text" inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code"></div>
+          <button type="button" class="btn ok" id="totpConfirmBtn">Activer la 2FA</button>
+        </div>
+      </div>`;
+  }
+
+  function bindTotpCard(v, st) {
+    const card = v.querySelector("#totpCard");
+    if (!card) return;
+
+    const setupBtn = card.querySelector("#totpSetupBtn");
+    if (setupBtn) {
+      setupBtn.onclick = async () => {
+        setupBtn.disabled = true;
+        try {
+          const r = await fetch("/api/auth/totp/setup", { method: "POST" });
+          if (!r.ok) throw new Error("setup " + r.status);
+          const data = await r.json();
+          const area = card.querySelector("#totpConfirmArea");
+          const qr = card.querySelector("#totpQrWrap");
+          const sec = card.querySelector("#totpSecretLbl");
+          if (area) area.style.display = "block";
+          if (sec) sec.textContent = data.secret;
+          if (qr) {
+            const img = document.createElement("img");
+            img.alt = "QR code 2FA";
+            img.width = 180;
+            img.height = 180;
+            img.src =
+              "https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=" +
+              encodeURIComponent(data.uri);
+            qr.innerHTML = "";
+            qr.appendChild(img);
+          }
+          setupBtn.style.display = "none";
+          card.querySelector("#totpConfirmCode")?.focus();
+        } catch (_) {
+          toast("2FA", "Impossible de démarrer la configuration", "err");
+          setupBtn.disabled = false;
+        }
+      };
+    }
+
+    const confirmBtn = card.querySelector("#totpConfirmBtn");
+    if (confirmBtn) {
+      confirmBtn.onclick = async function () {
+        const code = card.querySelector("#totpConfirmCode")?.value?.trim();
+        if (!code) {
+          toast("2FA", "Saisissez le code à 6 chiffres", "err");
+          return;
+        }
+        const r = await fetch("/api/auth/totp/confirm", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ code }),
+        });
+        if (!r.ok) {
+          toast("2FA", "Code invalide — réessayez", "err");
+          return;
+        }
+        await onTotpEnabled();
+      };
+    }
+
+    const disableBtn = card.querySelector("#totpDisableBtn");
+    if (disableBtn) {
+      disableBtn.onclick = async () => {
+        const password = card.querySelector("#totpDisPass")?.value || "";
+        const code = card.querySelector("#totpDisCode")?.value?.trim();
+        if (!password || !code) {
+          toast("2FA", "Mot de passe et code requis", "err");
+          return;
+        }
+        const r = await fetch("/api/auth/totp/disable", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ password, code }),
+        });
+        if (!r.ok) {
+          toast("2FA", "Mot de passe ou code incorrect", "err");
+          return;
+        }
+        toast("2FA désactivée", "", "ok");
+        App.go("reglages");
+      };
+    }
+
+    if (st && st.pending && setupBtn) {
+      setupBtn.click();
+    }
+  }
+
+  async function injectReglages(v) {
+    if (!window.PORTIA_REQUIRE_AUTH || !eligible()) return;
+    const st = await totpStatus();
+    if (!st || !st.eligible) return;
+    const row = v.querySelector(".row");
+    const col = row && row.querySelector(".col:last-child");
+    if (!col) return;
+    col.insertAdjacentHTML("beforeend", cardHtml(st));
+    bindTotpCard(v, st);
+  }
+
+  function patchReglages() {
+    if (!window.VIEWS || !VIEWS.reglages) return;
+    const orig = VIEWS.reglages;
+    VIEWS.reglages = function () {
+      const v = orig();
+      setTimeout(() => injectReglages(v), 50);
+      return v;
+    };
+  }
+
+  async function onTotpEnabled() {
+    window.PORTIA_TOTP_SETUP_REQUIRED = false;
+    if (App.user) App.user.totpSetupRequired = false;
+    document.getElementById("totpGate")?.remove();
+    document.getElementById("totpSetupPanel")?.remove();
+    toast("2FA activée", "Connexion sécurisée par authentificateur", "ok");
+    if (window.portiaReloadServer) {
+      try {
+        await window.portiaReloadServer();
+      } catch (_) {}
+    }
+    if (App.enter) App.enter();
+    if (App.go) App.go("cockpit");
+  }
+
+  async function openSetupPanel() {
+    if (!window.PORTIA_REQUIRE_AUTH || !eligible()) return;
+    document.getElementById("totpGate")?.remove();
+    if (document.getElementById("totpSetupPanel")) return;
+    const st = await totpStatus();
+    const panel = document.createElement("div");
+    panel.id = "totpSetupPanel";
+    panel.style.cssText =
+      "position:fixed;inset:0;z-index:10000;background:linear-gradient(180deg,#fdfbf6,#f4eee2);display:flex;align-items:center;justify-content:center;padding:20px;overflow:auto";
+    const pendingHint =
+      st && st.pending
+        ? '<p class="sub" style="color:var(--terra)">Configuration en cours — utilisez le QR déjà scanné ou rescannez-le ci-dessous, puis cliquez <b>Activer la 2FA</b> (pas le champ de connexion).</p>'
+        : '<p class="sub">Scannez le QR avec Google Authenticator ou Authy, puis saisissez le code à 6 chiffres et cliquez <b>Activer la 2FA</b>.</p>';
+    panel.innerHTML =
+      '<div class="login-card" style="max-width:480px;width:100%">' +
+      '<div class="login-ey">Sécurité obligatoire</div>' +
+      "<h1>Configurer la 2FA</h1>" +
+      pendingHint +
+      '<div id="totpPanelMount"></div></div>';
+    document.body.appendChild(panel);
+    const mount = panel.querySelector("#totpPanelMount");
+    mount.innerHTML = cardHtml({ eligible: true, enabled: false });
+    bindTotpCard(mount, st || { eligible: true, enabled: false, pending: false });
+  }
+
+  function enforceSetup() {
+    if (!window.PORTIA_REQUIRE_AUTH || !eligible()) return;
+    if (document.getElementById("totpSetupPanel")) return;
+    if (document.getElementById("totpGate")) return;
+    const gate = document.createElement("div");
+    gate.id = "totpGate";
+    gate.style.cssText =
+      "position:fixed;inset:0;z-index:9999;background:rgba(26,24,20,.72);display:flex;align-items:center;justify-content:center;padding:16px";
+    gate.innerHTML =
+      '<div class="login-card" style="max-width:420px;width:100%"><div class="login-ey">Sécurité obligatoire</div>' +
+      "<h1>2FA requise</h1>" +
+      '<p class="sub">Votre compte doit activer l’authentificateur avant d’accéder à la mission.</p>' +
+      '<button type="button" class="btn-primary" id="totpGateBtn">Configurer la 2FA</button></div>';
+    document.body.appendChild(gate);
+    gate.querySelector("#totpGateBtn").onclick = () => openSetupPanel();
+  }
+
+  async function show2faBanner() {
+    if (!window.PORTIA_REQUIRE_AUTH || !eligible()) return;
+    if (window.PORTIA_TOTP_SETUP_REQUIRED || (App.user && App.user.totpSetupRequired)) {
+      enforceSetup();
+      return;
+    }
+    const st = await totpStatus();
+    if (!st || !st.eligible || st.enabled) return;
+    if (document.getElementById("totpBanner")) return;
+    const app = document.getElementById("app");
+    if (!app || !app.classList.contains("on")) return;
+    const b = document.createElement("div");
+    b.id = "totpBanner";
+    b.className = "note warn";
+    b.style.cssText =
+      "margin:0;border-radius:0;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;z-index:50;position:relative";
+    b.innerHTML =
+      '<span><b>2FA recommandée</b> — Activez l’authentificateur pour sécuriser votre compte.</span>' +
+      '<button type="button" class="btn terra" style="flex-shrink:0">Configurer la 2FA</button>';
+    b.querySelector("button").onclick = () => App.go("reglages");
+    app.insertBefore(b, app.firstChild);
+  }
+
+  function patchEnter() {
+    if (!window.App || !App.enter) return;
+    const orig = App.enter.bind(App);
+    App.enter = function () {
+      const r = orig();
+      setTimeout(show2faBanner, 120);
+      return r;
+    };
+  }
+
+  function patchGo() {
+    if (!window.App || !App.go) return;
+    const orig = App.go.bind(App);
+    App.go = function (k) {
+      const blocked =
+        window.PORTIA_TOTP_SETUP_REQUIRED ||
+        (App.user && App.user.totpSetupRequired);
+      if (blocked) {
+        if (k === "reglages") openSetupPanel();
+        else enforceSetup();
+        return;
+      }
+      return orig(k);
+    };
+  }
+
+  function boot() {
+    patchReglages();
+    patchEnter();
+    patchGo();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+
+  window.PortiaTotp = { boot, eligible, show2faBanner, enforceSetup, openSetupPanel, onTotpEnabled };
+})();

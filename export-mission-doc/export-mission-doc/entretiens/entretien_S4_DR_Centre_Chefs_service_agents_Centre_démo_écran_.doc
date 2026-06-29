@@ -1,0 +1,67 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Chefs service + agents Centre (démo écran)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Chefs service + agents Centre (démo écran)</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | DR Centre |
+| Axe | Technique |
+| Semaine | S4 |
+| Date mission | J+22 |
+| Heure | 11:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | direction |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Chefs de service &amp; démonstration écran
+<b>Durée indicative :</b> 90-120 min
+<b>Clé trame :</b> `terrain_demo`</p><p><b>Nombre de questions :</b> 21</p><p>### Phase 1 — Investigation</p><p>#### A. Démonstration des outils en usage</p><p><b>1. Quels écrans / applications démontrez-vous aujourd'hui (nom, version, éditeur) ?</b>
+<li>*Réf. :* `dm_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Parcours type : de la saisie d'un bénéficiaire jusqu'au reporting — décrivez étape par étape.</b>
+<li>*Réf. :* `dm_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Où sont stockées les données (local, serveur régional, central) ?</b>
+<li>*Réf. :* `dm_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Captures d'écran ou exports possibles à verser en Data Room (R7) ?</b>
+<li>*Réf. :* `dm_i_a4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Qualité des données saisies</p><p><b>1. Quels champs obligatoires et contrôles de cohérence existent dans vos outils ?</b>
+<li>*Réf. :* `dm_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quels doublons ou incohérences détectez-vous régulièrement ?</b>
+<li>*Réf. :* `dm_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Comment corrigez-vous une erreur après validation / clôture ?</b>
+<li>*Réf. :* `dm_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Existe-t-il un référentiel territorial normalisé dans la saisie ?</b>
+<li>*Réf. :* `dm_i_b4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### C. Habilitations &amp; sécurité</p><p><b>1. Comment sont créés / révoqués les comptes agents ?</b>
+<li>*Réf. :* `dm_i_c1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Y a-t-il des profils différenciés (lecture, saisie, validation) ?</b>
+<li>*Réf. :* `dm_i_c2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Avez-vous des traces d'audit (qui a modifié quoi, quand) ?</b>
+<li>*Réf. :* `dm_i_c3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### D. Performance &amp; incidents</p><p><b>1. Temps de réponse perçu, plantages, lenteurs aux heures de pointe ?</b>
+<li>*Réf. :* `dm_i_d1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Incidents majeurs des 12 derniers mois et résolution ?</b>
+<li>*Réf. :* `dm_i_d2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Procédure de support (interne DSI, prestataire) ?</b>
+<li>*Réf. :* `dm_i_d3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### Écarts outils vs cible PNIPM</p><p><b>1. Vos outils permettent-ils un drill-down jusqu'au bénéficiaire pour le Cabinet ?</b>
+<li>*Réf. :* `dm_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Interopérabilité SIGFIP / UXP / NNI : tentatives, échecs, blocages ?</b>
+<li>*Réf. :* `dm_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Le SSO et la 2FA sont-ils envisageables sur votre périmètre ?</b>
+<li>*Réf. :* `dm_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Quelles fonctionnalités du CDC sont absentes de vos écrans actuels ?</b>
+<li>*Réf. :* `dm_c_4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Pistes d'amélioration</p><p><b>1. Quelle évolution minimale de l'existant donnerait le plus de valeur ?</b>
+<li>*Réf. :* `dm_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quels exports automatisés vers la plateforme cible seraient acceptables ?</b>
+<li>*Réf. :* `dm_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Besoins de formation des agents sur un nouvel outil ?</b>
+<li>*Réf. :* `dm_cc_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

@@ -1,0 +1,161 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Livrable L6 — Feuille de route de déploiement (DEMO)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+@page {size:A4;margin:2.5cm 2cm}
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#1a1a1a;margin:0;padding:24px 32px}
+h1{font-size:20pt;color:#003366;margin:0 0 16px;font-weight:bold;letter-spacing:0.5px}
+h2{font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366}
+h3{font-size:12pt;color:#333;margin:20px 0 8px}
+h4{font-size:11pt;color:#444;margin:16px 0 6px;font-weight:bold}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt}
+td,th{border:1px solid #999;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e8eef4;font-weight:bold;color:#003366}
+ul,ol{margin:10px 0;padding-left:28px}
+li{margin-bottom:6px}
+blockquote{border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333}
+p{margin:0 0 10px;text-align:justify}
+hr{border:none;border-top:1px solid #ccc;margin:20px 0}
+.cover{text-align:center;padding:80px 0 40px}
+.cover h1{font-size:22pt;border:none}
+.meta-table td:first-child{width:35%;font-weight:bold;background:#f5f8fc}
+</style></head>
+<body>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h1 style='font-size:20pt;color:#003366;margin:24px 0 12px;font-weight:bold'>FEUILLE DE ROUTE DE DÉPLOIEMENT PNIPM</h1>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Trajectoire séquencée, prérequis, jalons et conditions de réussite</h2>
+<table>
+<tr><th></th><th></th></tr>
+<tr><td><b>Commanditaire</b></td><td>MPJIPSC</td></tr>
+<tr><td><b>Prestataire</b></td><td>Cabinet PORTIA</td></tr>
+<tr><td><b>Référence livrable</b></td><td>L6 — Jalon J+28</td></tr>
+<tr><td><b>Version</b></td><td>1.0 — Projet consolidé</td></tr>
+<tr><td><b>Date</b></td><td>20 avril 2026</td></tr>
+<tr><td><b>Horizon</b></td><td>24 mois (T0 = lancement marché développement)</td></tr>
+</table>
+<blockquote style='border-left:4px solid #003366;margin:16px 0;padding:10px 20px;background:#f5f8fc;font-style:italic;color:#333'><b>VERSION DÉMO</b> — Trajectoire recommandée post-audit ; à valider par le Comité Stratégique.</blockquote>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>Synthèse exécutive</h2>
+<p>La feuille de route propose une trajectoire en <b>4 phases sur 24 mois</b>, conditionnée par <b>8 prérequis bloquants</b> identifiés dans L4. Le scénario <b>recommandé</b> privilégie un MVP fonctionnel à M+12 (consolidation + drill-down + traçabilité primes) avant les intégrations lourdes (SIGFIP, NNI, UXP).</p>
+<p><b>Investissement relatif estimé :</b> 100 % répartis 15 % / 45 % / 30 % / 10 % (phases 0 à 3).</p>
+<p><b>Facteurs clés de succès :</b> Cellule PNIPM opérationnelle, sponsor Cabinet actif, protocole NNI signé, qualité data DPSD.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>1. Principes de la trajectoire</h2>
+<ol style='margin:8px 0 8px 24px'>
+<li><b>Valeur politique d&#x27;abord</b> — livrer visible au Cabinet avant perfection technique ;</li>
+<li><b>Intégrer plutôt que remplacer</b> — API depuis SI existants ;</li>
+<li><b>Identité et data avant IA</b> — pas de module prédictif avant M+18 ;</li>
+<li><b>Offline by design</b> — terrain ivoirien dès le MVP ;</li>
+<li><b>Gouvernance continue</b> — COPIL mensuel + Comité Strat. trimestriel.</li>
+</ol>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>2. Prérequis bloquants (Phase 0)</h2>
+<table>
+<tr><th>#</th><th>Prérequis</th><th>Owner</th><th>Échéance T0</th><th>Statut audit</th></tr>
+<tr><td>P0-1</td><td>Arbitrage NNI / clé bénéficiaire</td><td>Comité Strat.</td><td>T0-1 mois</td><td>Acté 06/04</td></tr>
+<tr><td>P0-2</td><td>Cellule PNIPM (MOA)</td><td>Cabinet</td><td>T0</td><td>Proposé</td></tr>
+<tr><td>P0-3</td><td>Révision périmètre MVP CDC</td><td>CT PNIPM</td><td>T0-2 mois</td><td>En cours</td></tr>
+<tr><td>P0-4</td><td>Protocole accès NNI (DPO)</td><td>DPO / ANRMP</td><td>T0+1 mois</td><td>Négociation</td></tr>
+<tr><td>P0-5</td><td>Référentiel dispositifs v1</td><td>DAJIP</td><td>T0+2 mois</td><td>60 %</td></tr>
+<tr><td>P0-6</td><td>Grille qualité data v1</td><td>DPSD</td><td>T0+2 mois</td><td>40 %</td></tr>
+<tr><td>P0-7</td><td>SSO / IAM cible défini</td><td>DSI</td><td>T0+1 mois</td><td>Esquisse</td></tr>
+<tr><td>P0-8</td><td>Marché développement lancé</td><td>DMP</td><td>T0</td><td>Post-audit</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>3. Phases de déploiement</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 0 — Fondations (M0–M3)</h3>
+<table>
+<tr><th>Lot</th><th>Livrables</th><th>Jalons</th></tr>
+<tr><td>Gouvernance</td><td>Cellule, RACI, charte data</td><td>COPIL mensuel</td></tr>
+<tr><td>Référentiels</td><td>Dispositifs, territoires, indicateurs</td><td>Ref v1</td></tr>
+<tr><td>IAM</td><td>SSO pilote 2 apps</td><td>50 % users</td></tr>
+<tr><td>Infra</td><td>Environnement dev/recette</td><td>Go dev</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 1 — MVP consolidation (M3–M12)</h3>
+<table>
+<tr><th>Lot</th><th>Fonctionnalités</th><th>KPI</th></tr>
+<tr><td>F1</td><td>Tableau de bord Cabinet</td><td>5 KPI live</td></tr>
+<tr><td>F2</td><td>Drill-down programme → bénéficiaire (pilote AEJ)</td><td>1 programme</td></tr>
+<tr><td>F3</td><td>Traçabilité primes THIMO</td><td>Chaîne complète 1 dispositif</td></tr>
+<tr><td>F4</td><td>PWA saisie offline DR pilote</td><td>2 DR</td></tr>
+<tr><td>F5</td><td>Intégration AEJ + DPSD (API)</td><td>Flux auto F1</td></tr>
+</table>
+<p><b>Jalon clé M+12 :</b> Go-live MVP — restitution COPIL + Comité Strat.</p>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 2 — Intégrations &amp; scale (M12–M18)</h3>
+<table>
+<tr><th>Lot</th><th>Intégrations</th><th>Dépendances</th></tr>
+<tr><td>I1</td><td>NNI (identité)</td><td>P0-4</td></tr>
+<tr><td>I2</td><td>SIGFIP (budget)</td><td>Convention DAF</td></tr>
+<tr><td>I3</td><td>2e vague programmes (PEJEDEC, PACE)</td><td>Ref dispositifs</td></tr>
+<tr><td>I4</td><td>UXP / X-Road (1er service)</td><td>RQ-05 résolu</td></tr>
+<tr><td>I5</td><td>Volet B (RH, patrimoine)</td><td>Entretiens S3</td></tr>
+</table>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Phase 3 — Optimisation &amp; IA (M18–M24)</h3>
+<table>
+<tr><th>Lot</th><th>Contenu</th><th>Condition</th></tr>
+<tr><td>O1</td><td>Conteneurisation progressive</td><td>Phase 2 stable</td></tr>
+<tr><td>O2</td><td>Module IA prédictif (si data OK)</td><td>RQ-06 fermé</td></tr>
+<tr><td>O3</td><td>Extension 10 DR + tutelles</td><td>Adoption &gt;70 %</td></tr>
+<tr><td>O4</td><td>SLA 99,9 %</td><td>Charge réelle mesurée</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>4. Jalons et instances</h2>
+<table>
+<tr><th>Date</th><th>Jalon</th><th>Instance</th><th>Critère succès</th></tr>
+<tr><td>T0</td><td>Lancement marché</td><td>Comité Strat.</td><td>AO publié</td></tr>
+<tr><td>M+3</td><td>Fondations OK</td><td>COPIL</td><td>Ref + SSO pilote</td></tr>
+<tr><td>M+6</td><td>Alpha MVP</td><td>COPIL</td><td>Demo Cabinet</td></tr>
+<tr><td>M+12</td><td>Go-live MVP</td><td>Comité Strat.</td><td>5 KPI + drill-down</td></tr>
+<tr><td>M+18</td><td>Intégrations v1</td><td>COPIL</td><td>NNI + 1 bailleur auto</td></tr>
+<tr><td>M+24</td><td>Bilan phase 3</td><td>Comité Strat.</td><td>Roadmap 2</td></tr>
+</table>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>5. Scénarios alternatifs</h2>
+<table>
+<tr><th>Scénario</th><th>Description</th><th>Durée MVP</th><th>Coût relatif</th><th>Risque</th></tr>
+<tr><td><b>A — Recommandé</b></td><td>MVP allégé → intégrations</td><td>12 mois</td><td>100 %</td><td>Maîtrisé</td></tr>
+<tr><td>B — Accéléré</td><td>Big-bang intégrations M+6</td><td>6 mois</td><td>130 %</td><td>Élevé</td></tr>
+<tr><td>C — Minimal</td><td>Dashboard seul, pas NNI</td><td>9 mois</td><td>70 %</td><td>Redevabilité limitée</td></tr>
+<tr><td>D — CDC strict</td><td>Toutes exigences lot 1</td><td>18 mois</td><td>150 %</td><td>Blocages</td></tr>
+</table>
+<p><b>Recommandation PORTIA :</b> Scénario A — meilleur ratio valeur / risque.</p>
+<div style='page-break-before:always;margin:0;padding:0'><br/></div>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>6. Gouvernance du déploiement</h2>
+<table>
+<tr><th>Rôle</th><th>Responsabilité</th><th>Fréquence</th></tr>
+<tr><td>Sponsor Cabinet</td><td>Arbitrages politiques</td><td>Mensuel</td></tr>
+<tr><td>CT PNIPM</td><td>MOA fonctionnel</td><td>Hebdo</td></tr>
+<tr><td>DSI</td><td>MOA technique</td><td>Hebdo</td></tr>
+<tr><td>Cellule PNIPM</td><td>Coordination</td><td>Quotidien</td></tr>
+<tr><td>COPIL</td><td>Suivi, déblocage</td><td>Mensuel</td></tr>
+<tr><td>Comité Strat.</td><td>Jalons majeurs</td><td>Trimestriel</td></tr>
+<tr><td>DPO</td><td>Conformité data</td><td>Continu</td></tr>
+</table>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>7. Conditions de réussite</h2>
+<ol style='margin:8px 0 8px 24px'>
+<li>Maintien du sponsor politique post-audit ;</li>
+<li>Budget pluriannuel sécurisé (État + cofinancements) ;</li>
+<li>Intégrateur avec références interop Afrique de l&#x27;Ouest ;</li>
+<li>Transfert compétences DSI (3 agents formés architecture) ;</li>
+<li>Plan conduite du changement DR (formation, quick wins).</li>
+</ol>
+<h2 style='font-size:14pt;color:#003366;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #003366'>8. Annexes</h2>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe A — Diagramme de Gantt (description)</h3>
+<ul style='margin:8px 0 8px 24px'>
+<li>M0–M3 : Phase 0 (barre bleue)</li>
+<li>M3–M12 : Phase 1 MVP (barre verte)</li>
+<li>M12–M18 : Phase 2 (barre orange)</li>
+<li>M18–M24 : Phase 3 (barre grise)</li>
+</ul>
+<h3 style='font-size:12pt;color:#333;margin:20px 0 8px'>Annexe B — Lien livrables audit → marché</h3>
+<table>
+<tr><th>Livrable audit</th><th>Input marché</th></tr>
+<tr><td>L2 Besoins</td><td>CCTP fonctionnel</td></tr>
+<tr><td>L3 Carto</td><td>Architecture cible</td></tr>
+<tr><td>L4 Matrice</td><td>Périmètre MVP</td></tr>
+<tr><td>L5 Risques</td><td>Clauses contractuelles</td></tr>
+<tr><td>L6 Roadmap</td><td>Planning contractuel</td></tr>
+</table>
+</body></html>

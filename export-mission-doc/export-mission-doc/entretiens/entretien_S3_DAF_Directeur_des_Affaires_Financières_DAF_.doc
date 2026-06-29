@@ -1,0 +1,59 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Directeur des Affaires Financières (DAF)</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Directeur des Affaires Financières (DAF)</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | DAF |
+| Axe | Technique |
+| Semaine | S3 |
+| Date mission | J+14 |
+| Heure | 14:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | direction |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> Direction centrale / service métier
+<b>Durée indicative :</b> 90 min
+<b>Clé trame :</b> `direction`</p><p><b>Nombre de questions :</b> 17</p><p>### Phase 1 — Investigation</p><p>#### A. Mandat &amp; périmètre</p><p><b>1. Mandat de votre direction et périmètre de données produites ?</b>
+<li>*Réf. :* `dir_i_a1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quels dispositifs / programmes relèvent de votre direction ?</b>
+<li>*Réf. :* `dir_i_a2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Effectifs, organisation régionale, points focaux data ?</b>
+<li>*Réf. :* `dir_i_a3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### B. Outils &amp; reporting</p><p><b>1. Quels outils utilisez-vous pour suivi et reporting (nom, version) ?</b>
+<li>*Réf. :* `dir_i_b1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quelles données, formats, fréquences de production ?</b>
+<li>*Réf. :* `dir_i_b2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Quels processus manuels et chronophages ?</b>
+<li>*Réf. :* `dir_i_b3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Obligations de reporting internes, bailleurs, tutelle ?</b>
+<li>*Réf. :* `dir_i_b4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>#### C. Qualité &amp; échanges</p><p><b>1. Qualité et fraîcheur des données — auto-évaluation ?</b>
+<li>*Réf. :* `dir_i_c1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Avec quelles structures échangez-vous des données, comment ?</b>
+<li>*Réf. :* `dir_i_c2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Principaux points de douleur opérationnels ?</b>
+<li>*Réf. :* `dir_i_c3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### Intégration CDC</p><p><b>1. Quelles fonctionnalités CDC sont utiles vs superflues pour vous ?</b>
+<li>*Réf. :* `dir_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Quelles données partageriez-vous dans une plateforme centralisée ?</b>
+<li>*Réf. :* `dir_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Obstacles à la centralisation (juridique, technique, politique) ?</b>
+<li>*Réf. :* `dir_c_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Priorités</p><p><b>1. Quick wins améliorant immédiatement votre quotidien ?</b>
+<li>*Réf. :* `dir_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Conditions de réussite et craintes ?</b>
+<li>*Réf. :* `dir_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Référents data et métier à associer (noms) ?</b>
+<li>*Réf. :* `dir_cc_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Pièces Data Room à verser sous 72h ?</b>
+<li>*Réf. :* `dir_cc_4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>

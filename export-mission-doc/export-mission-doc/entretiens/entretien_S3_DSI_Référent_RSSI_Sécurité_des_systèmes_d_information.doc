@@ -1,0 +1,43 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Référent RSSI — Sécurité des systèmes d'information</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]-->
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#1a1a1a;max-width:800px;margin:24px auto}
+h1{font-size:18pt;color:#8b4513}h2{font-size:14pt;color:#5c4033;margin-top:1.2em}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px}</style></head>
+<body><p><h1 style='color:#8b4513'>Entretien — Référent RSSI — Sécurité des systèmes d'information</h1></p><p><li><b>Mission :</b> PNIPM</li>
+<li><b>Exporté le :</b> 2026-06-08 15:21 UTC</li>
+<li><b>J0 mission :</b> 2026-03-23</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Fiche entretien</h2></p><p>| Champ | Valeur |
+|-------|--------|
+| Structure | DSI |
+| Axe | Technique |
+| Semaine | S3 |
+| Date mission | J+14 |
+| Heure | 14:30 |
+| Auditeur(s) | B+T |
+| Statut | planifie |
+| Qualification | — |
+| Triangulation | 0 source(s) |
+| Trame | rssi_dpo |</p><p><h2 style='color:#5c4033;margin-top:1.2em'>Observations</h2></p><p><li>Distinct de l'entretien DSI architecture</li></p><p><h2 style='color:#5c4033;margin-top:1.2em'>Questionnaire structuré (grille complète)</h2></p><p><b>Grille :</b> RSSI — Sécurité des systèmes d'information
+<b>Durée indicative :</b> 90 min
+<b>Clé trame :</b> `rssi`</p><p><b>Nombre de questions :</b> 9</p><p>### Phase 1 — Investigation</p><p>#### Gouvernance sécurité</p><p><b>1. Mandat RSSI, rattachement, moyens (équipe, budget) ?</b>
+<li>*Réf. :* `rssi_i_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Politique de sécurité SI : date, couverture, application réelle ?</b>
+<li>*Réf. :* `rssi_i_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>3. Registre incidents : volume, gravité, remontée Cabinet ?</b>
+<li>*Réf. :* `rssi_i_3`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>4. Audits, pentests, conformité ISO/ANSSI — planning ?</b>
+<li>*Réf. :* `rssi_i_4`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>5. Séparation des pouvoirs DSI vs validation sécurité en production ?</b>
+<li>*Réf. :* `rssi_i_5`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 2 — Confrontation</p><p>#### CDC sécurité</p><p><b>1. SSO, 2FA, 6 niveaux d'accès — qui valide la mise en œuvre ?</b>
+<li>*Réf. :* `rssi_c_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Hébergement souverain / cloud national — position officielle ?</b>
+<li>*Réf. :* `rssi_c_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p>### Phase 3 — Co-construction</p><p>#### Actions</p><p><b>1. Prérequis sécurité bloquants avant construction ?</b>
+<li>*Réf. :* `rssi_cc_1`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li></p><p><b>2. Documents à fournir (politique, PRA) — délai ?</b>
+<li>*Réf. :* `rssi_cc_2`</li>
+<li><b>Réponse :</b> _… à compléter lors de l'entretien …_</li>
+</p></body></html>
